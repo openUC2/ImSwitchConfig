@@ -20,6 +20,7 @@
         "forPositioning": true
     }
 },
+"lasers":{
 "635 Laser": {
   "analogChannel": null,
   "digitalLine": null,
