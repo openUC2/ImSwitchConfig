@@ -1,6 +1,6 @@
 {
   "positioners": {
-    "LightsheetStage": {
+    "ESP32Stage": {
         "managerName": "ESP32StageManager",
         "managerProperties": {
             "rs232device": "ESP32"
@@ -76,7 +76,8 @@
         "image_height": 1000
       }
     },
-    "forAcquisition": true
+    "forAcquisition": true,
+    "forFocusLock": true
   }
 },
 "rois": {
@@ -93,6 +94,16 @@
     "Recording",
     "Image",
     "Laser",
-    "Positioner"
-  ]
+    "Positioner", 
+    "Autofocus"
+  ],
+  "autofocus": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32Stage",
+    "updateFreq": 10,
+    "frameCropx": 780,
+    "frameCropy": 400,
+    "frameCropw": 500,
+    "frameCroph": 100
+  }
 }
