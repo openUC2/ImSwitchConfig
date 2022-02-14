@@ -27,7 +27,7 @@
   "managerName": "ESP32LEDLaserManager",
   "managerProperties": {
       "rs232device": "ESP32",
-      "channel_index": "R",
+      "channel_index": 1,
       "filter_change": false
   },
   "wavelength": 635,
@@ -40,7 +40,7 @@
   "managerName": "ESP32LEDLaserManager",
   "managerProperties": {
       "rs232device": "ESP32",
-      "channel_index": "G",
+      "channel_index": 2,
       "filter_change": false
   },
   "wavelength": 0,
