@@ -15,7 +15,8 @@
         "managerName": "ESP32Manager",
         "managerProperties": {
           "host_": "192.168.43.129",
-          "serialport": "COM4"
+          "serialport_": "COM4",
+          "serialport":"/dev/cu.wchusbserial1440"
         }
       }
     },
@@ -92,7 +93,7 @@
       "Recording",
       "Image",
       "Laser",
-      "Positioner"
+      "Positioner",
+      "WellPlate"
     ]
   }
-  
