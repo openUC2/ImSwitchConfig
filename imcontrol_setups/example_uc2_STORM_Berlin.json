@@ -27,12 +27,12 @@
   "managerName": "ESP32LEDLaserManager",
   "managerProperties": {
       "rs232device": "ESP32",
-      "channel_index": "R",
+      "channel_index": 1,
       "filter_change": false
   },
   "wavelength": 635,
   "valueRangeMin": 0,
-  "valueRangeMax": 32768
+  "valueRangeMax": 255
 },
 "LED": {
   "analogChannel": null,
@@ -40,12 +40,12 @@
   "managerName": "ESP32LEDLaserManager",
   "managerProperties": {
       "rs232device": "ESP32",
-      "channel_index": "W",
+      "channel_index": 2,
       "filter_change": false
   },
-  "wavelength": 635,
+  "wavelength": 0,
   "valueRangeMin": 0,
-  "valueRangeMax": 32768
+  "valueRangeMax": 255
 }
 },
 "detectors": {
