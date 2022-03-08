@@ -1,0 +1,29 @@
+{
+    "positioners": {
+      "LightsheetStage": {
+          "managerName": "SQUIDStageManager",
+          "managerProperties": {
+              "rs232device": "SQUID"
+          },
+          "axes": ["X", "Y", "Z"],
+          "forScanning": true,
+          "forPositioning": true
+      }
+  },
+  "rs232devices": {
+      "SQUID": {
+        "managerName": "SQUIDManager",
+        "managerProperties": {
+          "serialport":"/dev/cu.usbmodem14501"
+        }
+      }
+    },
+    "availableWidgets": [
+      "Settings",
+      "View",
+      "Recording",
+      "Image",
+      "Laser",
+      "Positioner"
+    ]
+  }
