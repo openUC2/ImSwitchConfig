@@ -49,7 +49,7 @@
 }
 },
 "detectors": {
-  "WidefieldCamera": {
+  "Holography": {
     "analogChannel": null,
     "digitalLine": null,
     "managerName": "AVManager",
@@ -65,6 +65,23 @@
       }
     },
     "forAcquisition": true
+  },
+  "LightSheet": {
+    "analogChannel": null,
+    "digitalLine": null,
+    "managerName": "GXPIPYManager",
+    "managerProperties": {
+      "cameraListIndex": 1,
+      "gxipycam": {
+        "exposure": 0,
+        "gain": 0,
+        "blacklevel": 100,
+        "image_width": 1000,
+        "image_height": 1000
+      }
+    },
+    "forAcquisition": true,
+    "forFocusLock": true
   }
 },
 "rois": {
@@ -82,10 +99,11 @@
     "Image",
     "Laser",
     "Positioner",
-    "Autofocus"
+    "Autofocus",
+    "Holo"
   ],
   "autofocus": {
-    "camera": "WidefieldCamera",
+    "camera": "LightSheet",
     "positioner": "ESPStage",
     "updateFreq": 10,
     "frameCropx": 780,

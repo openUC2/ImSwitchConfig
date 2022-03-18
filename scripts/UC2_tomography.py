@@ -31,7 +31,9 @@ N_steps = roundtrip//delta_deg
 print(N_steps)
 n_step = int(delta_deg/deg_per_step)
 print(n_step)
-	
+
+api.imcontrol.setMotorsEnabled(positioner[0], 1)
+
 for i in range(N_steps+1):
 	api.imcontrol.movePositioner(positioner[0], "X", n_step)
 	time.sleep(.2) # settle
