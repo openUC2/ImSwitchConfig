@@ -14,7 +14,8 @@
       "SQUID": {
         "managerName": "SQUIDManager",
         "managerProperties": {
-          "serialport":"/dev/cu.usbmodem14501"
+          "serialport1":"/dev/cu.usbmodem14501",
+          "serialport":"/dev/cu.usbmodem14401"
         }
       }
     },
