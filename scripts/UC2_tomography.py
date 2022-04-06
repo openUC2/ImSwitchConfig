@@ -22,6 +22,11 @@ pixelsize_nyq = wavelength/NA/2 # 0.8133333333333334e-06 => undersampled
 deg_per_step = 360/N_step_roundtrip
 iiter = 1
 positioner = api.imcontrol.getPositionerNames()
+api.imcontrol.movePositioner(positioner[0], "XYZ", (1000,0,0))
+
+positioner = api.imcontrol.getPositionerNames()
+api.imcontrol.setSpeed(positioner[0], (1000,50,1000))
+api.imcontrol.setMotorsEnabled(positioner[0], 1)
 
 
 # roundtrip
