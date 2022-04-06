@@ -1,5 +1,6 @@
 {
-    "setupFileName": "example_uc2_lightsheet_rotating.json",
+    "setupFileName23": "example_uc2_lightsheet_rotating.json",
+    "setupFileName": "example_uc2_incubatormicroscope_vimba.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
