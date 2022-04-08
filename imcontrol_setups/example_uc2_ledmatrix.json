@@ -34,19 +34,6 @@
       "valueRangeMin": 0,
       "valueRangeMax": 32768
   },
-    "ESP32 LEDMatrix": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDMatrixManager",
-      "managerProperties": {
-          "rs232device": "ESP32",
-          "channel_index": "B",
-          "filter_change": true
-      },
-      "wavelength": 488,
-      "valueRangeMin": 0,
-      "valueRangeMax": 32768
-  },
   "635 Laser": {
     "analogChannel": null,
     "digitalLine": null,
@@ -73,21 +60,37 @@
     "valueRangeMin": 0,
     "valueRangeMax": 32768
   }
+},
+  "LEDMatrixs": {
+    "ESP32 LEDMatrix": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDMatrixManager",
+      "managerProperties": {
+          "rs232device": "ESP32",
+          "channel_index": "B",
+          "filter_change": true
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 32768
+  }
   },
   "detectors": {
     "WidefieldCamera": {
       "analogChannel": null,
       "digitalLine": null,
-      "managerName": "GXPIPYManager",
+      "managerNameGX": "GXPIPYManager",
+      "managerName": "AVManager",
       "managerProperties": {
         "cameraListIndex": 1,
-        "gxipycam": {
+        "avcam": {
           "exposure": 0,
           "gain": 0,
           "blacklevel": 100,
           "image_width": 1000,
           "image_height": 1000,
-          "binning":1
+          "pixel_format": "Mono12"
         }
       },
       "forAcquisition": true

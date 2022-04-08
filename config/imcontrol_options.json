@@ -1,9 +1,10 @@
 {
-    "setupFileName": "example_uc2_lightsheet_rotating.json",
+    "setupFileName": "example_uc2_ledmatrix.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
     },
+    "setupFileName22": "example_uc2_lightsheet_rotating.json",
     "setupFileName000": "example_uc2_thorcam.json",
     "setupFileName00": "example_squid_xyz_only.json",
     "setupFileName0": "example_uc2_STORM_Berlin.json",
