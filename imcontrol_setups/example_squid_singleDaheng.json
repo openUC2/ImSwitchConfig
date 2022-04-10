@@ -1,0 +1,87 @@
+{
+    "positioners": {
+      "LightsheetStage": {
+          "managerName": "SQUIDStageManager",
+          "managerProperties": {
+              "rs232device": "SQUID"
+          },
+          "axes": ["X", "Y", "Z"],
+          "forScanning": true,
+          "forPositioning": true
+      }
+  },
+  "lasers": {
+    "488 Laser": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "SQUIDLaserManager",
+      "managerProperties": {
+          "rs232device": "SQUID",
+          "illumination_source": 12
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 32768
+  },
+  "LED": {
+    "analogChannel": null,
+    "digitalLine": null,
+    "managerName": "SQUIDLedManager",
+    "managerProperties": {
+        "rs232device": "SQUID",
+        "channel_index": "0",
+        "isBinary": false,
+        "illumination_source":0
+    },
+    "wavelength": 1000,
+    "valueRangeMin": 0,
+    "valueRangeMax": 32768
+  }},
+  "detectors": {
+    "AutofocusCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "GXPIPYManager",
+      "managerProperties": {
+        "cameraListIndex": 1,
+        "gxipycam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
+    }
+  },
+  "rs232devices": {
+      "SQUID": {
+        "managerName": "SQUIDManager",
+        "managerProperties": {
+          "serialport1":"/dev/cu.usbmodem14501",
+          "serialport":"/dev/cu.usbmodem14401"
+        }
+      }
+    },
+    "autofocus": {
+        "camera": "AutofocusCamera",
+        "positioner": "ESPStage",
+        "updateFreq": 10,
+        "frameCropx": 780,
+        "frameCropy": 400,
+        "frameCropw": 500,
+        "frameCroph": 100
+      },
+    "availableWidgets": [
+      "Settings",
+      "View",
+      "Recording",
+      "Image",
+      "Laser",
+      "Autofocus",
+      "Positioner",
+      "WellPlate"
+    ]
+}
