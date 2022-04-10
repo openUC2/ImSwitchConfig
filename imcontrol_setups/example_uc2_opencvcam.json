@@ -81,10 +81,10 @@
       "analogChannel": null,
       "digitalLine": null,
       "managerNameGX": "GXPIPYManager",
-      "managerName": "AVManager",
+      "managerName": "OpenCVCamManager",
       "managerProperties": {
         "cameraListIndex": 1,
-        "avcam": {
+        "opencvcam": {
           "exposure": 0,
           "gain": 0,
           "blacklevel": 100,
