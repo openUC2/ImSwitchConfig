@@ -105,6 +105,7 @@
     "Image",
     "Laser",
     "Positioner",
-    "LEDMatrix"
+    "LEDMatrix",
+    "Holo"
   ]
 }
