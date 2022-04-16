@@ -1,10 +1,11 @@
 {
-    "setupFileName": "example_uc2_lightsheet_vimba.json",
+    "setupFileName": "example_uc2_ledmatrix.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
     },
-    "setupFileName23": "example_uc2_lightsheet_gxipy.json",
+    "setupFileName1235": "example_uc2_lightsheet_gxipy_holisheet.json",
+    "setupFileName235": "example_uc2_lightsheet_vimba.json",
     "setupFileName22": "example_uc2_lightsheet_rotating.json",
     "setupFileName000": "example_uc2_thorcam.json",
     "setupFileName00": "example_squid_xyz_only.json",
