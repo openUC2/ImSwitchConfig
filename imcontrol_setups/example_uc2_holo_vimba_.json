@@ -32,19 +32,6 @@
     "valueRangeMin": 0,
     "valueRangeMax": 32768
 },
-"ESP32 LEDMatrix": {
-  "analogChannel": null,
-  "digitalLine": null,
-  "managerName": "ESP32LEDMatrixManager",
-  "managerProperties": {
-      "rs232device": "ESP32",
-      "channel_index": "B",
-      "filter_change": true
-  },
-  "wavelength": 488,
-  "valueRangeMin": 0,
-  "valueRangeMax": 32768
-},
 "Lightsheet X-position": {
     "analogChannel": null,
     "digitalLine": null,
@@ -105,6 +92,6 @@
     "Image",
     "Laser",
     "Positioner",
-    "LEDMatrix"
+    "Holo"
   ]
 }
