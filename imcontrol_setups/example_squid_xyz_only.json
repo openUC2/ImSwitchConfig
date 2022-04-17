@@ -1,6 +1,6 @@
 {
     "positioners": {
-      "LightsheetStage": {
+      "XYZStage": {
           "managerName": "SQUIDStageManager",
           "managerProperties": {
               "rs232device": "SQUID"
@@ -25,6 +25,7 @@
       "Recording",
       "Image",
       "Laser",
-      "Positioner"
+      "Positioner",
+      "SquidStageScan"
     ]
   }

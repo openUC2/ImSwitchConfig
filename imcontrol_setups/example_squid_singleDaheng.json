@@ -1,6 +1,6 @@
 {
     "positioners": {
-      "LightsheetStage": {
+      "XYZStage": {
           "managerName": "SQUIDStageManager",
           "managerProperties": {
               "rs232device": "SQUID"
@@ -82,6 +82,7 @@
       "Laser",
       "Autofocus",
       "Positioner",
-      "WellPlate"
+      "WellPlate",
+      "SquidStageScan"
     ]
 }
