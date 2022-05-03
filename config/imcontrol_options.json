@@ -1,9 +1,10 @@
 {
-    "setupFileName": "example_squid_singleDaheng.json",
+    "setupFileName": "example_uc2_Incubator_WebcamOpenCV.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
     },
+    "setupFileName345678": "example_squid_singleDaheng.json",
     "setupFileName134": "example_squid_xyz_only.json",
     "setupFileName3": "example_uc2_multicolour_basler.json",
     "setupFileName236": "example_uc2_ledmatrix.json",

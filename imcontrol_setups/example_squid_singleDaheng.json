@@ -83,6 +83,7 @@
       "Autofocus",
       "Positioner",
       "WellPlate",
-      "SquidStageScan"
+      "SquidStageScan",
+      "HoliSheet"
     ]
 }
