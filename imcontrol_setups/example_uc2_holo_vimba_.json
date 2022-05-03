@@ -58,7 +58,7 @@
   }  
 },
 "detectors": {
-  "WidefieldCamera": {
+  "HoloCamera": {
     "analogChannel": null,
     "digitalLine": null,
     "managerNameGX": "GXPIPYManager",
