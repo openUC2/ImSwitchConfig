@@ -1,16 +1,6 @@
 {
-  "rs232devices": {
-    "ESP32": {
-      "managerName": "ESP32Manager",
-      "managerProperties": {
-        "host_": "192.168.43.129",
-        "serialport": "COM7",
-        "serialport_mac": "/dev/cu./dev/cu.SLAB_USBtoUART"
-      }
-    }
-  },
   "positioners": {
-    "ESPStage": {
+    "Stage": {
         "managerName": "ESP32StageManager",
         "managerProperties": {
             "rs232device": "ESP32"
@@ -20,36 +10,33 @@
         "forPositioning": true
     }
 },
-"lasers":{
-"635 Laser": {
-  "analogChannel": null,
-  "digitalLine": null,
-  "managerName": "ESP32LEDLaserManager",
-  "managerProperties": {
-      "rs232device": "ESP32",
-      "channel_index": 1,
-      "filter_change": false
+"rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport_": "COM4",
+        "serialport":"/dev/cu.wchusbserial1440"
+      }
+    }
   },
-  "wavelength": 635,
-  "valueRangeMin": 0,
-  "valueRangeMax": 255
-},
-"LED": {
-  "analogChannel": null,
-  "digitalLine": null,
-  "managerName": "ESP32LEDLaserManager",
-  "managerProperties": {
-      "rs232device": "ESP32",
-      "channel_index": 2,
-      "filter_change": false
-  },
-  "wavelength": 0,
-  "valueRangeMin": 0,
-  "valueRangeMax": 255
+"LEDMatrixs": {
+  "ESP32 LEDMatrix": {
+    "analogChannel": null,
+    "digitalLine": null,
+    "managerName": "ESP32LEDMatrixManager",
+    "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": "B",
+        "filter_change": true
+    },
+    "wavelength": 488,
+    "valueRangeMin": 0,
+    "valueRangeMax": 32768
 }
 },
 "detectors": {
-  "LightSheet": {
+  "HoloCamera": {
     "analogChannel": null,
     "digitalLine": null,
     "managerName": "ThorcamManager",
@@ -68,7 +55,7 @@
     "forFocusLock": true
   }
 },
-"rois": {
+  "rois": {
   "Full chip": {
     "x": 600,
     "y": 600,
@@ -81,8 +68,7 @@
     "View",
     "Recording",
     "Image",
-    "Laser",
     "Positioner",
-    "Holo"
+    "LEDMatrix"
   ]
 }

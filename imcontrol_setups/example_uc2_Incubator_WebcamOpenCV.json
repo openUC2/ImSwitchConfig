@@ -39,10 +39,10 @@
     "WidefieldCamera": {
       "analogChannel": null,
       "digitalLine": null,
-      "managerName": "GXPIPYManager",
+      "managerName": "OpenCVCamManager",
       "managerProperties": {
         "cameraListIndex": 0,
-        "gxipycam": {
+        "opencvcam": {
           "exposure": 0,
           "gain": 0,
           "blacklevel": 100,
