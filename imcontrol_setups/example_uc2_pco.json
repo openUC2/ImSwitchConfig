@@ -1,0 +1,30 @@
+{
+  "detectors": {
+    "WidefieldCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "PCOManager",
+      "managerProperties": {
+        "cameraListIndex": 0,
+        "PCOcam": {
+          "exposure": 0
+        }
+      },
+      "forAcquisition": true
+    }
+  },
+  "rois": {
+    "Full chip": {
+      "x": 600,
+      "y": 600,
+      "w": 1200,
+      "h": 1200
+    }
+  },
+    "availableWidgets": [
+      "Settings",
+      "View",
+      "Recording",
+      "Image"
+    ]
+  }
