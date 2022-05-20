@@ -1,0 +1,74 @@
+{
+  "positioners": {
+    "Stage": {
+        "managerName": "ESP32StageManager",
+        "managerProperties": {
+            "rs232device": "ESP32"
+        },
+        "axes": ["X", "Y", "Z"],
+        "forScanning": true,
+        "forPositioning": true
+    }
+},
+"rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport_": "COM4",
+        "serialport":"/dev/cu.wchusbserial1440"
+      }
+    }
+  },
+"LEDMatrixs": {
+  "ESP32 LEDMatrix": {
+    "analogChannel": null,
+    "digitalLine": null,
+    "managerName": "ESP32LEDMatrixManager",
+    "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": "B",
+        "filter_change": true
+    },
+    "wavelength": 488,
+    "valueRangeMin": 0,
+    "valueRangeMax": 32768
+}
+},
+"detectors": {
+  "HoloCamera": {
+    "analogChannel": null,
+    "digitalLine": null,
+    "managerName": "ThorcamManager",
+    "managerProperties": {
+      "cameraListIndex": 1,
+      "gxipycam": {
+        "exposure": 0,
+        "gain": 0,
+        "blacklevel": 100,
+        "image_width": 1000,
+        "image_height": 1000,
+        "binning": 2
+      }
+    },
+    "forAcquisition": true,
+    "forFocusLock": true
+  }
+},
+  "rois": {
+  "Full chip": {
+    "x": 600,
+    "y": 600,
+    "w": 1200,
+    "h": 1200
+  }
+},
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Image",
+    "Positioner",
+    "LEDMatrix"
+  ]
+}

@@ -1,22 +1,22 @@
 {
     "detectors": {
-        "WidefieldCamera": {
+        "LightSheet": {
             "analogChannel": null,
             "digitalLine": null,
-            "managerName": "AVManager",
+            "managerName": "GXPIPYManager",
             "managerProperties": {
                 "cameraListIndex": 1,
-                "avcam": {
+                "gxipycam": {
                     "exposure": 0,
                     "gain": 0,
                     "blacklevel": 100,
                     "image_width": 1000,
                     "image_height": 1000,
-                    "pixel_format": "Mono12"
+                    "binning": 2
                 }
             },
             "forAcquisition": true,
-            "forFocusLock": false
+            "forFocusLock": true
         }
     },
     "lasers": {
@@ -138,10 +138,10 @@
             "h": 1200
         },
         "feptube": {
-            "x": 196,
-            "y": 476,
-            "w": 588,
-            "h": 452
+            "x": 916,
+            "y": 948,
+            "w": 896,
+            "h": 620
         }
     },
     "laserPresets": {},
@@ -152,6 +152,7 @@
         "Recording",
         "Image",
         "Laser",
-        "Positioner"
+        "Positioner",
+        "HoliSheet"
     ]
 }

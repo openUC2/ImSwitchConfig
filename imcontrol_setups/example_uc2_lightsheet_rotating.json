@@ -1,40 +1,55 @@
 {
     "detectors": {
-        "WidefieldCamera": {
+        "LightSheet": {
             "analogChannel": null,
             "digitalLine": null,
-            "managerName": "AVManager",
+            "managerName": "GXPIPYManager",
             "managerProperties": {
                 "cameraListIndex": 1,
-                "avcam": {
+                "gxipycam": {
                     "exposure": 0,
                     "gain": 0,
                     "blacklevel": 100,
                     "image_width": 1000,
                     "image_height": 1000,
-                    "pixel_format": "Mono12"
+                    "binning": 2
                 }
             },
             "forAcquisition": true,
-            "forFocusLock": false
+            "forFocusLock": true
+        },
+        "Holography": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "GXPIPYManager",
+            "managerProperties": {
+                "cameraListIndex": 2,
+                "gxipycam": {
+                    "exposure": 0,
+                    "gain": 0,
+                    "blacklevel": 100,
+                    "image_width": 1000,
+                    "image_height": 1000,
+                    "binning": 2
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
         }
     },
     "lasers": {
-        "488 Laser": {
+        "635 Laser": {
             "analogChannel": null,
             "digitalLine": null,
             "managerName": "ESP32LEDLaserManager",
             "managerProperties": {
                 "rs232device": "ESP32",
-                "channel_index": "",
+                "channel_index": 1,
                 "filter_change": false
             },
             "valueRangeMin": 0,
-            "valueRangeMax": 32768,
-            "wavelength": 488,
-            "freqRangeMin": 0,
-            "freqRangeMax": 0,
-            "freqRangeInit": 0,
+            "valueRangeMax": 255,
+            "wavelength": 635,
             "valueRangeStep": 1.0
         },
         "LED": {
@@ -43,52 +58,17 @@
             "managerName": "ESP32LEDLaserManager",
             "managerProperties": {
                 "rs232device": "ESP32",
-                "channel_index": "W",
+                "channel_index": 2,
                 "filter_change": false
             },
             "valueRangeMin": 0,
-            "valueRangeMax": 32768,
-            "wavelength": 1000,
-            "freqRangeMin": 0,
-            "freqRangeMax": 0,
-            "freqRangeInit": 0,
-            "valueRangeStep": 1.0
-        },
-        "Lightsheet X-position": {
-            "analogChannel": null,
-            "digitalLine": null,
-            "managerName": "ESP32LightSheetManager",
-            "managerProperties": {
-                "rs232device": "ESP32",
-                "axis": "pos_x"
-            },
-            "valueRangeMin": 0,
             "valueRangeMax": 255,
             "wavelength": 0,
-            "freqRangeMin": 0,
-            "freqRangeMax": 0,
-            "freqRangeInit": 0,
-            "valueRangeStep": 1.0
-        },
-        "Lightsheet Y-Amplitude": {
-            "analogChannel": null,
-            "digitalLine": null,
-            "managerName": "ESP32LightSheetManager",
-            "managerProperties": {
-                "rs232device": "ESP32",
-                "axis": "amp_y"
-            },
-            "valueRangeMin": 0,
-            "valueRangeMax": 255,
-            "wavelength": 0,
-            "freqRangeMin": 0,
-            "freqRangeMax": 0,
-            "freqRangeInit": 0,
             "valueRangeStep": 1.0
         }
     },
     "positioners": {
-        "LightsheetStage": {
+        "ESPStage": {
             "analogChannel": null,
             "digitalLine": null,
             "managerName": "ESP32StageManager",
@@ -109,8 +89,9 @@
         "ESP32": {
             "managerName": "ESP32Manager",
             "managerProperties": {
-                "host_": "192.168.137.95",
-                "serialport": "COM3"
+                "host_": "192.168.43.129",
+                "serialport": "COM7",
+                "serialport_mac": "/dev/cu./dev/cu.SLAB_USBtoUART"
             }
         }
     },
@@ -137,11 +118,11 @@
             "w": 1200,
             "h": 1200
         },
-        "feptube": {
-            "x": 196,
-            "y": 476,
-            "w": 588,
-            "h": 452
+        "test": {
+            "x": 1000,
+            "y": 1000,
+            "w": 1000,
+            "h": 1000
         }
     },
     "laserPresets": {},
@@ -152,6 +133,7 @@
         "Recording",
         "Image",
         "Laser",
-        "Positioner"
+        "Positioner",
+        "Holo"
     ]
 }
