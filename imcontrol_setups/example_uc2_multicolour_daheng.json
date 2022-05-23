@@ -15,8 +15,8 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM3",
-        "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART"
+        "serialport_windows": "COM3",
+        "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
       }
     }
   },
@@ -87,7 +87,7 @@
     "w": 1200,
     "h": 1200
   }
-},  
+},
 "LEDMatrixs": {
     "ESP32 LEDMatrix": {
       "analogChannel": null,
@@ -109,7 +109,7 @@
     "Recording",
     "Image",
     "Laser",
-    "Positioner", 
+    "Positioner",
     "Autofocus",
     "LEDMatrix"
   ],
