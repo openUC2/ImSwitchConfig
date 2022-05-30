@@ -9,7 +9,7 @@
     "setupFileName1111": "example_uc2_opencvcam.json",
     "setupFileName2346": "example_uc2_pco.json",
     "setupFileName236654": "example_uc2_Incubator_WebcamOpenCV.json",
-        "setupFileName234": "example_squid_singleDaheng.json",
+    "setupFileName234": "example_squid_singleDaheng.json",
     "setupFileName134": "example_squid_xyz_only.json",
     "setupFileName3": "example_uc2_multicolour_basler.json",
     "setupFileName236": "example_uc2_ledmatrix.json",

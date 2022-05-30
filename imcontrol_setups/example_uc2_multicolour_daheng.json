@@ -27,8 +27,9 @@
     "managerName": "ESP32LEDLaserManager",
     "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": "B",
-        "filter_change": true
+        "channel_index": 1,
+        "filter_change": true, 
+        "filter_axis": 0
     },
     "wavelength": 488,
     "valueRangeMin": 0,
@@ -40,8 +41,9 @@
   "managerName": "ESP32LEDLaserManager",
   "managerProperties": {
       "rs232device": "ESP32",
-      "channel_index": "R",
-      "filter_change": true
+      "channel_index": 2,
+      "filter_change": true,
+      "filter_axis": 0
   },
   "wavelength": 635,
   "valueRangeMin": 0,
@@ -53,12 +55,13 @@
   "managerName": "ESP32LEDLaserManager",
   "managerProperties": {
       "rs232device": "ESP32",
-      "channel_index": "W",
-      "filter_change": false
+      "channel_index": "LED",
+      "filter_change": true,
+      "filter_axis": 0
   },
   "wavelength": 635,
   "valueRangeMin": 0,
-  "valueRangeMax": 32768
+  "valueRangeMax": 255
 }
 },
 "detectors": {
