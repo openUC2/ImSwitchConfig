@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_uc2_multicolour_daheng.json",
+    "setupFileName": "example_uc2_cellstorm.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
