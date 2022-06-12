@@ -28,7 +28,7 @@
     "managerProperties": {
         "rs232device": "ESP32",
         "channel_index": 1,
-        "filter_change": true, 
+        "filter_change": true,
         "filter_axis": 0
     },
     "wavelength": 488,
@@ -68,20 +68,22 @@
   "WidefieldCamera": {
     "analogChannel": null,
     "digitalLine": null,
-    "managerName": "GXPIPYManager",
+    "managerName": "ESP32CamManager",
     "managerProperties": {
       "cameraListIndex": 1,
-      "gxipycam": {
+      "cameraHost": "192.168.2.171",
+      "cameraPort": "80",
+      "esp32cam": {
         "exposure": 0,
         "gain": 0,
-        "blacklevel": 100,
+        "framesize": 100,
         "image_width": 1000,
         "image_height": 1000
       }
     },
-    "forAcquisition": true,
-    "forFocusLock": true
+    "forAcquisition": true
   }
+
 },
 "rois": {
   "Full chip": {
@@ -105,15 +107,6 @@
       "valueRangeMin": 0,
       "valueRangeMax": 32768
   }
-  },
-  "autofocus": {
-    "camera": "WidefieldCamera",
-    "positioner": "ESP32Stage",
-    "updateFreq": 10,
-    "frameCropx": 780,
-    "frameCropy": 400,
-    "frameCropw": 500,
-    "frameCroph": 100
   },
   "scan": {
     "scanDesigner": "BetaScanDesigner",
@@ -141,7 +134,6 @@
     "Image",
     "Laser",
     "Positioner",
-    "Autofocus",
     "LEDMatrix",
     "Scan",
     "MCT"
