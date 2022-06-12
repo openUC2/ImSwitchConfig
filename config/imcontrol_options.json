@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_uc2_cellstorm.json",
+    "setupFileName": "example_uc2_oct_eda.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
