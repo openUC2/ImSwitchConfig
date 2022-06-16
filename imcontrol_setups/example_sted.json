@@ -221,7 +221,8 @@
     "Positioner",
     "Scan",
     "FocusLock",
-    "SLM"
+    "SLM",
+    "FFT"
   ],
   "scanDefaults": {
     "defaultScanFile": null

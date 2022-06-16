@@ -1,9 +1,11 @@
 {
-    "setupFileName": "example_uc2_oct_eda.json",
+    "setupFileName": "example_uc2_cellstorm.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
     },
+    "setupFileNamedd": "example_FFT.json",
+    "setupFileName243567": "example_sted.json",
     "setupFileName33": "example_uc2_Incubator_matrix_vimba.json",
     "setupFileName345678": "example_squid_singleDaheng.json",
     "setupFileName1111": "example_uc2_opencvcam.json",
