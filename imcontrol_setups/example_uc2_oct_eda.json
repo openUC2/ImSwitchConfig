@@ -36,7 +36,7 @@
             },
             "wavelength": 488,
             "valueRangeMin": 0,
-            "valueRangeMax": 32768
+            "valueRangeMax": 1023
         },
         "Lens 2": {
               "analogChannel": null,
@@ -54,7 +54,7 @@
               },
               "wavelength": 488,
               "valueRangeMin": 0,
-              "valueRangeMax": 32768
+              "valueRangeMax": 1023
           }          
     },
     "positioners": {
