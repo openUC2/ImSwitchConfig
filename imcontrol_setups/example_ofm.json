@@ -1,0 +1,72 @@
+{
+   "positioners":{
+      "ESP32Stage":{
+         "managerName":"OFMStageManager",
+         "managerProperties":{
+            "rs232device":"OFM"
+         },
+         "axes":[
+            "X",
+            "Y",
+            "Z"
+         ],
+         "forScanning":true,
+         "forPositioning":true
+      }
+   },
+   "rs232devices":{
+      "OFM":{
+         "managerName":"OFMManager",
+         "managerProperties":{
+            "host":"10.10.10.46"
+         }
+      }
+   },
+   "detectors":{
+      "WidefieldCamera":{
+         "analogChannel":null,
+         "digitalLine":null,
+         "managerName":"OFMCamManager",
+         "managerProperties":{
+            "cameraListIndex":1,
+            "ofmcam":{
+               "cameraHost":"10.10.10.46",
+               "cameraPort":5000,
+               "exposure":0,
+               "gain":0,
+               "blacklevel":100,
+               "image_width":1000,
+               "image_height":1000
+            }
+         },
+         "forAcquisition":true,
+         "forFocusLock":true
+      }
+   },
+   "rois":{
+      "Full chip":{
+         "x":600,
+         "y":600,
+         "w":1200,
+         "h":1200
+      }
+   },
+   "mct": {
+     "monitorIdx": 2,
+     "width": 1080,
+     "height": 1920,
+     "wavelength": 0,
+     "pixelSize": 0,
+     "angleMount": 0,
+     "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
+   },
+   "availableWidgets":[
+      "MCT",
+      "Settings",
+      "View",
+      "Recording",
+      "Image",
+      "Positioner"
+   ]
+}
