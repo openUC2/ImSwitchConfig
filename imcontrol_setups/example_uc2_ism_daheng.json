@@ -21,7 +21,7 @@
     }
   },
 "lasers": {
-  "LENS 1": {
+  "488 Laser": {
     "analogChannel": null,
     "digitalLine": null,
     "managerName": "ESP32LEDLaserManager",
@@ -29,35 +29,29 @@
         "rs232device": "ESP32",
         "channel_index": 1,
         "filter_change": true,
-        "filter_axis": 0
+        "filter_axis": 3,
+        "filter_position": 32000,
+        "filter_position_init": -32000,
+        "laser_despeckle_period": 10,
+        "laser_despeckle_amplitude": 0.1
     },
     "wavelength": 488,
     "valueRangeMin": 0,
     "valueRangeMax": 32768
 },
-"LENS 2": {
+"635 Laser": {
   "analogChannel": null,
   "digitalLine": null,
   "managerName": "ESP32LEDLaserManager",
   "managerProperties": {
       "rs232device": "ESP32",
       "channel_index": 2,
-      "filter_change": false,
-      "filter_axis": 0
-  },
-  "wavelength": 635,
-  "valueRangeMin": 0,
-  "valueRangeMax": 32768
-},
-"Laser RED": {
-  "analogChannel": null,
-  "digitalLine": null,
-  "managerName": "ESP32LEDLaserManager",
-  "managerProperties": {
-      "rs232device": "ESP32",
-      "channel_index": 3,
-      "filter_change": false,
-      "filter_axis": 0
+      "filter_change": true,
+      "filter_axis": 3,
+      "filter_position": 18000,
+      "filter_position_init": -0,
+      "laser_despeckle_period": 10,
+      "laser_despeckle_amplitude": 0.1
   },
   "wavelength": 635,
   "valueRangeMin": 0,
@@ -70,8 +64,10 @@
   "managerProperties": {
       "rs232device": "ESP32",
       "channel_index": "LED",
-      "filter_change": false,
-      "filter_axis": 0
+      "filter_change": true,
+      "filter_axis": 3,
+      "filter_position": 32000,
+      "filter_position_init": -0
   },
   "wavelength": 635,
   "valueRangeMin": 0,
@@ -82,22 +78,20 @@
   "WidefieldCamera": {
     "analogChannel": null,
     "digitalLine": null,
-    "managerName": "ESP32CamManager",
+    "managerName": "GXPIPYManager",
     "managerProperties": {
       "cameraListIndex": 1,
-      "cameraHost": "192.168.178.47",
-      "cameraPort": "80",
-      "esp32cam": {
+      "gxipycam": {
         "exposure": 0,
         "gain": 0,
-        "framesize": 100,
+        "blacklevel": 100,
         "image_width": 1000,
         "image_height": 1000
       }
     },
-    "forAcquisition": true
+    "forAcquisition": true,
+    "forFocusLock": true
   }
-
 },
 "rois": {
   "Full chip": {
@@ -115,12 +109,21 @@
       "managerProperties": {
           "rs232device": "ESP32",
           "channel_index": "B",
-          "filter_change": 0
+          "filter_change": true
       },
       "wavelength": 488,
       "valueRangeMin": 0,
       "valueRangeMax": 32768
   }
+  },
+  "autofocus": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32Stage",
+    "updateFreq": 10,
+    "frameCropx": 780,
+    "frameCropy": 400,
+    "frameCropw": 500,
+    "frameCroph": 100
   },
   "scan": {
     "scanDesigner": "BetaScanDesigner",
@@ -131,7 +134,7 @@
     "TTLCycleDesignerParams": {},
     "sampleRate": 100000
 },
-"mct": {
+"ism": {
   "monitorIdx": 2,
   "width": 1080,
   "height": 1920,
@@ -148,8 +151,9 @@
     "Image",
     "Laser",
     "Positioner",
+    "Autofocus",
     "LEDMatrix",
     "Scan",
-    "MCT"
+    "ISM"
   ]
 }
