@@ -36,7 +36,7 @@
             },
             "wavelength": 488,
             "valueRangeMin": 0,
-            "valueRangeMax": 1023
+            "valueRangeMax": 256
         },
         "Lens 2": {
               "analogChannel": null,
