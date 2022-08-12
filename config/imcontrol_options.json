@@ -1,9 +1,11 @@
 {
-    "setupFileName": "example_uc2_cellstorm.json",
+    "setupFileName": "example_uc2_multicolour_daheng.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
     },
+    "setupFileNameBalser": "example_uc2_multicolour_basler.json",
+    "setupFileNameasdf": "example_uc2_cellstorm.json",
     "setupFileNamedd": "example_FFT.json",
     "setupFileName243567": "example_sted.json",
     "setupFileName33": "example_uc2_Incubator_matrix_vimba.json",
@@ -15,7 +17,6 @@
     "setupFileName134": "example_squid_xyz_only.json",
     "setupFileName3": "example_uc2_multicolour_basler.json",
     "setupFileName236": "example_uc2_ledmatrix.json",
-    "setupFileName235": "example_uc2_lightsheet_vimba.json",
     "setupFileName22": "example_uc2_lightsheet_rotating.json",
     "setupFileName000": "example_uc2_thorcam.json",
     "setupFileName0": "example_uc2_STORM_Berlin.json",
