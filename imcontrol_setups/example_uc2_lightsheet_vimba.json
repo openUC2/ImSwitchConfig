@@ -132,6 +132,7 @@
         "Recording",
         "Image",
         "Laser",
+        "Positioner",
         "MCT"
     ]
 }
