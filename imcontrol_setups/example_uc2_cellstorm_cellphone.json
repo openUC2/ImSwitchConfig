@@ -27,8 +27,7 @@
       "managerName": "ESP32LEDMatrixManager",
       "managerProperties": {
           "rs232device": "ESP32",
-          "Nx": 4,
-          "Ny": 4,
+          "channel_index": "B",
           "filter_change": true
       },
       "wavelength": 488,
@@ -42,8 +41,7 @@
       "digitalLine": null,
       "managerName": "OpenCVCamManager",
       "managerProperties": {
-        "cameraListIndex": 1,
-        "cameraListIndexWIN": 0,
+        "cameraListIndex": 0,
         "opencvcam": {
           "exposure": 0,
           "gain": 0,
