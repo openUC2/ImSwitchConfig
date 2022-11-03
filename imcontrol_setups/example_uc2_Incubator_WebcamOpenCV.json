@@ -42,7 +42,8 @@
       "digitalLine": null,
       "managerName": "OpenCVCamManager",
       "managerProperties": {
-        "cameraListIndex": 0,
+        "cameraListIndex": 1,
+        "cameraListIndexWIN": 0,
         "opencvcam": {
           "exposure": 0,
           "gain": 0,

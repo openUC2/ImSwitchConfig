@@ -20,7 +20,7 @@
         }
     },
     "lasers": {
-        "Lens 1": {
+        "Laser Red": {
             "analogChannel": null,
             "digitalLine": null,
             "managerName": "ESP32LEDLaserManager",
@@ -38,7 +38,7 @@
             "valueRangeMin": 0,
             "valueRangeMax": 32768
         },
-        "Lens 2": {
+        "Laser Blue": {
               "analogChannel": null,
               "digitalLine": null,
               "managerName": "ESP32LEDLaserManager",
@@ -114,6 +114,16 @@
             "h": 452
         }
     },
+    "mct": {
+        "monitorIdx": 2,
+        "width": 1080,
+        "height": 1920,
+        "wavelength": 0,
+        "pixelSize": 0,
+        "angleMount": 0,
+        "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+        "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
+      },
     "laserPresets": {},
     "defaultLaserPresetForScan": null,
     "availableWidgets": [
@@ -121,6 +131,8 @@
         "View",
         "Recording",
         "Image",
-        "Laser"
+        "Laser",
+        "Positioner",
+        "MCT"
     ]
 }
