@@ -27,8 +27,7 @@
       "managerName": "ESP32LEDMatrixManager",
       "managerProperties": {
           "rs232device": "ESP32",
-          "Nx": 4,
-          "Ny": 4,
+          "channel_index": "B",
           "filter_change": true
       },
       "wavelength": 488,

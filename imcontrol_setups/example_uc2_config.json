@@ -81,23 +81,7 @@
     },
     "forAcquisition": true,
     "forFocusLock": true
-  },
-    "WidefieldCameraBasler": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "BaslerManager",
-      "managerProperties": {
-        "cameraListIndex": 1,
-        "basler": {
-          "exposure": 0,
-          "gain": 0,
-          "blacklevel": 100,
-          "image_width": 1000,
-          "image_height": 1000
-        }
-      },
-      "forAcquisition": true
-    }
+  }
 },
 "rois": {
   "Full chip": {
@@ -157,19 +141,14 @@
     "wavelength": 775,
     "pixelSize": 0.02,
     "angleMount": 0.15,
-    "correctionPatternsDir": "E:\\PhD\\SLM\\defcorrpatt\\"
+    "correctionPatternsDir": "E:\\PhD\\SLM\\defcorrpatt\\",
+    "managerProperties":{
+       "rs232device":"ESP32"
+    }
   },
   "availableWidgets": [
     "Settings",
     "View",
-    "Recording",
-    "Image",
-    "Laser",
-    "Positioner",
-    "Autofocus",
-    "LEDMatrix",
-    "Scan",
-    "MCT",
     "UC2Config"
   ]
 }
