@@ -21,7 +21,7 @@
               "identity":"UC2_Feather",
                "host_":"192.168.43.129",
                "serialport_windows":"COM3",
-               "serialport":"/dev/cu./dev/cu.SLAB_USBtoUART"
+               "serialport":"/dev/cu.SLAB_USBtoUART"
             }
          },
           "ESP32Cam":{
@@ -29,7 +29,7 @@
              "managerProperties":{
                "identity":"UC2_Camera",
                 "serialport_windows":"COM3",
-                "serialport":"/dev/cu./dev/cu.SLAB_USBtoUART"
+                "serialport":"/dev/cu.SLAB_USBtoUART"
              }
           }
       },
@@ -77,6 +77,25 @@
             "valueRangeMax":255
          }
       },
+        "autofocus": {
+          "camera": "WidefieldCamera",
+          "positioner": "ESP32Stage",
+          "updateFreq": 10,
+          "frameCropx": 780,
+          "frameCropy": 400,
+          "frameCropw": 500,
+          "frameCroph": 100
+        },
+      "mct": {
+         "monitorIdx": 2,
+         "width": 1080,
+         "height": 1920,
+         "wavelength": 0,
+         "pixelSize": 0,
+         "angleMount": 0,
+         "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+         "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
+       },
       "detectors":{
          "WidefieldCamera":{
             "analogChannel":null,
@@ -108,14 +127,18 @@
            "forAcquisition":true,
            "forFocusLock":true
         }
-
       },
       "availableWidgets":[
          "Settings",
          "Image",
          "View",
          "HistoScan",
-         "Positioner"
+         "Positioner",
+         "PixelCalibration",
+         "MCT",
+         "UC2Config",
+         "Autofocus"
       ],
-      "HistoScan":{}
+      "HistoScan":{},
+      "PixelCalibration":{}
 }

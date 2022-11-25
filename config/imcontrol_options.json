@@ -1,10 +1,13 @@
 {
-    "setupFileName": "example_uc2_testhisto.json",
+    "setupFileName": "example_uc2_multicolour_daheng_lena.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
     },
-    "setupFileName1": "example_uc2_multicolour_daheng.json",
+    "watcher": {
+        "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
+    },
+    "setupFileName1": "example_uc2_testhisto.json",
     "setupFileNameOpenCV": "example_uc2_Incubator_WebcamOpenCV.json",
     "setupFileNameCONFIG": "example_uc2_config.json",
     "setupFileNameLS": "example_uc2_lightsheet_michael_vimba.json",

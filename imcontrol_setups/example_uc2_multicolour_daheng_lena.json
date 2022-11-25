@@ -16,7 +16,7 @@
       "managerProperties": {
         "host_": "192.168.43.129",
         "serialport_windows": "COM3",
-        "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
+        "serialport": "/dev/cu.SLAB_USBtoUART"
       }
     }
   },
@@ -28,7 +28,7 @@
     "managerProperties": {
         "rs232device": "ESP32",
         "channel_index": 1,
-        "filter_change": true, 
+        "filter_change": false, 
         "filter_axis": 3,
         "filter_position": 32000,
         "filter_position_init": -32000,
@@ -46,7 +46,7 @@
   "managerProperties": {
       "rs232device": "ESP32",
       "channel_index": 2,
-      "filter_change": true,
+      "filter_change": false,
       "filter_axis": 3,
       "filter_position": 18000,
       "filter_position_init": -0,
@@ -64,7 +64,7 @@
   "managerProperties": {
       "rs232device": "ESP32",
       "channel_index": "LED",
-      "filter_change": true,
+      "filter_change": false,
       "filter_axis": 3,
       "filter_position": 32000,
       "filter_position_init": -0
@@ -125,6 +125,11 @@
     "frameCropw": 500,
     "frameCroph": 100
   },
+  "uc2Config":{
+    "defaultConfig": "pindefWemos.json",
+    "defaultConfig2": "pindefUC2Standalon2.json",
+    "defaultConfig1": "pindefUC2Standalon.json"
+  },
   "scan": {
     "scanDesigner": "BetaScanDesigner",
     "scanDesignerParams": {
@@ -154,6 +159,8 @@
     "Autofocus",
     "LEDMatrix",
     "Scan",
-    "MCT"
+    "MCT",
+    "UC2Config",
+    "ImSwitchServer"    
   ]
 }
