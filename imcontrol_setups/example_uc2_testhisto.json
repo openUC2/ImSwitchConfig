@@ -1,0 +1,144 @@
+{
+      "positioners":{
+         "ESP32Stage":{
+            "managerName":"ESP32StageManager",
+            "managerProperties":{
+               "rs232device":"ESP32"
+            },
+            "axes":[
+               "X",
+               "Y",
+               "Z"
+            ],
+            "forScanning":true,
+            "forPositioning":true
+         }
+      },
+      "rs232devices":{
+         "ESP32":{
+            "managerName":"ESP32Manager",
+            "managerProperties":{
+              "identity":"UC2_Feather",
+               "host_":"192.168.43.129",
+               "serialport_windows":"COM3",
+               "serialport":"/dev/cu.SLAB_USBtoUART"
+            }
+         },
+          "ESP32Cam":{
+             "managerName":"ESP32Manager",
+             "managerProperties":{
+               "identity":"UC2_Camera",
+                "serialport_windows":"COM3",
+                "serialport":"/dev/cu.SLAB_USBtoUART"
+             }
+          }
+      },
+      "lasers":{
+         "488 Laser":{
+            "analogChannel":null,
+            "digitalLine":null,
+            "managerName":"ESP32LEDLaserManager",
+            "managerProperties":{
+               "rs232device":"ESP32",
+               "channel_index":1,
+               "filter_change":true,
+               "filter_axis":0
+            },
+            "wavelength":488,
+            "valueRangeMin":0,
+            "valueRangeMax":32768
+         },
+         "635 Laser":{
+            "analogChannel":null,
+            "digitalLine":null,
+            "managerName":"ESP32LEDLaserManager",
+            "managerProperties":{
+               "rs232device":"ESP32",
+               "channel_index":2,
+               "filter_change":true,
+               "filter_axis":0
+            },
+            "wavelength":635,
+            "valueRangeMin":0,
+            "valueRangeMax":32768
+         },
+         "LED":{
+            "analogChannel":null,
+            "digitalLine":null,
+            "managerName":"ESP32LEDLaserManager",
+            "managerProperties":{
+               "rs232device":"ESP32",
+               "channel_index":"LED",
+               "filter_change":true,
+               "filter_axis":0
+            },
+            "wavelength":635,
+            "valueRangeMin":0,
+            "valueRangeMax":255
+         }
+      },
+        "autofocus": {
+          "camera": "WidefieldCamera",
+          "positioner": "ESP32Stage",
+          "updateFreq": 10,
+          "frameCropx": 780,
+          "frameCropy": 400,
+          "frameCropw": 500,
+          "frameCroph": 100
+        },
+      "mct": {
+         "monitorIdx": 2,
+         "width": 1080,
+         "height": 1920,
+         "wavelength": 0,
+         "pixelSize": 0,
+         "angleMount": 0,
+         "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+         "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
+       },
+      "detectors":{
+         "WidefieldCamera":{
+            "analogChannel":null,
+            "digitalLine":null,
+            "managerName":"GXPIPYManager",
+            "managerProperties":{
+               "cameraListIndex":1,
+               "gxipycam":{
+                  "exposure":0,
+                  "gain":0,
+                  "blacklevel":100,
+                  "image_width":1000,
+                  "image_height":1000
+               }
+            },
+            "forAcquisition":true,
+            "forFocusLock":true
+         },
+        "PreviewCamera":{
+           "analogChannel":null,
+           "digitalLine":null,
+           "managerName":"ESP32SerialCamManager",
+           "managerProperties":{
+              "cameraListIndex":1,
+              "esp32cam":{
+                "rs232device":"ESP32Cam"
+              }
+           },
+           "forAcquisition":true,
+           "forFocusLock":true
+        }
+      },
+      "availableWidgets":[
+         "Settings",
+         "Image",
+         "View",
+         "HistoScan",
+         "Positioner",
+         "PixelCalibration",
+         "MCT",
+         "UC2Config",
+         "Autofocus"
+      ],
+      "HistoScan":{},
+      "PixelCalibration":{}
+}

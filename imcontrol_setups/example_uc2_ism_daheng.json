@@ -29,7 +29,11 @@
         "rs232device": "ESP32",
         "channel_index": 1,
         "filter_change": true,
-        "filter_axis": 0
+        "filter_axis": 3,
+        "filter_position": 32000,
+        "filter_position_init": -32000,
+        "laser_despeckle_period": 10,
+        "laser_despeckle_amplitude": 0.1
     },
     "wavelength": 488,
     "valueRangeMin": 0,
@@ -43,7 +47,11 @@
       "rs232device": "ESP32",
       "channel_index": 2,
       "filter_change": true,
-      "filter_axis": 0
+      "filter_axis": 3,
+      "filter_position": 18000,
+      "filter_position_init": -0,
+      "laser_despeckle_period": 10,
+      "laser_despeckle_amplitude": 0.1
   },
   "wavelength": 635,
   "valueRangeMin": 0,
@@ -57,7 +65,9 @@
       "rs232device": "ESP32",
       "channel_index": "LED",
       "filter_change": true,
-      "filter_axis": 0
+      "filter_axis": 3,
+      "filter_position": 32000,
+      "filter_position_init": -0
   },
   "wavelength": 635,
   "valueRangeMin": 0,
@@ -81,23 +91,7 @@
     },
     "forAcquisition": true,
     "forFocusLock": true
-  },
-    "WidefieldCameraBasler": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "BaslerManager",
-      "managerProperties": {
-        "cameraListIndex": 1,
-        "basler": {
-          "exposure": 0,
-          "gain": 0,
-          "blacklevel": 100,
-          "image_width": 1000,
-          "image_height": 1000
-        }
-      },
-      "forAcquisition": true
-    }
+  }
 },
 "rois": {
   "Full chip": {
@@ -114,8 +108,8 @@
       "managerName": "ESP32LEDMatrixManager",
       "managerProperties": {
           "rs232device": "ESP32",
-          "Nx": 4,
-          "Ny": 4
+          "channel_index": "B",
+          "filter_change": true
       },
       "wavelength": 488,
       "valueRangeMin": 0,
@@ -140,7 +134,7 @@
     "TTLCycleDesignerParams": {},
     "sampleRate": 100000
 },
-"mct": {
+"ism": {
   "monitorIdx": 2,
   "width": 1080,
   "height": 1920,
@@ -150,15 +144,6 @@
   "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
   "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
 },
-"uc2Config": {
-    "monitorIdx": 2,
-    "width": 792,
-    "height": 600,
-    "wavelength": 775,
-    "pixelSize": 0.02,
-    "angleMount": 0.15,
-    "correctionPatternsDir": "E:\\PhD\\SLM\\defcorrpatt\\"
-  },
   "availableWidgets": [
     "Settings",
     "View",
@@ -169,7 +154,6 @@
     "Autofocus",
     "LEDMatrix",
     "Scan",
-    "MCT",
-    "UC2Config"
+    "ISM"
   ]
 }

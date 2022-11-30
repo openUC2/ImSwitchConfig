@@ -1,16 +1,4 @@
 {
-  "positioners": {
-    "GRBLStage": {
-        "managerName": "GRBLStageManager",
-        "managerProperties": {
-          "rs232device_mac": "/dev/cu.wchusbserial14330",
-          "rs232device": "COM4"
-        },
-        "axes": ["X", "Y", "Z"],
-        "forScanning": true,
-        "forPositioning": true
-    }
-},
 "detectors": {
   "WidefieldCamera": {
     "analogChannel": null,
@@ -42,7 +30,6 @@
     "View",
     "Recording",
     "Image",
-    "Laser",
-    "Positioner"
-  ]
+
+    ]
 }

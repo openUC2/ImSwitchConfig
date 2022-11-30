@@ -102,8 +102,8 @@
       "managerName": "ESP32LEDMatrixManager",
       "managerProperties": {
           "rs232device": "ESP32",
-          "channel_index": "B",
-          "filter_change": true
+          "Nx": 4,
+          "Ny": 4
       },
       "wavelength": 488,
       "valueRangeMin": 0,
@@ -118,6 +118,11 @@
     "frameCropy": 400,
     "frameCropw": 500,
     "frameCroph": 100
+  },
+  "uc2Config":{
+    "defaultConfig": "pindefWemos.json",
+    "defaultConfig2": "pindefUC2Standalon2.json",
+    "defaultConfig1": "pindefUC2Standalon.json"
   },
   "scan": {
     "scanDesigner": "BetaScanDesigner",
@@ -148,6 +153,8 @@
     "Autofocus",
     "LEDMatrix",
     "Scan",
-    "MCT"
+    "MCT",
+    "UC2Config",
+    "ImSwitchServer"    
   ]
 }
