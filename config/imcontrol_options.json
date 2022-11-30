@@ -4,6 +4,9 @@
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
     },
+    "watcher": {
+        "outputFolder": "C:\\Users\\user\\Documents\\ImSwitchConfig\\scripts"
+    },
     "setupFileName33": "example_uc2_Incubator_matrix_vimba.json",
     "setupFileName345678": "example_squid_singleDaheng.json",
     "setupFileName1111": "example_uc2_opencvcam.json",
