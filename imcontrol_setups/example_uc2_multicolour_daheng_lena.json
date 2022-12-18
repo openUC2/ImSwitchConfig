@@ -155,12 +155,13 @@
     "Recording",
     "Image",
     "Laser",
+    "LEDMatrix",
     "Positioner",
     "Autofocus",
-    "LEDMatrix",
     "Scan",
     "MCT",
     "UC2Config",
-    "ImSwitchServer"    
+    "ImSwitchServer",
+    "STORMRecon"   
   ]
 }
