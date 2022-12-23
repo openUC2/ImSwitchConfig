@@ -157,7 +157,6 @@
     "MCT",
     "UC2Config",
     "ImSwitchServer",
-    "STORMRecon",
-    "PixelCalibration"   
+    "STORMRecon"
   ]
 }
