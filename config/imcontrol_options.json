@@ -1,5 +1,6 @@
 {
-    "setupFileName": "example_uc2_histo_basler.json",
+    "setupFileName12356778": "example_uc2_histo_basler.json",
+        "setupFileName": "example_uc2_dynamic42.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
