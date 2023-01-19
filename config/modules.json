@@ -1,7 +1,6 @@
 {
     "enabled": [
         "imcontrol",
-        "imscripting",
-        "imblockly"
+        "imscripting"
     ]
 }

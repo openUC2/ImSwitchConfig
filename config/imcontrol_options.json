@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_uc2_multicolour_daheng_lena.json",
+    "setupFileName": "example_uc2_stormrecon.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
@@ -7,8 +7,8 @@
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
-    "setupFileName1": "example_uc2_testhisto.json",
-    "setupFileNameOpenCV": "example_uc2_Incubator_WebcamOpenCV.json",
+    "setupFileName1": "example_uc2_dynamic42.json",
+    "setupFileName11235": "example_uc2_multicolour_daheng_lena.json",
     "setupFileNameCONFIG": "example_uc2_config.json",
     "setupFileNameLS": "example_uc2_lightsheet_michael_vimba.json",
     "setupFileNameISM": "example_uc2_ism.json",

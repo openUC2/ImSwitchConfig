@@ -153,15 +153,6 @@
     "View",
     "Recording",
     "Image",
-    "Laser",
-    "LEDMatrix",
-    "Positioner",
-    "Autofocus",
-    "Scan",
-    "MCT",
-    "UC2Config",
-    "ImSwitchServer",
-    "STORMRecon",
-    "PixelCalibration"
+    "STORMRecon"
   ]
 }
