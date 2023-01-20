@@ -6,6 +6,7 @@
             "rs232device": "ESP32"
         },
         "axes": ["X", "Y", "Z"],
+        "axes_map": ["Y", "X", "Z"],
         "forScanning": true,
         "forPositioning": true
     }
@@ -66,6 +67,7 @@
     "managerName": "BaslerManager",
     "managerProperties": {
       "cameraListIndex": 1,
+      "cameraEffPixelsize": 0.08,
       "basler": {
         "exposure": 0,
         "gain": 0,
