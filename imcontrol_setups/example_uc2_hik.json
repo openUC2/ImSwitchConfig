@@ -114,6 +114,8 @@
         "Settings",
         "View",
         "Recording",
-        "Image"
-        ]
+        "Image",
+        "Positioner",
+        "LEDMatrix"
+    ]
 }
