@@ -7,9 +7,9 @@
             "managerProperties": {
                 "cameraListIndex": 1,
                 "gxipycam": {
-                    "exposure": 0,
+                    "exposure": 1,
                     "gain": 0,
-                    "blacklevel": 100,
+                    "blacklevel": 10,
                     "image_width": 1000,
                     "image_height": 1000
                 }
