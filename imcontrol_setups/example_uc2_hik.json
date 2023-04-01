@@ -118,6 +118,7 @@
         "LEDMatrix", 
         "PixelCalibration",
         "Histogramm", 
+        "UC2Config",
         "MCT",
         "ImSwitchServer"
     ]

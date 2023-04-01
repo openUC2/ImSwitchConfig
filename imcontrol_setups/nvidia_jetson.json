@@ -73,7 +73,7 @@
   "jetsonnano":{},
   "PixelCalibration": {},
   "availableWidgets": [
-
+    "ImSwitchServer",
     "Image", 
     "JetsonNano"
   ],
@@ -98,6 +98,5 @@
     "ImSwitchServer",
     "STORMRecon",
     "PixelCalibration"
-
   ]
 }

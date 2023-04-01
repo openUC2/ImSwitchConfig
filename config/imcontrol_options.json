@@ -1,5 +1,5 @@
 {
-    "setupFileName": "nvidia_jetson.json",
+    "setupFileName": "example_uc2_hik.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
