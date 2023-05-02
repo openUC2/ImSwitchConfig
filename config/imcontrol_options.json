@@ -1,10 +1,11 @@
 {
-    "setupFileName": "example_uc2_hik.json",
+    "setupFileName": "example_uc2_storm_alliedvision.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
     },
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
-    }
+    },
+    "setupFileName1": "example_uc2_sim_daheng.json"
 }
