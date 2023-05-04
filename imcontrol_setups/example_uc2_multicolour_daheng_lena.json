@@ -3,7 +3,9 @@
     "ESP32Stage": {
       "managerName": "ESP32StageManager",
       "managerProperties": {
-        "rs232device": "ESP32"
+        "rs232device": "ESP32",
+        "enableauto": false
+      
       },
       "axes": [
         "X",
@@ -55,6 +57,21 @@
       "valueRangeMin": 0,
       "valueRangeMax": 1024
     },
+    "Magnet": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": 3,
+        "filter_change": false,
+        "laser_despeckle_period": 10,
+        "laser_despeckle_amplitude": 0
+      },
+      "wavelength": 0,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1024
+    },
     "LED": {
       "analogChannel": null,
       "digitalLine": null,
@@ -80,9 +97,9 @@
       "managerProperties": {
         "cameraListIndex": 1,
         "gxipycam": {
-          "exposure": 0,
+          "exposure": 20,
           "gain": 0,
-          "blacklevel": 100,
+          "blacklevel": 10,
           "image_width": 1000,
           "image_height": 1000
         }
@@ -123,20 +140,6 @@
     "frameCropw": 500,
     "frameCroph": 100
   },
-  "uc2Config": {
-    "defaultConfig": "pindefWemos.json",
-    "defaultConfig2": "pindefUC2Standalon2.json",
-    "defaultConfig1": "pindefUC2Standalon.json"
-  },
-  "scan": {
-    "scanDesigner": "BetaScanDesigner",
-    "scanDesignerParams": {
-      "return_time": 0.01
-    },
-    "TTLCycleDesigner": "BetaTTLCycleDesigner",
-    "TTLCycleDesignerParams": {},
-    "sampleRate": 100000
-  },
   "mct": {
     "monitorIdx": 2,
     "width": 1080,
@@ -156,12 +159,8 @@
     "Laser",
     "LEDMatrix",
     "Positioner",
-    "Autofocus",
-    "Scan",
-    "MCT",
     "UC2Config",
-    "ImSwitchServer",
-    "STORMRecon",
-    "PixelCalibration"
+    "Autofocus",
+    "MCT"
   ]
 }
