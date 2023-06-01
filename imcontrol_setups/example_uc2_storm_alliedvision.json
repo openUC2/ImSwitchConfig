@@ -3,9 +3,7 @@
     "ESP32Stage": {
       "managerName": "ESP32StageManager",
       "managerProperties": {
-        "rs232device": "ESP32",
-        "enableauto":1, 
-        "isEnable":1
+        "rs232device": "ESP32"
       },
       "axes": [
         "X",
@@ -15,16 +13,6 @@
       "forScanning": true,
       "forPositioning": true
     }
-  },
-  "focusLock": {
-    "camera": "ESP32",
-    "port": "COM5",  
-    "positioner": "ESP32Stage",
-    "updateFreq": 4,
-    "frameCropx": 0,
-    "frameCropy": 0,
-    "frameCropw": 0,
-    "frameCroph": 0
   },
   "rs232devices": {
     "ESP32": {
@@ -43,7 +31,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 2,
+        "channel_index": 1,
         "filter_change": false,
         "laser_despeckle_period": 10,
         "laser_despeckle_amplitude": 0
@@ -58,7 +46,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 1,
+        "channel_index": 2,
         "filter_change": false,
         "laser_despeckle_period": 10,
         "laser_despeckle_amplitude": 0
@@ -86,24 +74,27 @@
   },
   "detectors": {
     "WidefieldCamera": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "GXPIPYManager",
-      "managerProperties": {
-        "cameraListIndex": 1,
-        "gxipycam": {
-          "exposure": 20,
-          "gain": 0,
-          "blacklevel": 10,
-          "image_width": 1000,
-          "image_height": 1000
-        }
-      },
-      "forAcquisition": true,
-      "forFocusLock": true
+        "analogChannel": null,
+        "digitalLine": null,
+        "managerName": "AVManager",
+        "managerProperties": {
+            "cameraListIndex": 1,
+            "mocktype": "STORM",  
+            "mockstackpath": "/Users/bene/Downloads/New_SMLM_datasets/ROI_cos7MT_AF647fluopaint.tif",            
+            "avcam": {
+                "exposure": 0,
+                "gain": 0,
+                "blacklevel": 100,
+                "image_width": 1000,
+                "image_height": 1000,
+                "pixel_format": "Mono12"
+            }
+        },
+        "forAcquisition": true,
+        "forFocusLock": false
     }
-  },
-  "rois": {
+},
+"rois": {
     "Full chip": {
       "x": 600,
       "y": 600,
@@ -135,31 +126,14 @@
     "frameCropw": 500,
     "frameCroph": 100
   },
-  "uc2Config": {
-    "defaultConfig": "pindefWemos.json",
-    "defaultConfig2": "pindefUC2Standalon2.json",
-    "defaultConfig1": "pindefUC2Standalon.json"
-  },
-  "mct": {
-    "monitorIdx": 2,
-    "width": 1080,
-    "height": 1920,
-    "wavelength": 0,
-    "pixelSize": 0,
-    "angleMount": 0,
-    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
-    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
-  },
   "availableWidgets": [
     "Settings",
     "View",
     "Recording",
     "Image",
     "Laser",
-    "LEDMatrix",
-    "MCT",
-    "UC2Config",
-    "ImSwitchServer",
-    "FocusLock"
+    "Positioner",
+    "Autofocus",
+    "STORMRecon"
   ]
 }

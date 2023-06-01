@@ -4,8 +4,15 @@
       "managerName": "ESP32StageManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "enableauto":1, 
-        "isEnable":1
+        "stepsizeX": 0.3125,
+        "stepsizeY": 0.3125,
+        "stepsizeZ": 0.3125,
+        "homeSpeedX", 15000,
+        "homeSpeedY", 15000,
+        "homeSpeedZ", 15000,
+        "homeDirectionX": -1,
+        "homeDirectionY": -1,
+        "homeDirectionZ": -1,
       },
       "axes": [
         "X",
@@ -16,57 +23,17 @@
       "forPositioning": true
     }
   },
-  "focusLock": {
-    "camera": "ESP32",
-    "port": "COM5",  
-    "positioner": "ESP32Stage",
-    "updateFreq": 4,
-    "frameCropx": 0,
-    "frameCropy": 0,
-    "frameCropw": 0,
-    "frameCroph": 0
-  },
   "rs232devices": {
     "ESP32": {
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport_windows": "COM5",
+        "serialport_windows": "COM3",
         "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
       }
     }
   },
   "lasers": {
-    "488 Laser": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "channel_index": 2,
-        "filter_change": false,
-        "laser_despeckle_period": 10,
-        "laser_despeckle_amplitude": 0
-      },
-      "wavelength": 488,
-      "valueRangeMin": 0,
-      "valueRangeMax": 1024
-    },
-    "635 Laser": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "channel_index": 1,
-        "filter_change": false,
-        "laser_despeckle_period": 10,
-        "laser_despeckle_amplitude": 0
-      },
-      "wavelength": 635,
-      "valueRangeMin": 0,
-      "valueRangeMax": 1024
-    },
     "LED": {
       "analogChannel": null,
       "digitalLine": null,
@@ -74,7 +41,7 @@
       "managerProperties": {
         "rs232device": "ESP32",
         "channel_index": "LED",
-        "filter_change": false,
+        "filter_change": true,
         "filter_axis": 3,
         "filter_position": 32000,
         "filter_position_init": -0
@@ -88,13 +55,15 @@
     "WidefieldCamera": {
       "analogChannel": null,
       "digitalLine": null,
-      "managerName": "GXPIPYManager",
+      "managerName": "BaslerManager",
       "managerProperties": {
         "cameraListIndex": 1,
-        "gxipycam": {
-          "exposure": 20,
+        "cameraEffPixelsize": 0.08,
+        "basler": {
+          "isRGB": true,
+          "exposure": 0,
           "gain": 0,
-          "blacklevel": 10,
+          "blacklevel": 100,
           "image_width": 1000,
           "image_height": 1000
         }
@@ -135,20 +104,16 @@
     "frameCropw": 500,
     "frameCroph": 100
   },
-  "uc2Config": {
-    "defaultConfig": "pindefWemos.json",
-    "defaultConfig2": "pindefUC2Standalon2.json",
-    "defaultConfig1": "pindefUC2Standalon.json"
+  "scan": {
+    "scanDesigner": "BetaScanDesigner",
+    "scanDesignerParams": {
+      "return_time": 0.01
+    },
+    "TTLCycleDesigner": "BetaTTLCycleDesigner",
+    "TTLCycleDesignerParams": {},
+    "sampleRate": 100000
   },
   "mct": {
-    "monitorIdx": 2,
-    "width": 1080,
-    "height": 1920,
-    "wavelength": 0,
-    "pixelSize": 0,
-    "angleMount": 0,
-    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
-    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
   "availableWidgets": [
     "Settings",
@@ -156,10 +121,11 @@
     "Recording",
     "Image",
     "Laser",
+    "Positioner",
+    "Autofocus",
     "LEDMatrix",
     "MCT",
     "UC2Config",
-    "ImSwitchServer",
-    "FocusLock"
+    "PixelCalibration"
   ]
 }
