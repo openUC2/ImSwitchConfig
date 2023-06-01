@@ -1,16 +1,32 @@
 {
   "positioners": {
     "ESP32Stage": {
-        "managerName": "ESP32StageManager",
-        "managerProperties": {
-            "rs232device": "ESP32"
-        },
-        "axes": ["X", "Y", "Z"],
-        "forScanning": true,
-        "forPositioning": true
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "enableauto":1, 
+        "isEnable":1
+      },
+      "axes": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "forScanning": true,
+      "forPositioning": true
     }
-},
-"rs232devices": {
+  },
+  "focusLock": {
+    "camera": "ESP32",
+    "port": "COM5",  
+    "positioner": "ESP32Stage",
+    "updateFreq": 4,
+    "frameCropx": 0,
+    "frameCropy": 0,
+    "frameCropw": 0,
+    "frameCroph": 0
+  },
+  "rs232devices": {
     "ESP32": {
       "managerName": "ESP32Manager",
       "managerProperties": {
@@ -20,95 +36,95 @@
       }
     }
   },
-"lasers": {
-  "488 Laser": {
-    "analogChannel": null,
-    "digitalLine": null,
-    "managerName": "ESP32LEDLaserManager",
-    "managerProperties": {
+  "lasers": {
+    "488 Laser": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 1,
-        "filter_change": false, 
+        "channel_index": 2,
+        "filter_change": false,
         "laser_despeckle_period": 10,
         "laser_despeckle_amplitude": 0
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1024
     },
-    "wavelength": 488,
-    "valueRangeMin": 0,
-    "valueRangeMax": 1024
-},
-"635 Laser": {
-  "analogChannel": null,
-  "digitalLine": null,
-  "managerName": "ESP32LEDLaserManager",
-  "managerProperties": {
-      "rs232device": "ESP32",
-      "channel_index": 2,
-      "filter_change": false,
-      "laser_despeckle_period": 10,
-      "laser_despeckle_amplitude": 0
-  },
-  "wavelength": 635,
-  "valueRangeMin": 0,
-  "valueRangeMax": 1024
-},
-"LED": {
-  "analogChannel": null,
-  "digitalLine": null,
-  "managerName": "ESP32LEDLaserManager",
-  "managerProperties": {
-      "rs232device": "ESP32",
-      "channel_index": "LED",
-      "filter_change": false,
-      "filter_axis": 3,
-      "filter_position": 32000,
-      "filter_position_init": -0
-  },
-  "wavelength": 635,
-  "valueRangeMin": 0,
-  "valueRangeMax": 255
-}
-},
-"detectors": {
-  "WidefieldCamera": {
-    "analogChannel": null,
-    "digitalLine": null,
-    "managerName": "GXPIPYManager",
-    "managerProperties": {
-      "cameraListIndex": 1,
-      "gxipycam": {
-        "exposure": 0,
-        "gain": 0,
-        "blacklevel": 100,
-        "image_width": 1000,
-        "image_height": 1000
-      }
+    "635 Laser": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": 1,
+        "filter_change": false,
+        "laser_despeckle_period": 10,
+        "laser_despeckle_amplitude": 0
+      },
+      "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1024
     },
-    "forAcquisition": true,
-    "forFocusLock": true
-  }
-},
-"rois": {
-  "Full chip": {
-    "x": 600,
-    "y": 600,
-    "w": 1200,
-    "h": 1200
-  }
-},
-"LEDMatrixs": {
+    "LED": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": "LED",
+        "filter_change": false,
+        "filter_axis": 3,
+        "filter_position": 32000,
+        "filter_position_init": -0
+      },
+      "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 255
+    }
+  },
+  "detectors": {
+    "WidefieldCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "GXPIPYManager",
+      "managerProperties": {
+        "cameraListIndex": 1,
+        "gxipycam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
+    }
+  },
+  "rois": {
+    "Full chip": {
+      "x": 600,
+      "y": 600,
+      "w": 1200,
+      "h": 1200
+    }
+  },
+  "LEDMatrixs": {
     "ESP32 LEDMatrix": {
       "analogChannel": null,
       "digitalLine": null,
       "managerName": "ESP32LEDMatrixManager",
       "managerProperties": {
-          "rs232device": "ESP32",
-          "Nx": 4,
-          "Ny": 4
+        "rs232device": "ESP32",
+        "Nx": 4,
+        "Ny": 4
       },
       "wavelength": 488,
       "valueRangeMin": 0,
       "valueRangeMax": 32768
-  }
+    }
   },
   "autofocus": {
     "camera": "WidefieldCamera",
@@ -119,30 +135,21 @@
     "frameCropw": 500,
     "frameCroph": 100
   },
-  "uc2Config":{
+  "uc2Config": {
     "defaultConfig": "pindefWemos.json",
     "defaultConfig2": "pindefUC2Standalon2.json",
     "defaultConfig1": "pindefUC2Standalon.json"
   },
-  "scan": {
-    "scanDesigner": "BetaScanDesigner",
-    "scanDesignerParams": {
-        "return_time": 0.01
-    },
-    "TTLCycleDesigner": "BetaTTLCycleDesigner",
-    "TTLCycleDesignerParams": {},
-    "sampleRate": 100000
-},
-"mct": {
-  "monitorIdx": 2,
-  "width": 1080,
-  "height": 1920,
-  "wavelength": 0,
-  "pixelSize": 0,
-  "angleMount": 0,
-  "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
-  "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
-},
+  "mct": {
+    "monitorIdx": 2,
+    "width": 1080,
+    "height": 1920,
+    "wavelength": 0,
+    "pixelSize": 0,
+    "angleMount": 0,
+    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
+  },
   "availableWidgets": [
     "Settings",
     "View",
@@ -152,9 +159,9 @@
     "Positioner",
     "Autofocus",
     "LEDMatrix",
-    "Scan",
     "MCT",
     "UC2Config",
-    "ImSwitchServer"    
+    "ImSwitchServer",
+    "FocusLock"
   ]
 }
