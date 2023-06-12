@@ -1,0 +1,102 @@
+{
+  "positioners": {
+    "ESP32Stage": {
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32"
+      },
+      "axes": [
+        "Z"
+      ],
+      "forScanning": true,
+      "forPositioning": true
+    }
+  },
+  "rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport_windows": "COM5",
+        "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
+      }
+    }
+  },
+  "detectors": {
+    "WidefieldCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "GXPIPYManager",
+      "managerProperties": {
+        "cameraListIndex": 1,
+        "gxipycam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
+    }
+  },
+  "LEDMatrixs": {
+    "ESP32 LEDMatrix": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDMatrixManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "Nx": 5,
+        "Ny": 5
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 32768
+    }
+  },
+  "autofocus": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32Stage",
+    "updateFreq": 10,
+    "frameCropx": 780,
+    "frameCropy": 400,
+    "frameCropw": 500,
+    "frameCroph": 100
+  },
+  "uc2Config": {
+    "defaultConfig": "pindefWemos.json",
+    "defaultConfig2": "pindefUC2Standalon2.json",
+    "defaultConfig1": "pindefUC2Standalon.json"
+  },
+  "jetsonnano":{},
+  "PixelCalibration": {},
+  "availableWidgets": [
+    "ImSwitchServer",
+    "Image", 
+    "JetsonNano"
+  ],
+"nonAvailableWidgets": [
+      "View","ESP32Stage",
+    "ESP32LEDMatrix",
+    "ESP32",
+    "GXPIPY",
+    "ESP32StageManager",
+    "ESP32LEDMatrixManager",
+    "ESP32Manager",
+    "GXPIPYManager",
+    "Recording",
+    "Image",
+    "Laser",
+    "LEDMatrix",
+    "Positioner",
+    "Autofocus",
+    "Scan",
+    "MCT",
+    "UC2Config",
+    "ImSwitchServer",
+    "STORMRecon",
+    "PixelCalibration"
+  ]
+}

@@ -7,7 +7,6 @@
             },
             "axes": [
                 "X",
-                "Y",
                 "Z"
             ],
             "forScanning": true,
@@ -116,7 +115,11 @@
         "Recording",
         "Image",
         "Positioner",
-        "MCT", 
-        "LEDMatrix"
+        "LEDMatrix",
+        "PixelCalibration",
+        "Histogramm",
+        "UC2Config",
+        "MCT",
+        "ImSwitchServer"
     ]
 }

@@ -3,16 +3,16 @@
     "ESP32Stage": {
       "managerName": "ESP32StageManager",
       "managerProperties": {
-        "rs232device": "ESP32"
+        "rs232device": "ESP32",
+        "stepsizeX": 0.8,
+        "stepsizeY": 0.8,
+        "stepsizeZ": 1
       },
       "axes": [
         "X",
         "Y",
         "Z"
       ],
-      "stepsizeX": 1, 
-      "stepsizeY": 1, 
-      "stepsizeZ": 1,
       "forScanning": true,
       "forPositioning": true
     }
@@ -162,7 +162,8 @@
     "Positioner",
     "Autofocus",
     "LEDMatrix",
-    "MCT", 
+    "MCT",
+    "UC2Config",
     "PixelCalibration"
   ]
 }
