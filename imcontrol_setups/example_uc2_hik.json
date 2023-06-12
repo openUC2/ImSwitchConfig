@@ -116,6 +116,7 @@
         "Recording",
         "Image",
         "Positioner",
+        "MCT", 
         "LEDMatrix"
     ]
 }

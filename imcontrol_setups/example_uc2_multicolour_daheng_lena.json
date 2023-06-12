@@ -3,7 +3,10 @@
     "ESP32Stage": {
       "managerName": "ESP32StageManager",
       "managerProperties": {
-        "rs232device": "ESP32"
+        "rs232device": "ESP32",
+        "enableauto":0,
+        "isEnable":1
+
       },
       "axes": [
         "X",
@@ -19,8 +22,8 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport_windows": "COM5",
-        "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
+        "serialport": "COM3",
+        "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART"
       }
     }
   },
@@ -52,6 +55,21 @@
         "laser_despeckle_amplitude": 0
       },
       "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1024
+    },
+    "Magnet": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": 3,
+        "filter_change": false,
+        "laser_despeckle_period": 10,
+        "laser_despeckle_amplitude": 0
+      },
+      "wavelength": 1000,
       "valueRangeMin": 0,
       "valueRangeMax": 1024
     },
@@ -128,15 +146,6 @@
     "defaultConfig2": "pindefUC2Standalon2.json",
     "defaultConfig1": "pindefUC2Standalon.json"
   },
-  "scan": {
-    "scanDesigner": "BetaScanDesigner",
-    "scanDesignerParams": {
-      "return_time": 0.01
-    },
-    "TTLCycleDesigner": "BetaTTLCycleDesigner",
-    "TTLCycleDesignerParams": {},
-    "sampleRate": 100000
-  },
   "mct": {
     "monitorIdx": 2,
     "width": 1080,
@@ -157,7 +166,6 @@
     "LEDMatrix",
     "Positioner",
     "Autofocus",
-    "Scan",
     "MCT",
     "UC2Config",
     "ImSwitchServer",
