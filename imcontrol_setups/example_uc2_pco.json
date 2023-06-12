@@ -1,4 +1,13 @@
 {
+  "rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport": "dummy"
+      }
+    }
+  },
   "detectors": {
     "WidefieldCamera": {
       "analogChannel": null,
@@ -11,6 +20,38 @@
         }
       },
       "forAcquisition": true
+    }
+  },
+  "lasers": {
+    "488 Laser": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": 1,
+        "filter_change": false,
+        "laser_despeckle_period": 10,
+        "laser_despeckle_amplitude": 0
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1024
+    },
+    "635 Laser": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": 2,
+        "filter_change": false,
+        "laser_despeckle_period": 10,
+        "laser_despeckle_amplitude": 0
+      },
+      "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1024
     }
   },
   "rois": {
@@ -35,7 +76,10 @@
       "Settings",
       "View",
       "Recording",
+      "Laser",
       "Image",
-      "SIM"
+      "SIM",
+      "Histogramm",
+      "PixelCalibration"
     ]
   }

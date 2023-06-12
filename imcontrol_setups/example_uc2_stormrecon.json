@@ -147,12 +147,23 @@
     "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
+  "sim": {
+    "monitorIdx": 2,
+    "width": 1080,
+    "height": 1920,
+    "wavelength": 0,
+    "pixelSize": 0,
+    "angleMount": 0,
+    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
+  },
   "PixelCalibration": {},
   "availableWidgets": [
     "Settings",
     "View",
     "Recording",
     "Image",
-    "STORMRecon"
+    "STORMRecon", 
+    "SIM"
   ]
 }
