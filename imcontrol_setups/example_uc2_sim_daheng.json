@@ -61,11 +61,11 @@
         }
     },
     "sim": {
-        "fastAPISIM_host": "192.168.137.154",
+        "fastAPISIM_host": "192.168.137.191",
         "fastAPISIM_port": "8000",
         "isFastAPISIM": true,
         "nPhases": 3, 
-        "nRotations": 3,
+        "nRotations": 2,
         "simPixelsize": 2.3,
         "simMagnefication": 15,
         "simNA": 0.5, 

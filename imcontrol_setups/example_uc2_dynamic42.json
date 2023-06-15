@@ -64,7 +64,7 @@
             "managerNameGX": "GXPIPYManager",
             "managerName": "OpenCVCamManager",
             "managerProperties": {
-                "cameraListIndex": 0,
+                "cameraListIndex": 1,
                 "opencvcam": {
                     "exposure": 0,
                     "gain": 0,

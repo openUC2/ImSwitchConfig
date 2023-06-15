@@ -115,9 +115,9 @@
         "Recording",
         "Image",
         "Positioner",
-        "LEDMatrix", 
+        "LEDMatrix",
         "PixelCalibration",
-        "Histogramm", 
+        "Histogramm",
         "UC2Config",
         "MCT",
         "ImSwitchServer"
