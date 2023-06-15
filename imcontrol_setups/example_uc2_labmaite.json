@@ -1,48 +1,81 @@
 {
-    "positioners": {
-        "ESP32Stage": {
-            "managerName": "ESP32StageManager",
-            "managerProperties": {
-                "rs232device": "ESP32"
-            },
-            "axes": [
-                "X",
-                "Y",
-                "Z"
-            ],
-            "forScanning": true,
-            "forPositioning": true
+  "positioners": {
+    "ESP32Stage": {
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "stepsizeX": 0.3125,
+        "stepsizeY": 0.3125,
+        "stepsizeZ": 0.3125,
+        "homeSpeedX": 15000,
+        "homeSpeedY": 15000,
+        "homeSpeedZ": 15000,
+        "homeDirectionX": -1,
+        "homeDirectionY": -1,
+        "homeDirectionZ": -1,
+        "initialSpeed": {"X": 15000, "Y":  15000,"Z": 15000}
+      },
+      "axes": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "forScanning": true,
+      "forPositioning": true
+    }
+  },
+  "deck": {
+    "OpentronsDeck": {
+      "translate_units": "mm2um",
+      "deck_file_": "C:\\Users\\matia_n97ktw5\\Documents\\LABMaiTE\\BMBF-LOCai\\locai-hw\\locai\\deck\\ot2_uc2.json",
+      "deck_file": "/Users/bene/Dropbox/Dokumente/Promotion/PROJECTS/MicronController/PYTHON/ImSwitch/locai/deck/ot2_locai.json",
+      "labwares": {
+        "custom_labwares_path_": "C:\\Users\\matia_n97ktw5\\Documents\\LABMaiTE\\BMBF-LOCai\\locai-hw\\locai\\custom_labware",
+        "custom_labwares_path": "/Users/bene/Dropbox/Dokumente/Promotion/PROJECTS/MicronController/PYTHON/ImSwitch/locai/custom_labware",
+        "standard": {
+            "1": "corning_96_wellplate_360ul_flat"
+        },
+        "custom": {
         }
-    },
-    "rs232devices": {
-        "ESP32": {
-            "managerName": "ESP32Manager",
-            "managerProperties": {
-                "host_": "192.168.43.129",
-                "serialport_windows": "COM5",
-                "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
-            }
-        }
-    },
-    "lasers": {
-        "LED": {
-            "analogChannel": null,
-            "digitalLine": null,
-            "managerName": "ESP32LEDLaserManager",
-            "managerProperties": {
-                "rs232device": "ESP32",
-                "channel_index": "LED",
-                "filter_change": false,
-                "filter_axis": 3,
-                "filter_position": 32000,
-                "filter_position_init": -0
-            },
-            "wavelength": 635,
-            "valueRangeMin": 0,
-            "valueRangeMax": 255
-        }
-    },
-    "detectors": {
+      },
+      "default_positions": {
+        "center": [0, 0],
+        "left": [-0.01, 0],
+        "right": [0.01, 0],
+        "up": [0, 0.01],
+        "down": [0, -0.01]
+      }
+    }
+  },
+  "rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport_windows": "COM9",
+        "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
+      }
+    }
+  },
+  "lasers": {
+    "LED": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": "LED",
+        "filter_change": true,
+        "filter_axis": 3,
+        "filter_position": 32000,
+        "filter_position_init": -0
+      },
+      "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 255
+    }
+  },
+  "detectors": {
         "WidefieldCamera": {
             "analogChannel": null,
             "digitalLine": null,
@@ -52,6 +85,7 @@
                 "cameraEffPixelsize": 0.1,
                 "gxipycam": {
                     "exposure": 0,
+                    "binning": 1,
                     "gain": 0,
                     "blacklevel": 100,
                     "image_width": 1000,
@@ -62,66 +96,58 @@
             "forFocusLock": true
         }
     },
-    "rois": {
-        "Full chip": {
-            "x": 600,
-            "y": 600,
-            "w": 1200,
-            "h": 1200
-        }
+  "rois": {
+    "Full chip": {
+      "x": 600,
+      "y": 600,
+      "w": 1200,
+      "h": 1200
+    }
+  },
+  "LEDMatrixs": {
+    "ESP32 LEDMatrix": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDMatrixManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "Nx": 4,
+        "Ny": 4
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 32768
+    }
+  },
+  "autofocus": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32Stage",
+    "updateFreq": 10,
+    "frameCropx": 780,
+    "frameCropy": 400,
+    "frameCropw": 500,
+    "frameCroph": 100
+  },
+  "scan": {
+    "scanDesigner": "BetaScanDesigner",
+    "scanDesignerParams": {
+      "return_time": 0.01
     },
-    "LEDMatrixs": {
-        "ESP32 LEDMatrix": {
-            "analogChannel": null,
-            "digitalLine": null,
-            "managerName": "ESP32LEDMatrixManager",
-            "managerProperties": {
-                "rs232device": "ESP32",
-                "Nx": 5,
-                "Ny": 5
-            },
-            "wavelength": 488,
-            "valueRangeMin": 0,
-            "valueRangeMax": 32768
-        }
-    },
-    "autofocus": {
-        "camera": "WidefieldCamera",
-        "positioner": "ESP32Stage",
-        "updateFreq": 10,
-        "frameCropx": 780,
-        "frameCropy": 400,
-        "frameCropw": 500,
-        "frameCroph": 100
-    },
-    "uc2Config": {
-        "defaultConfig": "pindefWemos.json",
-        "defaultConfig2": "pindefUC2Standalon2.json",
-        "defaultConfig1": "pindefUC2Standalon.json"
-    },
-    "mct": {
-        "monitorIdx": 2,
-        "width": 1080,
-        "height": 1920,
-        "wavelength": 0,
-        "pixelSize": 0,
-        "angleMount": 0,
-        "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
-        "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
-    },
-    "PixelCalibration": {},
-    "availableWidgets": [
-        "Settings",
-        "View",
-        "Recording",
-        "Image",
-        "Laser",
-        "LEDMatrix",
-        "Positioner",
-        "Autofocus",
-        "MCT",
-        "UC2Config",
-        "ImSwitchServer",
-        "PixelCalibration"
-    ]
+    "TTLCycleDesigner": "BetaTTLCycleDesigner",
+    "TTLCycleDesignerParams": {},
+    "sampleRate": 100000
+  },
+  "mct": {
+  },
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Image",
+    "Autofocus",
+    "Positioner",
+    "LEDMatrix",
+    "Deck",
+    "DeckScan"
+  ]
 }
