@@ -7,5 +7,6 @@
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
-    "setupFileName1": "example_uc2_storm_alliedvision.json"
+    "setupFileName1": "example_uc2_Incubator_matrix_vimba.json",
+    "setupFileNameHIK": "example_uc2_hik.json"
 }

@@ -31,8 +31,8 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport_windows": "COM5",
-        "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
+        "serialport": "COM3",
+        "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART"
       }
     }
   },
@@ -152,6 +152,7 @@
   },
   "availableWidgets": [
     "Settings",
+    "Positioner",
     "View",
     "Recording",
     "Image",
