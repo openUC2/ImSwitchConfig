@@ -76,6 +76,7 @@
   },
   "detectors": {
     "WidefieldCamera": {
+      "ExtPackage": "imswitch_det_webcam",
       "analogChannel": null,
       "digitalLine": null,
       "managerName": "GXPIPYManager",
