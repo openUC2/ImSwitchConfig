@@ -4,8 +4,8 @@
       "managerName": "ESP32StageManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "enableauto":1, 
-        "isEnable":1
+        "enableauto": 1,
+        "isEnable": 1
       },
       "axes": [
         "X",
@@ -15,16 +15,6 @@
       "forScanning": true,
       "forPositioning": true
     }
-  },
-  "focusLock": {
-    "camera": "ESP32",
-    "port": "COM5",  
-    "positioner": "ESP32Stage",
-    "updateFreq": 4,
-    "frameCropx": 0,
-    "frameCropy": 0,
-    "frameCropw": 0,
-    "frameCroph": 0
   },
   "rs232devices": {
     "ESP32": {
@@ -73,7 +63,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": "LED",
+        "channel_index": "3",
         "filter_change": false,
         "filter_axis": 3,
         "filter_position": 32000,
@@ -81,7 +71,7 @@
       },
       "wavelength": 635,
       "valueRangeMin": 0,
-      "valueRangeMax": 255
+      "valueRangeMax": 1023
     }
   },
   "detectors": {
@@ -100,7 +90,7 @@
         }
       },
       "forAcquisition": true,
-      "forFocusLock": true
+      "forFocusLock": false
     }
   },
   "rois": {
@@ -161,6 +151,7 @@
     "MCT",
     "UC2Config",
     "ImSwitchServer",
-    "FocusLock"
+    "Autofocus", 
+    "Hypha"
   ]
 }
