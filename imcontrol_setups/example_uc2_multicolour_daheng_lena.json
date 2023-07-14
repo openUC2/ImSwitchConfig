@@ -106,6 +106,24 @@
       },
       "forAcquisition": true,
       "forFocusLock": true
+    },
+    "ESP32Cam": {
+      "ExtPackage": "imswitch_det_webcam",
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32SerialCamManager",
+      "managerProperties": {
+        "cameraListIndex": 1,
+        "gxipycam": {
+          "exposure": 20,
+          "gain": 0,
+          "blacklevel": 10,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
     }
   },
   "rois": {
@@ -115,6 +133,9 @@
       "w": 1200,
       "h": 1200
     }
+  },
+  "HistoScan":{
+    "PreviewCamera": "ESP32Cam"
   },
   "LEDMatrixs": {
     "ESP32 LEDMatrix": {
@@ -161,7 +182,7 @@
   "webrtc":{},
   "PixelCalibration": {},
   "focusLock": {
-    "camera": "ESP32",
+    "camera": "ESP32Cam",
     "port": "COM5",
     "positioner": "ESP32StageManager",
     "updateFreq": 4,
@@ -184,9 +205,12 @@
     "DPC",
     "ImSwitchServer",
     "PixelCalibration",
-    "WebRTC"
+    "Hypha",
+    "FocusLock", 
+    "HistoScan"
   ],
   "nonAvailableWidgets":[
     "STORMRecon",
+    
     "FocusLock"]
 }
