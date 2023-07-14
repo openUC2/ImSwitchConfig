@@ -150,6 +150,29 @@
     "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
+  "deck": {
+    "OpentronsDeck": {
+      "translate_units": "mm2um",
+      "deck_file_": "C:\\Users\\matia_n97ktw5\\Documents\\LABMaiTE\\BMBF-LOCai\\locai-hw\\locai\\deck\\ot2_uc2.json",
+      "deck_file": "/Users/bene/Dropbox/Dokumente/Promotion/PROJECTS/MicronController/PYTHON/ImSwitch/locai/deck/ot2_locai.json",
+      "labwares": {
+        "custom_labwares_path_": "C:\\Users\\matia_n97ktw5\\Documents\\LABMaiTE\\BMBF-LOCai\\locai-hw\\locai\\custom_labware",
+        "custom_labwares_path": "/Users/bene/Dropbox/Dokumente/Promotion/PROJECTS/MicronController/PYTHON/ImSwitch/locai/custom_labware",
+        "standard": {
+            "1": "corning_96_wellplate_360ul_flat"
+        },
+        "custom": {
+        }
+      },
+      "default_positions": {
+        "center": [0, 0],
+        "left": [-0.01, 0],
+        "right": [0.01, 0],
+        "up": [0, 0.01],
+        "down": [0, -0.01]
+      }
+    }
+  },
   "PixelCalibration": {},
   "availableWidgets": [
     "Settings",
@@ -161,6 +184,8 @@
     "Positioner",
     "UC2Config",
     "Autofocus",
-    "MCT"
+    "MCT",
+    "Deck",
+    "DeckScan"
   ]
 }
