@@ -93,7 +93,7 @@
                 }
             },
             "forAcquisition": true,
-            "forFocusLock": true
+            "forFocusLock": false
         }
     },
   "rois": {
@@ -128,15 +128,6 @@
     "frameCropw": 500,
     "frameCroph": 100
   },
-  "scan": {
-    "scanDesigner": "BetaScanDesigner",
-    "scanDesignerParams": {
-      "return_time": 0.01
-    },
-    "TTLCycleDesigner": "BetaTTLCycleDesigner",
-    "TTLCycleDesignerParams": {},
-    "sampleRate": 100000
-  },
   "mct": {
   },
   "availableWidgets": [
@@ -148,6 +139,8 @@
     "Positioner",
     "LEDMatrix",
     "Deck",
-    "DeckScan"
+    "DeckScan", 
+    "Hypha",
+    "HistoScan"
   ]
 }
