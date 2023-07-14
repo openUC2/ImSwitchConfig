@@ -1,10 +1,10 @@
 import numpy as np
 import time
 
-#mainWindow.setCurrentModule('imcontrol')
+mainWindow.setCurrentModule('imcontrol')
 
-laserName = "635 Lasesr"
-ledName = "White LED"
+laserName = "635 Laser"
+ledName = "488 Laser"
 
 iiter = 1
 
