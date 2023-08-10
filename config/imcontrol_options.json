@@ -8,6 +8,10 @@
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
     "setupFileNameLabamaite": "example_uc2_labmaite.json",
+    "setupFileNameHIK": "example_uc2_hik_histo.json",
+    "setupFileNameLena": "example_uc2_multicolour_daheng_lena.json",
+    "setupFileName22": "example_uc2_labmaite.json",
+    "setupFileNamePCO": "example_uc2_pco.json",
     "setupFileNameHIK": "example_uc2_hik.json",
     "setupFileName11": "example_uc2_multicolour_hikvision.json",
     "setupFileName2": "example_uc2_sim_daheng.json",
