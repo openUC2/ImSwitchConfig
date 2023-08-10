@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_uc2_labmaite.json",
+    "setupFileName": "example_uc2_multicolour_daheng_lena.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
@@ -7,9 +7,9 @@
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
+    "setupFileNameLabamaite": "example_uc2_labmaite.json",
     "setupFileNameHIK": "example_uc2_hik.json",
     "setupFileName11": "example_uc2_multicolour_hikvision.json",
-    "setupFileName122": "example_uc2_multicolour_daheng_lena.json",
     "setupFileName2": "example_uc2_sim_daheng.json",
     "setupFileName1": "example_uc2_storm_alliedvision.json"
 }

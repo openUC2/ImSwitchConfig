@@ -27,54 +27,6 @@
       }
     }
   },
-  "lasers": {
-    "488 Laser": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "channel_index": 2,
-        "filter_change": false,
-        "laser_despeckle_period": 10,
-        "laser_despeckle_amplitude": 0
-      },
-      "wavelength": 488,
-      "valueRangeMin": 0,
-      "valueRangeMax": 1024
-    },
-    "635 Laser": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "channel_index": 1,
-        "filter_change": false,
-        "laser_despeckle_period": 10,
-        "laser_despeckle_amplitude": 0
-      },
-      "wavelength": 635,
-      "valueRangeMin": 0,
-      "valueRangeMax": 1024
-    },
-    "LED": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "channel_index": "3",
-        "filter_change": false,
-        "filter_axis": 3,
-        "filter_position": 32000,
-        "filter_position_init": -0
-      },
-      "wavelength": 635,
-      "valueRangeMin": 0,
-      "valueRangeMax": 1023
-    }
-  },
   "detectors": {
     "WidefieldCamera": {
       "ExtPackage": "imswitch_det_webcam",
@@ -101,21 +53,6 @@
       "y": 600,
       "w": 1200,
       "h": 1200
-    }
-  },
-  "LEDMatrixs": {
-    "ESP32 LEDMatrix": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDMatrixManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "Nx": 4,
-        "Ny": 4
-      },
-      "wavelength": 488,
-      "valueRangeMin": 0,
-      "valueRangeMax": 32768
     }
   },
   "autofocus": {
@@ -148,8 +85,6 @@
     "View",
     "Recording",
     "Image",
-    "Laser",
-    "LEDMatrix",
     "MCT",
     "UC2Config",
     "ImSwitchServer",
