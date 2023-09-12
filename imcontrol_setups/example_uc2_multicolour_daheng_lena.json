@@ -11,8 +11,8 @@
         "stepsizeY": 0.3125,
         "stepsizeZ": 1,
         "stepsizeA": 1,
-        "backlashA": 5,
-        "backlashZ": 5,
+        "backlashA": 7,
+        "backlashZ": 7,
         "backlashX": 15,
         "backlashY": 1,
         "initialSpeed": {"X": 15000, "Y":  15000, "Z": 15000, "A": 15000}
@@ -45,7 +45,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 2,
+        "channel_index": 1,
         "filter_change": false,
         "laser_despeckle_period": 10,
         "laser_despeckle_amplitude": 0
@@ -60,7 +60,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 1,
+        "channel_index": 2,
         "filter_change": false,
         "laser_despeckle_period": 10,
         "laser_despeckle_amplitude": 0
