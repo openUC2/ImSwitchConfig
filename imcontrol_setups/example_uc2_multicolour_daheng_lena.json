@@ -4,12 +4,24 @@
       "managerName": "ESP32StageManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "enableauto": false
+        "enableauto":0,
+        "isEnable": 1,
+        "isDualaxis":1,
+        "stepsizeX": 0.3125,
+        "stepsizeY": 0.3125,
+        "stepsizeZ": 1,
+        "stepsizeA": 1,
+        "backlashA": 7,
+        "backlashZ": 7,
+        "backlashX": 15,
+        "backlashY": 1,
+        "initialSpeed": {"X": 15000, "Y":  15000, "Z": 15000, "A": 15000}
       },
       "axes": [
         "X",
         "Y",
-        "Z"
+        "Z",
+        "A"
       ],
       "forScanning": true,
       "forPositioning": true
@@ -20,8 +32,9 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM3",
-        "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART"
+        "serialport": "COM4",
+        "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART",
+        "debug":0
       }
     }
   },
@@ -56,7 +69,7 @@
       "valueRangeMin": 0,
       "valueRangeMax": 1024
     },
-    "Magnet": {
+    "LED": {
       "analogChannel": null,
       "digitalLine": null,
       "managerName": "ESP32LEDLaserManager",
@@ -64,32 +77,18 @@
         "rs232device": "ESP32",
         "channel_index": 3,
         "filter_change": false,
-        "laser_despeckle_period": 10,
-        "laser_despeckle_amplitude": 0
-      },
-      "wavelength": 0,
-      "valueRangeMin": 0,
-      "valueRangeMax": 1024
-    },
-    "LED": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "channel_index": "LED",
-        "filter_change": false,
         "filter_axis": 3,
         "filter_position": 32000,
         "filter_position_init": -0
       },
-      "wavelength": 635,
+      "wavelength": 1024,
       "valueRangeMin": 0,
-      "valueRangeMax": 255
+      "valueRangeMax": 1023
     }
   },
   "detectors": {
     "WidefieldCamera": {
+      "ExtPackage": "imswitch_det_webcam",
       "analogChannel": null,
       "digitalLine": null,
       "managerName": "GXPIPYManager",
@@ -139,6 +138,11 @@
     "frameCropw": 500,
     "frameCroph": 100
   },
+  "uc2Config": {
+    "defaultConfig": "pindefWemos.json",
+    "defaultConfig2": "pindefUC2Standalon2.json",
+    "defaultConfig1": "pindefUC2Standalon.json"
+  },
   "mct": {
     "monitorIdx": 2,
     "width": 1080,
@@ -149,17 +153,37 @@
     "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
+  "dpc": {
+    "wavelength": 0.53,
+    "pixelsize": 0.2,
+    "NA":0.3,
+    "NAi": 0.3,
+    "n": 1.0,
+    "rotations": [0, 180, 90, 270]
+  },
+  "webrtc":{},
   "PixelCalibration": {},
   "availableWidgets": [
     "Settings",
+    "Positioner",
     "View",
     "Recording",
     "Image",
     "Laser",
-    "LEDMatrix",
-    "Positioner",
+    "MCT",
     "UC2Config",
+    "ImSwitchServer",
     "Autofocus",
-    "MCT"
-  ]
+    "ROIScan"
+  ],
+  "nonAvailableWidgets":[
+    "STORMRecon",
+    "Autofocus",
+    "ROIScan",
+    "FocusLock",
+    "HistoScan",
+    "PixelCalibration",
+    "Hypha",
+    "LEDMatrix",
+    "FocusLock"]
 }

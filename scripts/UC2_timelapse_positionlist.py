@@ -1,6 +1,6 @@
 import numpy as np
 import time
-import threading 
+import threading
 mainWindow.setCurrentModule('imcontrol')
 
 api.imcontrol.enalbeMotors(None, False)
@@ -25,7 +25,7 @@ api.imcontrol.homeAxis(positionerName, "Y")
 time.sleep(15)
 # move to inital position
 # X
-position = positions[0]
+position = positions[5]
 posX = position[0]
 api.imcontrol.movePositioner(positionerName, "X", posX, True, True)
 # Y
@@ -34,7 +34,6 @@ api.imcontrol.movePositioner(positionerName, "Y", posY, True, True)
 #Z
 posZ = position[2]
 api.imcontrol.movePositioner(positionerName, "Z", posZ, True, True)
-
 
 #
 def doScanning():
@@ -53,12 +52,11 @@ def doScanning():
 			api.imcontrol.movePositioner(positionerName, "Z", posZ, True, True)
 
 			time.sleep(1)
-			
-			api.imcontrol.snapImageToPath(str(iPos)+"_posscreening") 
+
+			api.imcontrol.snapImageToPath(str(iPos)+"_posscreening")
 			iPos +=1
 		time.sleep(60)
 		iiter +=1
 		print(iiter)
 
 doScanning()
-
