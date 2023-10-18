@@ -4,8 +4,7 @@
             "managerName": "ESP32Manager",
             "managerProperties": {
                 "host_": "192.168.43.129",
-                "serialport_": "COM3",
-                "serialport": "COM3",
+                "serialport": "COM5",
                 "debug":1
             }
 
@@ -26,6 +25,8 @@
                 "homeSpeedZ": 15000,
                 "homeEndstoppolarityX":1, 
                 "homeEndstoppolarityY":1,
+                "homeOnStartX":1,
+                "homeOnStartY":1,
                 "isDualaxis": true,
                 "homeDirectionX": 1,
                 "backlashX": 15,
@@ -77,8 +78,9 @@
             "managerName": "AVManager",
             "managerProperties": {
                 "cameraListIndex": 0,
+                "cameraEffPixelsize": 0.978,
                 "avcam": {
-                    "exposure": 10,
+                    "exposure": 1,
                     "gain": 0,
                     "blacklevel": 10,
                     "image_width": 1000,
@@ -159,14 +161,14 @@
         "Image",
         "Laser",
         "UC2Config",
-        "Joystick",
-        "LEDMatrix",
         "HistoScan",
         "ROIScan",
         "Autofocus"
     ],
     "nonAvailableWidgets": [
         "STORMRecon",
+        "LEDMatrix",
+        "Joystick",
         "LEDMatrix",
         "MCT",
         "ImSwitchServer",
