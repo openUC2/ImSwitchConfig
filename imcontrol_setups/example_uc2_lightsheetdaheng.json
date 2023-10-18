@@ -146,19 +146,18 @@
     "Laser",
     "UC2Config",
     "Joystick",
-    "Lightsheet",
-    "LEDMatrix"
+    "LEDMatrix",
+    "HistoScan", 
+    "ROIScan"
   ],
   "nonAvailableWidgets":[
     "STORMRecon",
     "LEDMatrix",
     "MCT",
-    
     "ImSwitchServer",
     "PixelCalibration",
     "Hypha",
     "FocusLock",
     "HistoScan", 
-    
     "FocusLock"]
 }
