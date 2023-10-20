@@ -1,5 +1,8 @@
 recordings/*
 recordings*
 
+*.tif
+*.tiff
+
 
 

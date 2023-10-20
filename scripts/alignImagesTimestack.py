@@ -22,9 +22,7 @@ import matplotlib.pyplot as plt
 def downscale_image(image, factor):
     # Downscale the image
     downscaled_image = transform.downscale_local_mean(image, (factor, factor))
-
     return downscaled_image
-
 
 def crop_center(image, size):
     # Get the dimensions of the image
@@ -42,8 +40,8 @@ def crop_center(image, size):
     return cropped_image
 
 
-factor = 5
-cropSize = 800
+driftCorrectionDownScaleFactor = 5
+driftCorrectionCropSize = 800
 iShift = [0,0]
 for i in range(1,100):
     # Directory containing the image files
@@ -62,8 +60,8 @@ for i in range(1,100):
             if 'Laser2' in filename:
                 image_path = os.path.join(directory, filename)
                 image = tif.imread(image_path)
-                image = crop_center(image, cropSize)
-                image = downscale_image(image, factor)
+                image = crop_center(image, driftCorrectionCropSize)
+                image = downscale_image(image, driftCorrectionDownScaleFactor)
 
                 imageList.append(image)
                 
@@ -92,10 +90,6 @@ for i in range(1,100):
         aligned_image = np.roll(image, int(iShift[1]), axis=1)
         aligned_image = np.roll(aligned_image,int(iShift[0]), axis=0)
         
-
-        
-        print(f'Known offset (y, x): {shift*factor}')
-
         # Display the aligned image
         plt.imshow(aligned_image)
         plt.axis('off')

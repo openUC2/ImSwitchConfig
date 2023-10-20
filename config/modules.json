@@ -2,6 +2,6 @@
     "enabled": [
         "imcontrol",
         "imscripting",
-        "imblockly"
+        "imreconstruct"
     ]
 }

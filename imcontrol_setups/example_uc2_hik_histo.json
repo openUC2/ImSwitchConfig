@@ -4,6 +4,8 @@
           "managerName": "ESP32StageManager",
           "managerProperties": {
             "rs232device": "ESP32",
+            "isRGB":true, 
+            "isEnable": true, 
             "enableauto": false,
             "stepsizeX": -0.3125,
             "stepsizeY": -0.3125,
@@ -30,8 +32,7 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM3",
-        "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART"
+        "serialport": "/dev/cu.SLAB_USBtoUART"
       }
     }
   },
@@ -57,7 +58,7 @@
         "managerProperties": {
             "isRGB": 1,
             "cameraListIndex": 0,
-            "cameraEffPixelsize": 0.1,
+            "cameraEffPixelsize": 0.2257,
             "hikcam": {
                 "exposure": 0,
                 "gain": 0,

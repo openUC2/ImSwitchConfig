@@ -1,19 +1,20 @@
 {
     "positioners": {
-        "ESP32Stage": {
-          "managerName": "ESP32StageManager",
+        "VirtualStage": {
+          "managerName": "VirtualStageManager",
           "managerProperties": {
-            "rs232device": "ESP32",
+            "rs232device": "VirtualMicroscope",
             "isEnable": true, 
             "enableauto": false,
             "isDualaxis": 0,
-            "stepsizeX": -0.3125,
-            "stepsizeY": -0.3125,
-            "stepsizeZ": 0.3125,
-            "stepsizeA": 0.3125,
+            "stepsizeX": 1,
+            "stepsizeY": 1,
+            "stepsizeZ": 1,
+            "stepsizeA": 1,
             "homeSpeedX": 15000,
             "homeSpeedY": 15000,
             "homeSpeedZ": 15000,
+            "homeSpeedA": 15000,
             "homeDirectionX": 1,
             "homeDirectionY": 1,
             "homeDirectionZ": -1,
@@ -30,41 +31,19 @@
         }
       },
     "rs232devices": {
-    "ESP32": {
-      "managerName": "ESP32Manager",
-      "managerProperties": {
-        "host_": "192.168.43.129",
-        "serialport": "/dev/cu.SLAB_USBtoUART"
-      }
-    },
     "VirtualMicroscope": {
       "managerName": "VirtualMicroscopeManager",
       "managerProperties": {
       }
     }
   },
-  "LEDMatrixs": {
-    "ESP32 LEDMatrix": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDMatrixManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "Nx": 4,
-        "Ny": 4, 
-      "wavelength": 488,
-      "valueRangeMin": 0,
-      "valueRangeMax": 32768
-    }
-    }
-  },
-  "lasers": {
+ "lasers": {
     "LED": {
       "analogChannel": null,
       "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
+      "managerName": "VirtualLaserManager",
       "managerProperties": {
-        "rs232device": "ESP32",
+        "rs232device": "VirtualMicroscope",
         "channel_index": 1
       },
       "wavelength": 635,
@@ -76,12 +55,12 @@
     "WidefieldCamera": {
         "analogChannel": null,
         "digitalLine": null,
-        "managerName": "HikCamManager",
+        "managerName": "VirtualCameraManager",
         "managerProperties": {
             "isRGB": 0,
             "cameraListIndex": 0,
             "cameraEffPixelsize": 0.2257,
-            "hikcam": {
+            "virtcam": {
                 "exposure": 0,
                 "gain": 0,
                 "blacklevel": 100,
@@ -101,26 +80,6 @@
       "h": 1200
     }
   },
-  "autofocus": {
-    "camera": "WidefieldCamera",
-    "positioner": "ESP32Stage",
-    "updateFreq": 10,
-    "frameCropx": 780,
-    "frameCropy": 400,
-    "frameCropw": 500,
-    "frameCroph": 100
-  },
-  "mct": {
-    "monitorIdx": 2,
-    "width": 1080,
-    "height": 1920,
-    "wavelength": 0,
-    "pixelSize": 0,
-    "angleMount": 0,
-    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
-    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
-  },
-  "webrtc":{},
   "PixelCalibration": {},
   "availableWidgets": [
     "Settings",
@@ -131,8 +90,6 @@
     "Positioner",
     "Autofocus",
     "MCT",
-    "UC2Config",
-    "LEDMatrix",
     "ROIScan",
     "HistoScan",
     "PixelCalibration", 
