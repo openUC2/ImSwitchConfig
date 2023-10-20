@@ -9,6 +9,8 @@
     },
     "setupFileNameHIK": "example_uc2_hik.json",
     "setupFileNameLena": "example_uc2_multicolour_daheng_lena.json",
+    "setupFileName111": "example_uc2_lightsheetdaheng.json",
+    "setupFileName222": "example_uc2_hik_histo.json",
     "setupFileNameHypha": "example_uc2_hypha.json",
     "setupFileName22": "example_uc2_labmaite.json",
     "setupFileNamePCO": "example_uc2_pco.json",

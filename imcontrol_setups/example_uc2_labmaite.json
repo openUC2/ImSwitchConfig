@@ -139,7 +139,7 @@
     "Positioner",
     "LEDMatrix",
     "Deck",
-    "DeckScan", 
+    "DeckScan",
     "Hypha",
     "HistoScan"
   ]
