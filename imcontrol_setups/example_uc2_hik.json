@@ -110,6 +110,7 @@
     },
     "PixelCalibration": {},
     "availableWidgets": [
+        "Flatfield",
         "Settings",
         "View",
         "Recording",

@@ -16,6 +16,7 @@
         "homeDirectionX": 1,
         "backlashX": 15,
         "backlashY": 40,
+        "homeEndstoppolarityY":0,
         "homeDirectionY": 1,
         "homeDirectionZ": 0,
         "homeXenabled": 1, 
@@ -360,7 +361,8 @@
   "HistoScan",
   "Hypha",
   "LEDMatrix",
-  "Joystick"
+  "Joystick",
+  "Flatfield"
 ],
 "nonAvailableWidgets": [
   "STORMRecon",

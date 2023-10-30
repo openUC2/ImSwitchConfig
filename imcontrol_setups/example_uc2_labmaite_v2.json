@@ -46,7 +46,7 @@
             "managerProperties": {
                 "host_": "192.168.43.129",
                 "serialport": "COM3",
-                "debug":1
+                "debug":0
             }
         }
     },
