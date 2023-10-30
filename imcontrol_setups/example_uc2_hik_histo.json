@@ -19,9 +19,9 @@
         "homeEndstoppolarityY":0,
         "homeDirectionY": 1,
         "homeDirectionZ": 0,
-        "homeXenabled": 1, 
-        "homeYenabled": 1, 
-        "homeZenabled": 0, 
+        "homeXenabled": 1,
+        "homeYenabled": 1,
+        "homeZenabled": 0,
         "initialSpeed": {
           "X": 15000,
           "Y": 15000,
@@ -340,7 +340,7 @@
           "b": 0
         }
       ]
-    },  
+    },
     "wavelength": 488,
     "valueRangeMin": 0,
     "valueRangeMax": 32768
