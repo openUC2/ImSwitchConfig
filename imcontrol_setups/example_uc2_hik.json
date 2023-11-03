@@ -120,6 +120,13 @@
     "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
+  "fovLock": {
+    "camera": "WidefieldCamera",
+    "positioner": "VirtualStage",
+    "updateFreq": 1, 
+    "piKp":1, 
+    "piKi":1
+    },
   "webrtc":{},
   "PixelCalibration": {},
   "availableWidgets": [
@@ -136,7 +143,8 @@
     "ROIScan",
     "HistoScan",
     "PixelCalibration",
-    "Lightsheet"
+    "Lightsheet",
+    "FOVLock"
   ],
   "nonAvailableWidgets":[
     "Hypha",
