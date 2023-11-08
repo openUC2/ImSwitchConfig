@@ -6,7 +6,7 @@
         "rs232device": "ESP32",
         "isEnable": true,
         "enableauto": false,
-        "stepsizeX": 0.3125,
+        "stepsizeX": -0.3125,
         "stepsizeY": -0.3125,
         "stepsizeZ": 0.3125,
         "homeSpeedX": 15000,
@@ -81,18 +81,21 @@
       },
       "forAcquisition": true,
       "forFocusLock": true
+    },
+    "Observer": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "OpenCVCamManager",
+      "managerProperties": {
+        "cameraListIndex": 1,
+        "cameraListIndexWIN": 0,
+        "isRGB":1,
+        "opencvcam": {
+          "exposure": 10
+        }
+      },
+      "forAcquisition": true
     }
-  },
-  "rois": {
-    "Full chip": {
-      "x": 600,
-      "y": 600,
-      "w": 1200,
-      "h": 1200
-    }
-  },
-  "HistoScan": {
-    "PreviewCamera1": "ESP32Cam"
   },
   "autofocus": {
     "camera": "WidefieldCamera",
@@ -152,13 +155,6 @@
       }
     }
   },
-  "fovLock": {
-    "camera": "WidefieldCamera",
-    "positioner": "ESP32Stage",
-    "updateFreq": 1,
-    "piKp": 1,
-    "piKi": 1
-  },
   "availableWidgets": [
     "Settings",
     "View",
@@ -175,7 +171,6 @@
     "LEDMatrix",
     "Joystick",
     "Flatfield",
-    "FOVLock", 
     "ROIScan"
   ],
   "nonAvailableWidgets": [
@@ -184,6 +179,7 @@
     "Hypha",
     "FocusLock",
     "HistoScan",
-    "FocusLock"
+    "FocusLock",
+    "FOVLock"
   ]
 }
