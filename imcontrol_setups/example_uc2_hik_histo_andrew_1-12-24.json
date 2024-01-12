@@ -44,7 +44,9 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM5"
+        "serialport": "COM5",
+        "baudrate":115200,
+        "debug":1
       }
     }
   },
