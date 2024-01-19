@@ -8,5 +8,5 @@
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
     "Comment": "Die Konfiguration mit dem Namen setupFileName ist 'aktiv', also musst du es entsprechend umbennen ",
-    "setupFileName_": "example_uc2_d\u00fcsseldorf_vimba.json"
+    "setupFileName_": "example_uc2_düsseldorf_vimba.json"
 }

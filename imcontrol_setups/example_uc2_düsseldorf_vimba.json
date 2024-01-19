@@ -5,7 +5,7 @@
             "managerProperties": {
                 "host_": "192.168.43.129",
                 "serialport": "COM5",
-                "debug":1
+                "debug":0
             }
 
         }

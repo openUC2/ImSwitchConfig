@@ -1,0 +1,10 @@
+{
+    "recording": {
+        "outputFolder": "./ImSwitch/ImSwitch/recordings",
+        "includeDateInOutputFolder": true
+    },
+    "watcher": {
+        "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
+    },
+    "setupFileName": "example_uc2_düsseldorf_vimba.json"
+}
