@@ -5,9 +5,9 @@
             "managerProperties": {
                 "host_": "192.168.43.129",
                 "serialport": "COM5",
-                "debug":0
+                "debug":0,
+                "baudrate":500000
             }
-
         }
     },
     "positioners": {
@@ -69,7 +69,25 @@
             "wavelength": 635,
             "valueRangeMin": 0,
             "valueRangeMax": 255
-        }
+        },
+        "LED": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "ESP32LEDLaserManager",
+            "managerProperties": {
+                "rs232device": "ESP32",
+                "channel_index": 1,
+                "filter_change": false, 
+                "filter_axis": 1,
+                "filter_position": 0,
+                "filter_position_init": 0,
+                "laser_despeckle_period": 0,
+                "laser_despeckle_amplitude": 0
+            },
+            "wavelength": 488,
+            "valueRangeMin": 0,
+            "valueRangeMax": 1024
+        }   
     },
     "detectors": {
         "WidefieldCamera": {

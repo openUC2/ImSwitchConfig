@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_uc2_NematostellaImager_WebcamDuesseldorf.json",
+    "setupFileName": "example_uc2_d\u00fcsseldorf_vimba.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
