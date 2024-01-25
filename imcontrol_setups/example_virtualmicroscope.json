@@ -80,6 +80,13 @@
       "h": 1200
     }
   },
+  "fovLock": {
+    "camera": "WidefieldCamera",
+    "positioner": "VirtualStage",
+    "updateFreq": 1, 
+    "piKp":1, 
+    "piKi":1
+    },
   "PixelCalibration": {},
   "availableWidgets": [
     "Settings",
@@ -93,10 +100,14 @@
     "ROIScan",
     "HistoScan",
     "PixelCalibration", 
-    "Lightsheet"
+    "Lightsheet", 
+    "WebRTC", 
+    "Flatfield", 
+    "FOVLock",
+    "Hypha",
+    "Temperature"
   ],
   "nonAvailableWidgets":[
-    "Hypha",
     "FocusLock", 
     "HistoScan",
     "STORMRecon",

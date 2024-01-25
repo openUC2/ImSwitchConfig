@@ -41,7 +41,9 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM3"
+        "serialport": "COM3", 
+        "baudrate":500000,
+        "debug": true
       }
     }
   },
@@ -78,18 +80,28 @@
       },
       "forAcquisition": true,
       "forFocusLock": true
-    }
-  },
-  "rois": {
-    "Full chip": {
-      "x": 600,
-      "y": 600,
-      "w": 1200,
-      "h": 1200
+    },
+    "WebCam": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "OpenCVCamManager",
+      "managerProperties": {
+        "cameraListIndex": 0,
+        "cameraEffPixelsize": 43,
+        "opencvcam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000,
+          "pixel_format": "Mono12"
+        }
+      },
+      "forAcquisition": true
     }
   },
   "HistoScan": {
-    "PreviewCamera1": "ESP32Cam"
+    "PreviewCamera1": "WebCam"
   },
   "autofocus": {
     "camera": "WidefieldCamera",
@@ -358,9 +370,12 @@
   "ImSwitchServer",
   "PixelCalibration",
   "HistoScan",
-  "Hypha",
   "LEDMatrix",
-  "Joystick"
+  "Joystick",
+  "Temperature",
+  "Hypha", 
+  "FlowStop", 
+  "FLIMLabs"
 ],
 "nonAvailableWidgets": [
   "STORMRecon",

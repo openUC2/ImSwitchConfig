@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_virtualmicroscope.json",
+    "setupFileName": "example_uc2_hik_histo.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
@@ -7,7 +7,7 @@
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
-    "setupFileNameHIK": "example_uc2_hik.json",
+    "setupFileNameVirt": "example_virtualmicroscope.json",
     "setupFileNameLena": "example_uc2_multicolour_daheng_lena.json",
     "setupFileName111": "example_uc2_lightsheetdaheng.json",
     "setupFileName222": "example_uc2_hik_histo.json",
