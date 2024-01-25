@@ -4,7 +4,7 @@
           "managerName": "ESP32StageManager",
           "managerProperties": {
             "rs232device": "ESP32",
-            "isEnable": true, 
+            "isEnable": true,
             "enableauto": false,
             "isDualaxis": 0,
             "stepsizeX": -0.3125,
@@ -22,7 +22,7 @@
           "axes": [
             "X",
             "Y",
-            "Z", 
+            "Z",
             "A"
           ],
           "forScanning": true,
@@ -51,7 +51,7 @@
       "managerProperties": {
         "rs232device": "ESP32",
         "Nx": 4,
-        "Ny": 4, 
+        "Ny": 4,
       "wavelength": 488,
       "valueRangeMin": 0,
       "valueRangeMax": 32768
@@ -120,6 +120,13 @@
     "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
+  "fovLock": {
+    "camera": "WidefieldCamera",
+    "positioner": "VirtualStage",
+    "updateFreq": 1, 
+    "piKp":1, 
+    "piKi":1
+    },
   "webrtc":{},
   "PixelCalibration": {},
   "availableWidgets": [
@@ -135,15 +142,16 @@
     "LEDMatrix",
     "ROIScan",
     "HistoScan",
-    "PixelCalibration", 
-    "Lightsheet"
+    "PixelCalibration",
+    "Lightsheet",
+    "FOVLock"
   ],
   "nonAvailableWidgets":[
     "Hypha",
-    "FocusLock", 
+    "FocusLock",
     "HistoScan",
     "STORMRecon",
-    "DPC",    
+    "DPC",
     "ImSwitchServer",
     "PixelCalibration",
     "FocusLock"]

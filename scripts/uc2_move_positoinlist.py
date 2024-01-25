@@ -1,0 +1,62 @@
+import numpy as np
+import time
+import threading
+mainWindow.setCurrentModule('imcontrol')
+
+api.imcontrol.enalbeMotors(None, False)
+# x,y,z
+positions = [	(0, 80000, -4290),
+				(17000, 80000, -4340),
+				(17000, 96000, -4290),
+				(9000, 96000, -4290)]
+positions = [(0, 0, 110),
+				(10000, 0, 110),
+				(10000, 10000, -130),
+				(0, 10000, -240)]
+
+positionerName = api.imcontrol.getPositionerNames()[0]
+print(api.imcontrol.getPositionerPositions())
+api.imcontrol.setPositionerSpeed(positionerName, "X", 35000)
+api.imcontrol.setPositionerSpeed(positionerName, "Y", 35000)
+api.imcontrol.setPositionerSpeed(positionerName, "Z", 35000)
+
+#api.imcontrol.homeAxis(positionerName, "X")
+#api.imcontrol.homeAxis(positionerName, "Y")
+time.sleep(15)
+# move to inital position
+# X
+position = positions[5]
+posX = position[0]
+api.imcontrol.movePositioner(positionerName, "X", posX, True, True)
+# Y
+posY = position[1]
+api.imcontrol.movePositioner(positionerName, "Y", posY, True, True)
+#Z
+posZ = position[2]
+api.imcontrol.movePositioner(positionerName, "Z", posZ, True, True)
+
+#
+def doScanning():
+	iiter = 0
+	while 1:
+		iPos = 0
+		for position in positions:
+			print(position)
+			posX = position[0]
+			api.imcontrol.movePositioner(positionerName, "X", posX, True, True)
+			# Y
+			posY = position[1]
+			api.imcontrol.movePositioner(positionerName, "Y", posY, True, True)
+			#Z
+			posZ = position[2]
+			api.imcontrol.movePositioner(positionerName, "Z", posZ, True, True)
+
+			time.sleep(1)
+
+			api.imcontrol.snapImageToPath(str(iPos)+"_posscreening")
+			iPos +=1
+		time.sleep(60)
+		iiter +=1
+		print(iiter)
+
+doScanning()

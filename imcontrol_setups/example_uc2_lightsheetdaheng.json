@@ -23,8 +23,9 @@
       "managerProperties": {
         "host_": "192.168.43.129",
         "serialport_": "COM3",
-        "serialport": "COM3"
-      }
+        "serialport": "COM3",
+        "baudrate":500000
+       }
     }
   },
   "lasers": {
