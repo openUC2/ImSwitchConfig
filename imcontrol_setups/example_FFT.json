@@ -3,7 +3,8 @@
     "WidefieldCamera": {
       "analogChannel": null,
       "digitalLine": null,
-      "managerName": "TISManager",
+      "managerName_": "TISManager",
+      "managerName": "cameraplugin",
       "managerProperties": {
         "cameraListIndex": 1,
         "tis": {
@@ -16,32 +17,10 @@
       },
       "forAcquisition": true
     }},
-  "rs232devices": {
-    "aaaotf": {
-      "managerName": "RS232Manager",
-      "managerProperties": {
-        "port": "ASRL4::INSTR",
-        "encoding": "ascii",
-        "recv_termination": "\n",
-        "send_termination": "\r \n",
-        "baudrate": 57600,
-        "bytesize": 8,
-        "parity": "none",
-        "stopbits": 1,
-        "rtscts": "false",
-        "dsrdtr": "false",
-        "xonxoff": "false"
-      }
-    }},
-  "rois": {
-    "Full chip": {
-      "x": 0,
-      "y": 0,
-      "w": 2448,
-      "h": 2048
-    }
-  },
   "availableWidgets": [
+    "widgetplugin"
+  ],
+  "notAvailableWidgets": [
     "Settings",
     "View",
     "Recording",
