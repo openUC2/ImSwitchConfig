@@ -1,4 +1,19 @@
 {
+  "positioners": {
+    "ESP32Stage": {
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32"
+      },
+      "axes": [
+        "X",
+        "Y", 
+        "Z"
+      ],
+      "forScanning": true,
+      "forPositioning": true
+    }
+  },
   "rs232devices": {
       "ESP32": {
         "managerName": "ESP32Manager",
@@ -32,7 +47,7 @@
       "digitalLine": null,
       "managerName": "OpenCVCamManager",
       "managerProperties": {
-        "cameraListIndex": 1,
+        "cameraListIndex": 0,
         "isRGB": 1,
         "cameraListIndexWIN": 0,
         "opencvcam": {
@@ -48,7 +63,7 @@
     }
   },
   "mct":{
-    "tWait":1
+    "tWait":2
   },
     "availableWidgets": [
       "Settings",
@@ -56,6 +71,7 @@
       "Recording",
       "Image",
       "LEDMatrix",
-      "MCT"
+      "MCT",
+      "Positioner"
     ]
   }
