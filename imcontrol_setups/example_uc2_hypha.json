@@ -116,7 +116,10 @@
         "Image",
         "Hypha",
         "Laser",
-        "LEDMatrix"
+        "LEDMatrix", 
+        "ObjectiveRevolver",
+        "BeadRec", 
+        "FLIMLabs"
       ]
     }
   

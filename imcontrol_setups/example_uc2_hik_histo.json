@@ -44,7 +44,9 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM3"
+        "serialport": "COM3",
+        "baudrate":500000,
+        "debug": true
       }
     }
   },
@@ -71,6 +73,7 @@
         "isRGB": 1,
         "cameraListIndex": 0,
         "cameraEffPixelsize": 0.2257,
+        "mocktype": "OffAxisHolo"
         "hikcam": {
           "exposure": 0,
           "gain": 0,
@@ -96,6 +99,9 @@
       },
       "forAcquisition": true
     }
+  },
+  "HistoScan": {
+    "PreviewCamera1": "Observer"
   },
   "autofocus": {
     "camera": "WidefieldCamera",
@@ -162,16 +168,8 @@
     "Image",
     "Laser",
     "Positioner",
-    "Autofocus",
-    "MCT",
-    "UC2Config",
-    "ImSwitchServer",
-    "PixelCalibration",
-    "HistoScan",
-    "LEDMatrix",
-    "Joystick",
-    "Flatfield",
-    "ROIScan"
+    "Holo",
+    "FFT"
   ],
   "nonAvailableWidgets": [
     "STORMRecon",
