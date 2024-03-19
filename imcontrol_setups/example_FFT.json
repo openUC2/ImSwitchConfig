@@ -3,8 +3,7 @@
     "WidefieldCamera": {
       "analogChannel": null,
       "digitalLine": null,
-      "managerName_": "TISManager",
-      "managerName": "cameraplugin",
+      "managerName": "TISManager",
       "managerProperties": {
         "cameraListIndex": 1,
         "tis": {
@@ -17,15 +16,21 @@
       },
       "forAcquisition": true
     }},
+  "rois": {
+    "Full chip": {
+      "x": 0,
+      "y": 0,
+      "w": 2448,
+      "h": 2048
+    }
+  },
   "availableWidgets": [
-    "widgetplugin"
-  ],
-  "notAvailableWidgets": [
     "Settings",
     "View",
     "Recording",
     "Image",
-    "FFT"
+    "FFT",
+    "FLIMLabs"
   ],
   "scanDefaults": {
     "defaultScanFile": null

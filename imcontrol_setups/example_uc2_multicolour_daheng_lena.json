@@ -200,7 +200,8 @@
     "Autofocus",
     "ROIScan",
     "LEDMatrix",
-    "HistoScan"
+    "HistoScan", 
+    "FLIMLabs"
   ],
   "nonAvailableWidgets":[
     "Temperature",
