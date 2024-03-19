@@ -5,7 +5,22 @@
       "managerProperties": {
         "rs232device": "ESP32",
         "enableauto": 0,
-        "isEnable": 1
+        "isEnable": 1,
+        "homeXenabled": true, 
+        "homeStepsX":10000, 
+        "homeOnStartX": true,
+        "homeEndposReleaseX":5000,
+        "homeYenabled": true, 
+        "homeStepsY":10000, 
+        "homeOnStartY": true,
+        "homeEndposReleaseY":5000,
+        "homeAenabled": true, 
+        "homeStepsA":10000, 
+        "homeOnStarta": true,
+        "homeEndposReleaseA":5000,
+        "stepsizeX": -0.3125,
+        "stepsizeY": -0.3125,
+        "stepsizeZ": 0.3125
       },
       "axes": [
         "X",
@@ -24,7 +39,8 @@
         "host_": "192.168.43.129",
         "serialport_": "COM3",
         "serialport": "COM3",
-        "baudrate":500000
+        "baudrate":500000, 
+        "debug":1
        }
     }
   },
@@ -149,7 +165,8 @@
     "Joystick",
     "LEDMatrix",
     "HistoScan", 
-    "ROIScan"
+    "ROIScan",
+    "Lightsheet"
   ],
   "nonAvailableWidgets":[
     "STORMRecon",

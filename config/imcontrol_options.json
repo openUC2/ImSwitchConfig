@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_uc2_multicolour_daheng_lena.json",
+    "setupFileName": "example_uc2_lightsheetdaheng.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
@@ -7,7 +7,7 @@
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
-    "setupFileNameLS": "example_uc2_lightsheetdaheng.json",
+    "setupFileName_": "example_uc2_multicolour_daheng_lena.json",
     "setupFileNameHisto": "example_uc2_hik_histo.json",
     "setupFileNameWei": "example_uc2_wei_alliedvision.json",
     "setupFileNameDaheng": "example_uc2_daheng_histo.json",

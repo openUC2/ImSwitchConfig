@@ -16,23 +16,6 @@
       },
       "forAcquisition": true
     }},
-  "rs232devices": {
-    "aaaotf": {
-      "managerName": "RS232Manager",
-      "managerProperties": {
-        "port": "ASRL4::INSTR",
-        "encoding": "ascii",
-        "recv_termination": "\n",
-        "send_termination": "\r \n",
-        "baudrate": 57600,
-        "bytesize": 8,
-        "parity": "none",
-        "stopbits": 1,
-        "rtscts": "false",
-        "dsrdtr": "false",
-        "xonxoff": "false"
-      }
-    }},
   "rois": {
     "Full chip": {
       "x": 0,
@@ -46,7 +29,8 @@
     "View",
     "Recording",
     "Image",
-    "FFT"
+    "FFT",
+    "FLIMLabs"
   ],
   "scanDefaults": {
     "defaultScanFile": null
