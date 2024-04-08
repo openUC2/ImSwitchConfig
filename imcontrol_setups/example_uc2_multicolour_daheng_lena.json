@@ -13,7 +13,7 @@
         "homeSpeedY": 15000,
         "homeSpeedZ": 15000,
         "isDualaxis": true,
-        "homeDirectionX": -1,
+        "homeDirectionX": 1,
         "backlashXOld": 15,
         "backlashYOld": 40,
         "backlashX": 0,
@@ -55,7 +55,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 1,
+        "channel_index": 3,
         "filter_change": false,
         "laser_despeckle_period": 10,
         "laser_despeckle_amplitude": 0
@@ -85,11 +85,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": "LED",
-        "filter_change": false,
-        "filter_axis": 3,
-        "filter_position": 32000,
-        "filter_position_init": -0
+        "channel_index": 1
       },
       "wavelength": 1024,
       "valueRangeMin": 0,
