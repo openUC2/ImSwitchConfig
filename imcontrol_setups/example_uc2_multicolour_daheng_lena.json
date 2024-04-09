@@ -43,7 +43,7 @@
         "host_": "192.168.43.129",
         "serialport": "COM3",
         "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART",
-        "debug":0, 
+        "debug":1 , 
         "baudrate": 500000
       }
     }
@@ -201,7 +201,7 @@
     "ROIScan",
     "LEDMatrix",
     "HistoScan", 
-    "FLIMLabs"
+    "DPC"
   ],
   "nonAvailableWidgets":[
     "Temperature",

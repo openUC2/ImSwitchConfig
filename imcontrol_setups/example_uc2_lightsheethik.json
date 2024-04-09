@@ -165,13 +165,14 @@
     "UC2Config",
     "Joystick",
     "LEDMatrix",
-    "HistoScan", 
-    "ROIScan",
-    "Lightsheet"
+    "Lightsheet",
+    "Holo"
   ],
   "nonAvailableWidgets":[
     "STORMRecon",
     "LEDMatrix",
+    "HistoScan", 
+    "ROIScan",
     "MCT",
     "ImSwitchServer",
     "PixelCalibration",

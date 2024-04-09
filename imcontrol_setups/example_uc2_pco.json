@@ -8,6 +8,39 @@
       }
     }
   },
+  "positioners": {
+    "ESP32Stage": {
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "enableauto": 0,
+        "isEnable": 1,
+        "homeXenabled": true, 
+        "homeStepsX":10000, 
+        "homeOnStartX": true,
+        "homeEndposReleaseX":5000,
+        "homeYenabled": true, 
+        "homeStepsY":10000, 
+        "homeOnStartY": true,
+        "homeEndposReleaseY":5000,
+        "homeAenabled": true, 
+        "homeStepsA":10000, 
+        "homeOnStarta": true,
+        "homeEndposReleaseA":5000,
+        "stepsizeX": -0.3125,
+        "stepsizeY": -0.3125,
+        "stepsizeZ": 0.3125
+      },
+      "axes": [
+        "X",
+        "Y",
+        "Z",
+        "A"
+      ],
+      "forScanning": true,
+      "forPositioning": true
+    }
+  },
   "detectors": {
     "WidefieldCamera": {
       "analogChannel": null,
@@ -72,11 +105,34 @@
     "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
+  "imswitch_sim": {
+    "monitorIdx": 2,
+    "width": 1080,
+    "height": 1920,
+    "wavelength": 0,
+    "pixelSize": 0,
+    "angleMount": 0,
+    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488",
+    "isSimulation": 0,
+    "nRotations": 3,
+    "nPhases": 3,
+    "isFastAPISIM": 1,
+    "simPixelsize": 1,
+    "simNA": 0,
+    "simN": 0,
+    "simETA": 0,
+    "fastAPISIM_host": "192.168.0.1",
+    "fastAPISIM_port": 0,
+    "tWaitSequence": 0
+  },
     "availableWidgets": [
       "Settings",
       "View",
       "Recording",
       "Laser",
       "Image",
-      "SIM"    ]
+      "SIM",
+      "imswitch_sim"
+    ]
   }
