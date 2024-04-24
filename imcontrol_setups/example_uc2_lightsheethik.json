@@ -163,14 +163,14 @@
     "Image",
     "Laser",
     "UC2Config",
-    "Joystick",
     "LEDMatrix",
-    "Lightsheet",
-    "Holo"
-  ],
+    "Lightsheet", 
+    "Hypha"
+    ],
   "nonAvailableWidgets":[
     "STORMRecon",
     "LEDMatrix",
+    "Joystick",    
     "HistoScan", 
     "ROIScan",
     "MCT",
