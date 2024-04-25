@@ -86,6 +86,29 @@
       "forFocusLock": true
     }
   },
+  "dpc": {
+    "wavelength": 0.53,
+    "pixelsize": 0.2,
+    "NA":0.3,
+    "NAi": 0.3,
+    "n": 1.0,
+    "rotations": [0, 180, 90, 270]
+  },
+  "LEDMatrixs": {
+    "ESP32 LEDMatrix": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDMatrixManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "Nx": 4,
+        "Ny": 4
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 32768
+    }
+  },
   "availableWidgets": [
     "Settings",
     "View",
@@ -94,7 +117,9 @@
     "Laser",
     "Positioner",
     "Holo",
-    "FFT"
+    "FFT",
+    "LEDMatrix",
+    "DPC"
   ],
   "nonAvailableWidgets": [
     "STORMRecon",
