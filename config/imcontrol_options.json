@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_uc2_NematostellaImager_WebcamDuesseldorf.json",
+    "setupFileName": "example_uc2_d\u00fcsseldorf_hik_imager_IR.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
@@ -7,6 +7,7 @@
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
+    "setupFileName_ColourWebcam": "example_uc2_NematostellaImager_WebcamDuesseldorf.json",
     "Comment": "Die Konfiguration mit dem Namen setupFileName ist 'aktiv', also musst du es entsprechend umbennen ",
     "setupFileName_": "example_uc2_d\u00fcsseldorf_vimba.json"
 }
