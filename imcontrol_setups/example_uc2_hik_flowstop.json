@@ -11,8 +11,10 @@
             "initialSpeed": {"X": 15000, "Y":  15000,"Z": 15000, "A": 15000}
           },
           "axes": [
-            "Z",
-            "A"
+            "A",
+            "X",
+            "Y",
+            "Z"
           ],
           "forScanning": true,
           "forPositioning": true
@@ -123,7 +125,8 @@
     "Laser",
     "Positioner",
     "UC2Config",
-    "Hypha"
+    "Hypha", 
+    "FlowStop"
     ],
   "nonAvailableWidgets":[
     "UC2Config",
