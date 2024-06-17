@@ -46,7 +46,7 @@
         "host_": "192.168.43.129",
         "serialport": "COM3",
         "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART",
-        "debug":1, 
+        "debug":0, 
         "baudrate": 500000,
         "baudrate1": 115200
       }
