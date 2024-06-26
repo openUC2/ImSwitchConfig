@@ -4,23 +4,13 @@
       "managerName": "VirtualStageManager",
       "managerProperties": {
         "rs232device": "VirtualMicroscope",
-        "isEnable": true,
-        "enableauto": false,
-        "isDualaxis": 0,
-        "stepsizeX": 1,
-        "stepsizeY": 1,
-        "stepsizeZ": 1,
-        "stepsizeA": 1,
-        "homeSpeedX": 15000,
-        "homeSpeedY": 15000,
-        "homeSpeedZ": 15000,
-        "homeSpeedA": 15000,
-        "homeDirectionX": 1,
-        "homeDirectionY": 1,
-        "homeDirectionZ": -1,
+        "isEnable": false,
+        "enableauto": true,
+        "stepsizeZ": 0.3125,
+        "stepsizeA": 0.3125,
         "initialSpeed": { "X": 15000, "Y": 15000, "Z": 15000, "A": 15000 }
       },
-      "axes": ["X", "Y", "Z", "A"],
+      "axes": ["A", "X", "Y", "Z"],
       "forScanning": true,
       "forPositioning": true
     }
@@ -29,7 +19,22 @@
     "VirtualMicroscope": {
       "managerName": "VirtualMicroscopeManager",
       "managerProperties": {
-        "imagePath":"simplant"
+        "imagePath": ""
+      }
+    }
+  },
+  "LEDMatrixs": {
+    "ESP32 LEDMatrix": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDMatrixManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "Nx": 4,
+        "Ny": 4,
+        "wavelength": 488,
+        "valueRangeMin": 0,
+        "valueRangeMax": 32768
       }
     }
   },
@@ -76,13 +81,26 @@
       "h": 1200
     }
   },
-  "fovLock": {
+  "autofocus": {
     "camera": "WidefieldCamera",
-    "positioner": "VirtualStage",
-    "updateFreq": 1,
-    "piKp": 1,
-    "piKi": 1
+    "positioner": "ESP32Stage",
+    "updateFreq": 10,
+    "frameCropx": 780,
+    "frameCropy": 400,
+    "frameCropw": 500,
+    "frameCroph": 100
   },
+  "mct": {
+    "monitorIdx": 2,
+    "width": 1080,
+    "height": 1920,
+    "wavelength": 0,
+    "pixelSize": 0,
+    "angleMount": 0,
+    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
+  },
+  "webrtc": {},
   "PixelCalibration": {},
   "availableWidgets": [
     "Settings",
@@ -91,24 +109,18 @@
     "Image",
     "Laser",
     "Positioner",
-    "Autofocus",
-    "MCT",
-    "ROIScan",
-    "HistoScan",
+    "UC2Config",
     "Hypha",
-    "imswitch_arkitekt"
+    "FlowStop"
   ],
   "nonAvailableWidgets": [
+    "UC2Config",
+    "LEDMatrix",
+    "Hypha",
+    "FlowStop",
+    "Hypha",
     "FocusLock",
-    "SIM",
-    "DPC",
-    "FOVLock",
-    "Temperature",
     "HistoScan",
-    "PixelCalibration",
-    "Lightsheet",
-    "WebRTC",
-    "Flatfield",
     "STORMRecon",
     "DPC",
     "ImSwitchServer",

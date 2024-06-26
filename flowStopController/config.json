@@ -5,7 +5,7 @@
     "defaultExperimentName": "FlowStopExperiment",
     "defaultFrameRate": 1,
     "defaultSavePath": "./",
-    "defaultAxisFlow": "A",
+    "defaultAxisFlow": "X",
     "defaultAxisFocus": "Z",
     "defaultDelayTimeAfterRestart": 1
 }
