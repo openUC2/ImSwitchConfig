@@ -14,6 +14,43 @@ This repository will help you setting up the `JSON`-files for the UC2-specific d
 
 More information can be found in the original documentation of ImSwitch can be found in the [***READTHEDOCS of IMSWITCH***](https://imswitch.readthedocs.io/en/stable/)
 
+## Setting up the current ImSwitch Config 
+
+### Available Modules
+
+The file under `$USER$/Documents/ImSwitchConfig/config/modules.json` (Windows) and `/User/$username$/ImSwitchConfig/config/modules.json` (Mac/Linux) may look like this:
+
+```json
+{
+    "enabled": [
+        "imcontrol",
+        "imscripting",
+	"imnotebook"
+    ]
+}
+```
+These are the available modules that will be loaded on startup of imswitch. ImControl is the general control GUI, ImScripting is the python interpreter to control the system, ImNotebook launches a jupyter server that can be used to control ImSwitch inside imswitch using Jupyter.
+
+### Setup Configuration
+
+The file under `$USER$/Documents/ImSwitchConfig/config/imcontrol_options.json` (Windows) and `/User/$username$/ImSwitchConfig/config/imcontrol_options.json` (Mac/Linux) may look like this:
+
+```json
+{
+    "setupFileName": "example_virtual_microscope.json",
+    "recording": {
+        "outputFolder": "./ImSwitch/ImSwitch/recordings",
+        "includeDateInOutputFolder": true
+    },
+    "watcher": {
+        "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
+    }
+}
+```
+
+The entry `"setupFileName": "example_virtual_microscope.json",` determines the current active configuration file that defines the hardware configuration (E.g. camera, positioner.. see below). This file is stored under `..imcontrol_setups`.
+
+
 ## Setting up this repository
 
 ImSwitch will create a folder that stores all settings in:
@@ -24,7 +61,10 @@ ImSwitch will create a folder that stores all settings in:
 There you will find several subfolders:
 
 ```
-configimcontrol_setupsimcontrol_slmscripts
+config
+imcontrol_setups
+imcontrol_slm
+scripts
 ```
 
 You can download this repo and replace all files in this folder. Alternatively, you can clone it and keep it up to date with upcoming configurations. 
