@@ -152,6 +152,7 @@
         "Recording",
         "Image",
         "Laser",
-        "Positioner"
+        "Positioner",
+        "LightSheet"
     ]
 }

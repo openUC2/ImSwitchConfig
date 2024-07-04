@@ -24,8 +24,6 @@
         "homeXenabled": 1,
         "homeYenabled": 1,
         "homeZenabled": 0,
-        "homeOnStartX":1,
-        "homeOnStartY":1,
         "initialSpeed": {
           "X": 15000,
           "Y": 15000,
@@ -46,13 +44,9 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-<<<<<<< Updated upstream
         "serialport": "COM3",
         "baudrate":500000,
         "debug": true
-=======
-        "serialport": "COM4"
->>>>>>> Stashed changes
       }
     }
   },
@@ -79,7 +73,7 @@
         "isRGB": 0,
         "cameraListIndex": 0,
         "cameraEffPixelsize": 0.2257,
-        "mocktype": "OffAxisHolo"
+        "mocktype": "OffAxisHolo",
         "hikcam": {
           "exposure": 0,
           "gain": 0,
@@ -92,51 +86,13 @@
       "forFocusLock": true
     }
   },
-  "HistoScan": {
-    "PreviewCamera1": "Observer"
-  },
-  "autofocus": {
-    "camera": "WidefieldCamera",
-    "positioner": "ESP32Stage",
-    "updateFreq": 10,
-    "frameCropx": 780,
-    "frameCropy": 400,
-    "frameCropw": 500,
-    "frameCroph": 100
-  },
-  "mct": {
-    "monitorIdx": 2,
-    "width": 1080,
-    "height": 1920,
-    "wavelength": 0,
-    "pixelSize": 0,
-    "angleMount": 0,
-    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
-    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
-  },
   "dpc": {
     "wavelength": 0.53,
     "pixelsize": 0.2,
-    "NA": 0.3,
+    "NA":0.3,
     "NAi": 0.3,
     "n": 1.0,
-    "rotations": [
-      0,
-      180,
-      90,
-      270
-    ]
-  },
-  "webrtc": {},
-  "PixelCalibration": {},
-  "focusLock": {
-    "camera": "WidefieldCamera",
-    "positioner": "ESP32StageManager",
-    "updateFreq": 4,
-    "frameCropx": 0,
-    "frameCropy": 0,
-    "frameCropw": 0,
-    "frameCroph": 0
+    "rotations": [0, 180, 90, 270]
   },
   "LEDMatrixs": {
     "ESP32 LEDMatrix": {
@@ -146,11 +102,11 @@
       "managerProperties": {
         "rs232device": "ESP32",
         "Nx": 4,
-        "Ny": 4,
-        "wavelength": 488,
-        "valueRangeMin": 0,
-        "valueRangeMax": 32768
-      }
+        "Ny": 4
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 32768
     }
   },
   "availableWidgets": [
@@ -160,21 +116,10 @@
     "Image",
     "Laser",
     "Positioner",
-<<<<<<< Updated upstream
-=======
-    "Autofocus",
-    "MCT",
-    "UC2Config",
-    "ImSwitchServer",
-    "PixelCalibration",
-    "HistoScan",
-    "LEDMatrix",
-    "Joystick",
-    "Flatfield",
-    "ROIScan",
->>>>>>> Stashed changes
     "Holo",
-    "FFT"
+    "FFT",
+    "LEDMatrix",
+    "DPC"
   ],
   "nonAvailableWidgets": [
     "STORMRecon",
