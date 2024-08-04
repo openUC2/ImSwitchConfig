@@ -1,6 +1,5 @@
 {
     "enabled": [
-        "imcontrol",
-        "imscripting"
+        "imcontrol"
     ]
 }
