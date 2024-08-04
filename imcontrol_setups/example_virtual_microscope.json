@@ -29,7 +29,7 @@
     "VirtualMicroscope": {
       "managerName": "VirtualMicroscopeManager",
       "managerProperties": {
-        "imagePath":"simplant"
+        "imagePath_":"simplant"
       }
     }
   },
@@ -95,12 +95,12 @@
     "MCT",
     "ROIScan",
     "HistoScan",
-    "Hypha",
-    "imswitch_arkitekt"
+    "Hypha"
   ],
   "nonAvailableWidgets": [
     "FocusLock",
     "SIM",
+        "imswitch_arkitekt",
     "DPC",
     "FOVLock",
     "Temperature",

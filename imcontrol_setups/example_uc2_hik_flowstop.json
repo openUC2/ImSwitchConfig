@@ -8,7 +8,8 @@
             "enableauto": true,
             "stepsizeZ": 0.3125,
             "stepsizeA": 0.3125,
-            "initialSpeed": {"X": 15000, "Y":  15000,"Z": 15000, "A": 15000}
+            "maxSpeedZ": 200,
+            "maxSpeedA": 15000
           },
           "axes": [
             "A",
@@ -25,7 +26,8 @@
       "managerProperties": {
         "host_": "192.168.43.129",
         "serialport": "/dev/cu.SLAB_USBtoUART", 
-        "baudrate":500000, 
+        "baudrate_":500000, 
+        "baudrate":115200,
         "debug":1
       }
     }

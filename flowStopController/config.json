@@ -1,11 +1,12 @@
 {
-    "wasRunning": true,
+    "wasRunning": false,
     "defaultFlowRate": 100,
     "defaultNumberOfFrames": -1,
     "defaultExperimentName": "FlowStopExperiment",
     "defaultFrameRate": 1,
     "defaultSavePath": "./",
-    "defaultAxisFlow": "X",
+    "defaultFileFormat": "JPG",
+    "defaultAxisFlow": "A",
     "defaultAxisFocus": "Z",
     "defaultDelayTimeAfterRestart": 1
 }

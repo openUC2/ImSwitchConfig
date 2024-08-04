@@ -44,7 +44,8 @@
         "serialport": "COM3",
         "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART",
         "debug":1 , 
-        "baudrate": 500000
+        "baudrate_": 500000,
+        "baudrate": 115200
       }
     }
   },
