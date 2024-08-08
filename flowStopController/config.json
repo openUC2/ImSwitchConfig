@@ -8,5 +8,6 @@
     "defaultFileFormat": "JPG",
     "defaultAxisFlow": "A",
     "defaultAxisFocus": "Z",
-    "defaultDelayTimeAfterRestart": 1
+    "defaultDelayTimeAfterRestart": 1,
+    "defaultIsRecordVideo": true
 }
