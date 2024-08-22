@@ -29,7 +29,7 @@
     "VirtualMicroscope": {
       "managerName": "VirtualMicroscopeManager",
       "managerProperties": {
-        "imagePath":"simplant"
+        "imagePath_":"simplant"
       }
     }
   },
