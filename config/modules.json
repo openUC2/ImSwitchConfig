@@ -1,7 +1,7 @@
 {
     "enabled": [
         "imcontrol",
-        "imscripting",
-        "imnotebook"
+        "imnotebook",
+        "imscripting"
     ]
 }

@@ -12,15 +12,15 @@
         "homeSpeedX": 15000,
         "homeSpeedY": 15000,
         "homeSpeedZ": 15000,
-        "isDualaxis": true,
+        "isDualaxis": false,
         "backlashXOld": 15,
         "backlashYOld": 40,
         "backlashX": 0,
         "backlashY": 0,
         "homeEndstoppolarityX": 0,
         "homeEndstoppolarityY": 0,
-        "homeDirectionX": 0,
-        "homeDirectionY": 1,
+        "homeDirectionX": -1,
+        "homeDirectionY": -1,
         "homeDirectionZ": 0,
         "homeOnStartX": 1,
         "homeOnStartY": 1,
@@ -44,11 +44,11 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM3",
+        "serialport": "COM4",
         "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART",
-        "debug":0, 
-        "baudrate": 500000,
-        "baudrate1": 115200
+        "debug":1, 
+        "baudrate_": 500000,
+        "baudrate": 115200
       }
     }
   },
@@ -104,6 +104,7 @@
       "managerName": "GXPIPYManager",
       "managerProperties": {
         "cameraListIndex": 1,
+        "isRGB": 0,
         "cameraEffPixelsize": 0.327,
         "gxipycam": {
           "exposure": 20,
@@ -203,7 +204,9 @@
     "Autofocus",
     "ROIScan",
     "LEDMatrix", 
-    "HistoScan"
+    "HistoScan",
+    "FlowStop",
+    "HoliSheet"
   ],
   "nonAvailableWidgets":[
     "ObjectiveRevolver",
