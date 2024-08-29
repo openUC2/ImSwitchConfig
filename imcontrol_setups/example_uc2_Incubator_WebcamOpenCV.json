@@ -1,40 +1,59 @@
 {
-    "positioners": {
-      "LightsheetStage": {
-          "managerName": "ESP32StageManager",
-          "managerProperties": {
-              "rs232device": "ESP32"
-          },
-          "axes": ["X", "Y", "Z"],
-          "forScanning": true,
-          "forPositioning": true
-      }
+  "positioners": {
+    "LightsheetStage": {
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32"
+      },
+      "axes": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "forScanning": true,
+      "forPositioning": true
+    }
   },
   "rs232devices": {
-      "ESP32": {
-        "managerName": "ESP32Manager",
-        "managerProperties": {
-          "host_": "192.168.43.129",
-          "serialport_": "COM4",
-          "serialport":"/dev/cu.wchusbserial1440"
-        }
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "debug": true,
+        "host_": "192.168.43.129",
+        "serialport": "COM3",
+        "serialport_": "/dev/cu.wchusbserial1440"
       }
-    },
+    }
+  },
+  "lasers": {
+    "LED": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": "LED"
+      },
+      "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 255
+    }
+  },
   "LEDMatrixs": {
     "ESP32 LEDMatrix": {
       "analogChannel": null,
       "digitalLine": null,
       "managerName": "ESP32LEDMatrixManager",
       "managerProperties": {
-          "rs232device": "ESP32",
-          "Nx": 4,
-          "Ny": 4,
-          "filter_change": true
+        "rs232device": "ESP32",
+        "Nx": 4,
+        "Ny": 4,
+        "filter_change": true
       },
       "wavelength": 488,
       "valueRangeMin": 0,
-      "valueRangeMax": 32768
-  }
+      "valueRangeMax": 255
+    }
   },
   "detectors": {
     "WidefieldCamera": {
@@ -42,8 +61,9 @@
       "digitalLine": null,
       "managerName": "OpenCVCamManager",
       "managerProperties": {
-        "cameraListIndex": 1,
+        "cameraListIndex": 0,
         "cameraListIndexWIN": 0,
+        "isRGB": true,
         "opencvcam": {
           "exposure": 0,
           "gain": 0,
@@ -64,12 +84,18 @@
       "h": 1200
     }
   },
-    "availableWidgets": [
-      "Settings",
-      "View",
-      "Recording",
-      "Image",
-      "Positioner",
-      "LEDMatrix"
-    ]
-  }
+  "mct":{
+    "tWait":1.5
+   },
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Image",
+    "Positioner",
+    "LEDMatrix",
+    "MCT",
+    "Laser",
+    "Hypha"
+  ]
+}

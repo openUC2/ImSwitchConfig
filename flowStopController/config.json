@@ -5,8 +5,7 @@
     "defaultExperimentName": "FlowStopExperiment",
     "defaultFrameRate": 1,
     "defaultSavePath": "./",
-    "defaultFileFormat": "JPG",
-    "defaultAxisFlow": "A",
+    "defaultAxisFlow": "X",
     "defaultAxisFocus": "Z",
     "defaultDelayTimeAfterRestart": 1,
     "defaultIsRecordVideo": true

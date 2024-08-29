@@ -11,10 +11,11 @@
             "initialSpeed": {"X": 15000, "Y":  15000,"Z": 15000, "A": 15000}
           },
           "axes": [
-            "Z",
-            "A"
+            "A",
+            "X",
+            "Y",
+            "Z"
           ],
-          "forScanning": true,
           "forPositioning": true
         }
       },
@@ -24,7 +25,7 @@
       "managerProperties": {
         "host_": "192.168.43.129",
         "serialport": "/dev/cu.SLAB_USBtoUART", 
-        "baudrate":500000, 
+        "baudrate":115200, 
         "debug":1
       }
     }
@@ -123,7 +124,8 @@
     "Laser",
     "Positioner",
     "UC2Config",
-    "Hypha"
+    "Hypha", 
+    "FlowStop"
     ],
   "nonAvailableWidgets":[
     "UC2Config",
