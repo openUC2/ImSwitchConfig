@@ -46,13 +46,9 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-<<<<<<< Updated upstream
         "serialport": "COM3",
-        "baudrate":500000,
+        "baudrate":115200,
         "debug": true
-=======
-        "serialport": "COM4"
->>>>>>> Stashed changes
       }
     }
   },
@@ -79,7 +75,7 @@
         "isRGB": 0,
         "cameraListIndex": 0,
         "cameraEffPixelsize": 0.2257,
-        "mocktype": "OffAxisHolo"
+        "mocktype": "OffAxisHolo",
         "hikcam": {
           "exposure": 0,
           "gain": 0,
@@ -160,8 +156,6 @@
     "Image",
     "Laser",
     "Positioner",
-<<<<<<< Updated upstream
-=======
     "Autofocus",
     "MCT",
     "UC2Config",
@@ -169,12 +163,9 @@
     "PixelCalibration",
     "HistoScan",
     "LEDMatrix",
-    "Joystick",
     "Flatfield",
     "ROIScan",
->>>>>>> Stashed changes
-    "Holo",
-    "FFT"
+    "Holo"
   ],
   "nonAvailableWidgets": [
     "STORMRecon",
