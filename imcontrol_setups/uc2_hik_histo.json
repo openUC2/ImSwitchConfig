@@ -1,0 +1,197 @@
+{
+  "positioners": {
+    "ESP32Stage": {
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "isEnable": true,
+        "enableauto": false,
+        "stepsizeXDocu": "200*32 per revolution at 1.27 pitch",
+        "stepsizeX": 0.198,
+        "stepsizeY": 0.198,
+        "stepsizeZ": 0.1563,
+        "homeSpeedX": 15000,
+        "homeSpeedY": 15000,
+        "homeSpeedZ": 15000,
+        "isDualaxis": false,
+        "homeDirectionX": -1,
+        "homeEndstoppolarityX": 0,
+        "backlashXOld": 15,
+        "backlashYOld": 40,
+        "backlashX": 0,
+        "backlashY": 0,
+        "homeEndstoppolarityY": 0,
+        "homeDirectionY": -1,
+        "homeDirectionZ": 0,
+        "homeXenabled": 1,
+        "homeYenabled": 1,
+        "homeZenabled": 0,
+        "homeOnStartX":0,
+        "homeOnStartY":0,
+        "initialSpeed": {
+          "X": 15000,
+          "Y": 15000,
+          "Z": 15000
+        }
+      },
+      "axes": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "forScanning": true,
+      "forPositioning": true
+    }
+  },
+  "rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport": "COM3",
+        "baudrate":115200,
+        "debug": true
+      }
+    }
+  },
+  "lasers": {
+    "LEDRing": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": 1
+      },
+      "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1023
+    },
+    "LED":{
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": 2
+      },
+      "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1023
+    }
+  },
+  "detectors": {
+    "WidefieldCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "HikCamManager",
+      "managerProperties": {
+        "isRGB": 0,
+        "cameraListIndex": 0,
+        "cameraEffPixelsize": 0.333,
+        "mocktype": "OffAxisHolo",
+        "hikcam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
+    }
+  },
+  "HistoScan": {
+    "PreviewCamera1": "Observer"
+  },
+  "autofocus": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32Stage",
+    "updateFreq": 10,
+    "frameCropx": 780,
+    "frameCropy": 400,
+    "frameCropw": 500,
+    "frameCroph": 100
+  },
+  "mct": {
+    "monitorIdx": 2,
+    "width": 1080,
+    "height": 1920,
+    "wavelength": 0,
+    "pixelSize": 0,
+    "angleMount": 0,
+    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
+    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
+  },
+  "dpc": {
+    "wavelength": 0.53,
+    "pixelsize": 0.2,
+    "NA": 0.3,
+    "NAi": 0.3,
+    "n": 1.0,
+    "rotations": [
+      0,
+      180,
+      90,
+      270
+    ]
+  },
+  "webrtc": {},
+  "PixelCalibration": {},
+  "focusLock": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32StageManager",
+    "updateFreq": 4,
+    "frameCropx": 0,
+    "frameCropy": 0,
+    "frameCropw": 0,
+    "frameCroph": 0
+  },
+  "LEDMatrixs": {
+    "ESP32 LEDMatrix": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDMatrixManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "Nx": 4,
+        "Ny": 4,
+        "wavelength": 488,
+        "valueRangeMin": 0,
+        "valueRangeMax": 32768
+      }
+    }
+  },
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Laser",
+    "Positioner",
+    "Autofocus",
+    "MCT",
+    "UC2Config",
+    "PixelCalibration",
+    "HistoScan",
+    "ROIScan",
+    "Histogramm",
+    "imswitch_arkitekt_next", 
+    "Workflow"
+  ],
+  "nonAvailableWidgets": [
+    "Joystick",
+    "Image",
+    "Flatfield",
+    "Histogramm",
+    "STORMRecon",
+    "DPC",
+    "Holo",
+    "FFT",
+    "Hypha",
+    "FocusLock",
+    "HistoScan",
+    "FocusLock",
+    "FOVLock"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "detectors": {
+    "WidefieldCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "HikCamManager",
+      "managerProperties": {
+        "isRGB": 0,
+        "cameraListIndex": 0,
+        "cameraEffPixelsize": 0.2257,
+        "mocktype": "OffAxisHolo",
+        "hikcam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
+    }
+  },
+  "webrtc": {},
+  "PixelCalibration": {},
+  "focusLock": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32StageManager",
+    "updateFreq": 4,
+    "frameCropx": 0,
+    "frameCropy": 0,
+    "frameCropw": 0,
+    "frameCroph": 0
+  },
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording"
+],
+"nonAvailableWidgets": [
+    "Laser",
+      "Positioner",x
+      "Autofocus",
+      "MCT",
+      "UC2Config",
+      "PixelCalibration",
+      "HistoScan",
+      "ROIScan",
+    "Joystick",
+    "Image",
+    "Flatfield",
+    "Histogramm",
+    "STORMRecon",
+    "imswitch_arkitekt_next",
+    "DPC",
+    "Holo",
+    "FFT",
+    "Hypha",
+    "FocusLock",
+    "HistoScan",
+    "FocusLock",
+    "FOVLock"
+  ]
+}

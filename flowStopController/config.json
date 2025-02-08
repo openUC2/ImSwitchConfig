@@ -1,13 +1,13 @@
 {
-    "wasRunning": false,
-    "defaultFlowRate": 100,
-    "defaultNumberOfFrames": -1,
-    "defaultExperimentName": "FlowStopExperiment",
-    "defaultFrameRate": 1,
-    "defaultSavePath": "./",
-    "defaultFileFormat": "JPG",
-    "defaultAxisFlow": "A",
-    "defaultAxisFocus": "Z",
-    "defaultDelayTimeAfterRestart": 1,
-    "defaultIsRecordVideo": true
+    "wasRunning": true,
+    "flowRate": 100,
+    "numberOfFrames": -1,
+    "experimentName": "FlowStopExperiment",
+    "frameRate": 1,
+    "savePath": "./",
+    "fileFormat": "JPG",
+    "axisFlow": "X",
+    "axisFocus": "Z",
+    "delayTimeAfterRestart": 1,
+    "isRecordVideo": true
 }
