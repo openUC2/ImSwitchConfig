@@ -6,21 +6,21 @@
         "rs232device": "ESP32",
         "isEnable": true,
         "enableauto": false,
-        "stepsizeXDocu": "200*32 per revolution at 1.27 pitch",
-        "stepsizeX": 0.198,
-        "stepsizeY": 0.198,
-        "stepsizeZ": 0.1563,
-        "homeSpeedX": 15000,
-        "homeSpeedY": 15000,
-        "homeSpeedZ": 15000,
+        "stepsizeXDocu": "200*16 per revolution at 1.27 pitch",
+        "stepsizeX": 0.396,
+        "stepsizeY": 0.396,
+        "stepsizeZ": 0.1563,        
+        "homeSpeedX": 10000,
+        "homeSpeedY": 10000,
+        "homeSpeedZ": 10000,
         "isDualaxis": false,
-        "homeDirectionX": -1,
-        "homeEndstoppolarityX": 0,
         "backlashXOld": 15,
         "backlashYOld": 40,
         "backlashX": 0,
         "backlashY": 0,
-        "homeEndstoppolarityY": 0,
+        "homeEndstoppolarityX": 1,
+        "homeEndstoppolarityY": 1,
+        "homeDirectionX": -1,
         "homeDirectionY": -1,
         "homeDirectionZ": 0,
         "homeXenabled": 1,
@@ -61,21 +61,21 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 1
+        "channel_index": 2
       },
       "wavelength": 635,
       "valueRangeMin": 0,
       "valueRangeMax": 1023
     },
-    "LED":{
+    "LED": {
       "analogChannel": null,
       "digitalLine": null,
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 2
+        "channel_index": 1
       },
-      "wavelength": 635,
+      "wavelength": 1024,
       "valueRangeMin": 0,
       "valueRangeMax": 1023
     }
@@ -88,7 +88,7 @@
       "managerProperties": {
         "isRGB": 0,
         "cameraListIndex": 0,
-        "cameraEffPixelsize": 0.333,
+        "cameraEffPixelsize": 0.2257,
         "mocktype": "OffAxisHolo",
         "hikcam": {
           "exposure": 0,
@@ -100,10 +100,29 @@
       },
       "forAcquisition": true,
       "forFocusLock": true
-    }
+    }, 
+      "Preview": {
+        "analogChannel": null,
+        "digitalLine": null,
+        "managerName": "OpenCVCamManager",
+        "managerProperties": {
+          "cameraListIndex": 0,
+          "cameraListIndexWIN": 0,
+          "isRGB": true,
+          "opencvcam": {
+            "exposure": 0,
+            "gain": 0,
+            "blacklevel": 100,
+            "image_width": 1000,
+            "image_height": 1000,
+            "pixel_format": "Mono12"
+          }
+        },
+        "forAcquisition": false
+      }
   },
   "HistoScan": {
-    "PreviewCamera1": "Observer"
+    "PreviewCamera1": "Preview"
   },
   "autofocus": {
     "camera": "WidefieldCamera",
@@ -167,6 +186,7 @@
     "Settings",
     "View",
     "Recording",
+    "Image",
     "Laser",
     "Positioner",
     "Autofocus",
@@ -174,17 +194,14 @@
     "UC2Config",
     "PixelCalibration",
     "HistoScan",
-    "ROIScan",
-    "Timelapse",
-    "Workflow"
+    "Joystick",
+    "Flatfield",
+    "Histogramm",
+    "ROIScan"
   ],
   "nonAvailableWidgets": [
-    "Joystick",
-    "Image",
-    "Flatfield",   
- "imswitch_arkitekt_next", 
-    "Histogramm",
     "STORMRecon",
+    "imswitch_arkitekt_next",
     "DPC",
     "Holo",
     "FFT",

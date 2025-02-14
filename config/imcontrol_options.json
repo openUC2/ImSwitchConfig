@@ -1,5 +1,5 @@
 {
-    "setupFileName": "uc2_hik_histo.json",
+    "setupFileName": "FRAME.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
