@@ -1,12 +1,20 @@
 {
-    "wasRunning": false,
-    "defaultFlowRate": 100,
-    "defaultNumberOfFrames": -1,
-    "defaultExperimentName": "FlowStopExperiment",
-    "defaultFrameRate": 1,
-    "defaultSavePath": "./",
-    "defaultFileFormat": "JPG",
-    "defaultAxisFlow": "A",
-    "defaultAxisFocus": "Z",
-    "defaultDelayTimeAfterRestart": 1
+    "wasRunning": true,
+    "flowRate": 100,
+    "numberOfFrames": -1,
+    "experimentName": "LepmonExperiment",
+    "frameRate": 1,
+    "savePath": "./",
+    "fileFormat": "JPG",
+    "axisFlow": "X",
+    "axisFocus": "Z",
+    "delayTimeAfterRestart": 1,
+    "isRecordVideo": true,
+    "numImages": 10,
+    "uniqueId": [
+        374481
+    ],
+    "volumePerImage": 1000,
+    "timeToStabilize": 1,
+    "pumpSpeed": 100
 }

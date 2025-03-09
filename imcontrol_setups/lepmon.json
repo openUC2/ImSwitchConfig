@@ -1,0 +1,31 @@
+{
+  "detectors": {
+    "WidefieldCamera": {
+        "analogChannel": null,
+        "digitalLine": null,
+        "managerName": "AVManager",
+        "managerProperties": {
+            "cameraListIndex": 0,
+            "cameraEffPixelsize": 0.978,
+            "avcam": {
+                "exposure": 1,
+                "gain": 0,
+                "blacklevel": 10,
+                "image_width": 1000,
+                "image_height": 1000,
+                "pixel_format": "Mono12"
+            }
+        },
+        "forAcquisition": true
+    }
+  },
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Image",
+    "Workflow",    
+    "Timelapse", 
+    "Lepmon"
+  ]
+}

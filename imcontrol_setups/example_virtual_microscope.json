@@ -10,17 +10,15 @@
         "stepsizeX": 1,
         "stepsizeY": 1,
         "stepsizeZ": 1,
-        "stepsizeA": 1,
         "homeSpeedX": 15000,
         "homeSpeedY": 15000,
         "homeSpeedZ": 15000,
-        "homeSpeedA": 15000,
         "homeDirectionX": 1,
         "homeDirectionY": 1,
         "homeDirectionZ": -1,
-        "initialSpeed": { "X": 15000, "Y": 15000, "Z": 15000, "A": 15000 }
+        "initialSpeed": { "X": 15000, "Y": 15000, "Z": 15000}
       },
-      "axes": ["X", "Y", "Z", "A"],
+      "axes": ["X", "Y", "Z"],
       "forScanning": true,
       "forPositioning": true
     }
@@ -45,7 +43,19 @@
       "wavelength": 635,
       "valueRangeMin": 0,
       "valueRangeMax": 1023
-    }
+    },
+    "LASER": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "VirtualLaserManager",
+      "managerProperties": {
+        "rs232device": "VirtualMicroscope",
+        "channel_index": 2
+      },
+      "wavelength": 488,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1023
+    }    
   },
   "detectors": {
     "WidefieldCamera": {
@@ -95,10 +105,19 @@
     "MCT",
     "ROIScan",
     "HistoScan",
-    "Hypha"
+    "Hypha", 
+    "ImSwitchServer",
+    "Lightsheet",
+    "Workflow",
+    "Lepmon", 
+    "Experiment", 
+    "Timelapse"
   ],
   "nonAvailableWidgets": [
+    "Histogramm",  
+    "imswitch_arkitekt_next",
     "FocusLock",
+    "FlowStop",
     "SIM",
         "imswitch_arkitekt",
     "DPC",
@@ -106,12 +125,10 @@
     "Temperature",
     "HistoScan",
     "PixelCalibration",
-    "Lightsheet",
     "WebRTC",
     "Flatfield",
     "STORMRecon",
     "DPC",
-    "ImSwitchServer",
     "PixelCalibration",
     "FocusLock"
   ]

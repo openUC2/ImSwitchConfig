@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_uc2_multicolour_daheng_lena.json",
+    "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/FRAME.json",
     "recording": {
         "outputFolder": "./ImSwitch/ImSwitch/recordings",
         "includeDateInOutputFolder": true
@@ -7,8 +7,10 @@
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     },
-    "setupFileName_VIRT": "example_virtual_microscope.json",
-    "setupFileName_FlowStop": "example_uc2_hik_flowstop.json",
+    "setupFileNameVIRT": "example_virtual_microscope.json",
+    "setupFileNameDaheng": "example_uc2_daheng_histo.json",
+    "setupFileNameHIK": "example_uc2_hik_flowstop.json",
+    "setupFileName____": "/Users/bene/ImSwitchConfig/imcontrol_setups/example_uc2_multicolour_daheng_lena.json",
     "setupFileName_VirtFlow": "example_uc2_virtual_flowstop.json",
     "setupFileNameLS": "example_uc2_lightsheethik.json",
     "setupFileName_ANDREW": "example_uc2_hik_histo_andrew_1-12-24.json",
@@ -22,7 +24,6 @@
     "setupFileNam_holo": "example_uc2_hik_holo.json",
     "setupFileName111": "example_uc2_lightsheetdaheng.json",
     "setupFileNameWei": "example_uc2_wei_alliedvision.json",
-    "setupFileNameDaheng": "example_uc2_daheng_histo.json",
     "setupFileName22": "example_uc2_labmaite.json",
     "setupFileName11": "example_uc2_multicolour_hikvision.json",
     "setupFileName2": "example_uc2_sim_daheng.json",

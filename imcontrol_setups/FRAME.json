@@ -9,35 +9,45 @@
         "stepsizeXDocu": "200*16 per revolution at 1.27 pitch",
         "stepsizeX": 0.396,
         "stepsizeY": 0.396,
-        "stepsizeZ": 0.1563,
+        "stepsizeA": 0.396,
+        "stepsizeZ": 0.3125,        
         "homeSpeedX": 10000,
         "homeSpeedY": 10000,
         "homeSpeedZ": 10000,
+        "homeSpeedA": 10000,
         "isDualaxis": false,
-        "homeDirectionX": -1,
-        "homeEndstoppolarityX": 0,
         "backlashXOld": 15,
         "backlashYOld": 40,
         "backlashX": 0,
         "backlashY": 0,
-        "homeEndstoppolarityY": 0,
+        "homeEndstoppolarityX": 1,
+        "homeEndstoppolarityY": -1,
+        "homeEndstoppolarityZ": -1,
+        "homeEndstoppolarityA": 1,
+        "homeDirectionX": -1,
         "homeDirectionY": -1,
-        "homeDirectionZ": 0,
+        "homeDirectionZ": 1,
+        "homeDirectionA": -1,
         "homeXenabled": 1,
         "homeYenabled": 1,
-        "homeZenabled": 0,
-        "homeOnStartX":0,
-        "homeOnStartY":0,
+        "homeZenabled": 1,
+        "homeAenabled": 1,
+        "homeOnStartX":1,
+        "homeOnStartY":1,
+        "homeOnStartZ":1,
+        "homeOnStartA":1,
         "initialSpeed": {
           "X": 15000,
           "Y": 15000,
-          "Z": 15000
+          "Z": 15000,
+          "A": 15000
         }
       },
       "axes": [
         "X",
         "Y",
-        "Z"
+        "Z", 
+        "A"
       ],
       "forScanning": true,
       "forPositioning": true
@@ -61,7 +71,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 1
+        "channel_index": 2
       },
       "wavelength": 635,
       "valueRangeMin": 0,
@@ -73,7 +83,7 @@
       "managerName": "ESP32LEDLaserManager",
       "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 2
+        "channel_index": 1
       },
       "wavelength": 1024,
       "valueRangeMin": 0,
@@ -84,13 +94,33 @@
     "WidefieldCamera": {
       "analogChannel": null,
       "digitalLine": null,
-      "managerName": "AVManager",
+      "managerName": "HikCamManager",
       "managerProperties": {
         "isRGB": 0,
         "cameraListIndex": 0,
         "cameraEffPixelsize": 0.2257,
         "mocktype": "OffAxisHolo",
-        "avcam": {
+        "hikcam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
+    },
+    "Observer": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "HikCamManager",
+      "managerProperties": {
+        "isRGB": 0,
+        "cameraListIndex": 0,
+        "cameraEffPixelsize": 0.2257,
+        "mocktype": "OffAxisHolo",
+        "hikcam": {
           "exposure": 0,
           "gain": 0,
           "blacklevel": 100,
@@ -124,20 +154,18 @@
     "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
-  "dpc": {
-    "wavelength": 0.53,
-    "pixelsize": 0.2,
-    "NA": 0.3,
-    "NAi": 0.3,
-    "n": 1.0,
-    "rotations": [
-      0,
-      180,
-      90,
-      270
-    ]
+  "objective": {
+    "pixelsizes": [0.2, 0.1], 
+    "NAs": [0.5, 0.8],
+    "magnifications": [10, 20],
+    "objectiveNames": ["10x", "20x"],
+    "objectivePositions": [0, 1], 
+    "homeDirection": -1,
+    "homePolarity": 1,
+    "homeSpeed": 20000,
+    "homeAcceleration": 20000,
+    "calibrateOnStart": true
   },
-  "webrtc": {},
   "PixelCalibration": {},
   "focusLock": {
     "camera": "WidefieldCamera",
@@ -178,7 +206,9 @@
     "Joystick",
     "Flatfield",
     "Histogramm",
-    "ROIScan"
+    "ROIScan", 
+    "Objective", 
+    "Experiment"
   ],
   "nonAvailableWidgets": [
     "STORMRecon",

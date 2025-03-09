@@ -6,21 +6,24 @@
         "rs232device": "ESP32",
         "isEnable": true,
         "enableauto": false,
-        "stepsizeX": -0.3125,
-        "stepsizeY": -0.3125,
+        "stepsizeX": 0.3125,
+        "stepsizeY": 0.3125,
         "stepsizeZ": 0.3125,
         "homeSpeedX": 15000,
         "homeSpeedY": 15000,
         "homeSpeedZ": 15000,
-        "isDualaxis": true,
-        "homeDirectionX": 1,
+        "isDualaxis": false,
         "backlashXOld": 15,
         "backlashYOld": 40,
         "backlashX": 0,
         "backlashY": 0,
+        "homeEndstoppolarityX": 0,
         "homeEndstoppolarityY": 0,
+        "homeDirectionX": -1,
         "homeDirectionY": -1,
         "homeDirectionZ": 0,
+        "homeOnStartX": 1,
+        "homeOnStartY": 1,
         "homeXenabled": 1,
         "homeYenabled": 1,
         "homeZenabled": 0,
@@ -41,9 +44,9 @@
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM3",
+        "serialport": "COM4",
         "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART",
-        "debug":1 , 
+        "debug":1,
         "baudrate_": 500000,
         "baudrate": 115200
       }
@@ -101,18 +104,21 @@
       "managerName": "GXPIPYManager",
       "managerProperties": {
         "cameraListIndex": 1,
-        "cameraEffPixelsize": 0.2257,
+        "isRGB": 0,
+        "cameraEffPixelsize": 0.327,
         "gxipycam": {
           "exposure": 20,
           "gain": 0,
           "blacklevel": 10,
           "image_width": 1000,
-          "image_height": 1000
+          "image_height": 1000,
+          "flipX": true,
+          "flipY": true
         }
       },
       "forAcquisition": true,
       "forFocusLock": true
-    }, 
+    },
     "Observer": {
       "managerName": "OpenCVCamManager",
       "managerProperties": {
@@ -194,16 +200,19 @@
     "Laser",
     "MCT",
     "UC2Config",
+    "ImSwitchServer",
     "Autofocus",
     "ROIScan",
     "LEDMatrix",
-    "HistoScan", 
-    "Joystick"
+    "HistoScan",
+    "FlowStop",
+    "HoliSheet"
   ],
   "nonAvailableWidgets":[
-    "FlowStop",
+    "ObjectiveRevolver",
     "Temperature",
-    "HoliSheet",
+    "ObjectiveRevolver",
+
     "STORMRecon",
     "Autofocus",
     "ROIScan",
