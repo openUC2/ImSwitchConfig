@@ -5,7 +5,6 @@
       "managerProperties": {
         "rs232device": "ESP32",
         "enableauto": 0,
-<<<<<<< Updated upstream
         "isEnable": 1,
         "homeXenabled": true, 
         "homeStepsX":10000, 
@@ -22,15 +21,6 @@
         "stepsizeX": -0.3125,
         "stepsizeY": -0.3125,
         "stepsizeZ": 0.3125
-=======
-        "isEnable": 1,        
-      "stepsizeX": 0.3125,
-      "stepsizeY": 0.3125,
-      "stepsizeZ": 0.3125,
-      "stepsizeA": 0.3125,
-      "initialSpeed": {"X": 15000, "Y":  15000, "Z": 15000, "A": 15000}
-
->>>>>>> Stashed changes
       },
       "axes": [
         "X",

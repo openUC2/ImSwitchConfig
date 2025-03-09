@@ -90,7 +90,7 @@
         "cameraListIndex": 0,
         "cameraEffPixelsize": 0.2257,
         "mocktype": "OffAxisHolo",
-        "avcam": {
+        "hikcam": {
           "exposure": 0,
           "gain": 0,
           "blacklevel": 100,
