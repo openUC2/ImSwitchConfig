@@ -93,6 +93,18 @@
     "piKp": 1,
     "piKi": 1
   },
+  "objective": {
+    "pixelsizes": [0.2, 0.1], 
+    "NAs": [0.5, 0.8],
+    "magnifications": [10, 20],
+    "objectiveNames": ["10x", "20x"],
+    "objectivePositions": [0, 1], 
+    "homeDirection": -1,
+    "homePolarity": 1,
+    "homeSpeed": 20000,
+    "homeAcceleration": 20000,
+    "calibrateOnStart": true
+  },
   "PixelCalibration": {},
   "availableWidgets": [
     "Settings",
@@ -111,7 +123,9 @@
     "Workflow",
     "Lepmon", 
     "Experiment", 
-    "Timelapse"
+    "Timelapse", 
+    "UC2Config",
+    "Objective"
   ],
   "nonAvailableWidgets": [
     "Histogramm",  
