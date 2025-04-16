@@ -36,6 +36,10 @@
         "homeOnStartY":1,
         "homeOnStartZ":1,
         "homeOnStartA":1,
+        "stageOffsetPositionX": -15000,
+        "stageOffsetPositionY": -31400,
+        "stageOffsetPositionZ": 0,
+        "stageOffsetPositionA": 0,
         "initialSpeed": {
           "X": 15000,
           "Y": 15000,
@@ -110,30 +114,10 @@
       },
       "forAcquisition": true,
       "forFocusLock": true
-    },
-    "Observer": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "HikCamManager",
-      "managerProperties": {
-        "isRGB": 0,
-        "cameraListIndex": 0,
-        "cameraEffPixelsize": 0.2257,
-        "mocktype": "OffAxisHolo",
-        "hikcam": {
-          "exposure": 0,
-          "gain": 0,
-          "blacklevel": 100,
-          "image_width": 1000,
-          "image_height": 1000
-        }
-      },
-      "forAcquisition": true,
-      "forFocusLock": true
     }
   },
   "HistoScan": {
-    "PreviewCamera1": "Observer"
+    "PreviewCamera1": "WidefieldCamera"
   },
   "autofocus": {
     "camera": "WidefieldCamera",
@@ -155,10 +139,10 @@
     "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
   },
   "objective": {
-    "pixelsizes": [0.2, 0.1], 
-    "NAs": [0.5, 0.8],
-    "magnifications": [10, 20],
-    "objectiveNames": ["10x", "20x"],
+    "pixelsizes": [0.78, 0.23], 
+    "NAs": [0.1, 0.45],
+    "magnifications": [4, 20],
+    "objectiveNames": ["4x", "20x"],
     "objectivePositions": [0, 1], 
     "homeDirection": -1,
     "homePolarity": 1,
@@ -208,7 +192,8 @@
     "Histogramm",
     "ROIScan", 
     "Objective", 
-    "Experiment"
+    "Experiment", 
+    "LEDMatrix"
   ],
   "nonAvailableWidgets": [
     "STORMRecon",
