@@ -55,7 +55,7 @@
         "wavelength": 488,
         "valueRangeMin": 0,
         "valueRangeMax": 1023
-      }    
+      }
     },
     "detectors": {
       "WidefieldCamera": {
@@ -94,11 +94,11 @@
       "piKi": 1
     },
     "objective": {
-      "pixelsizes": [0.2, 0.1], 
+      "pixelsizes": [0.2, 0.1],
       "NAs": [0.5, 0.8],
       "magnifications": [10, 20],
       "objectiveNames": ["10x", "20x"],
-      "objectivePositions": [0, 1], 
+      "objectivePositions": [0, 1],
       "homeDirection": -1,
       "homePolarity": 1,
       "homeSpeed": 20000,
@@ -117,19 +117,19 @@
       "MCT",
       "ROIScan",
       "HistoScan",
-      "Hypha", 
+      "Hypha",
       "ImSwitchServer",
       "Lightsheet",
       "Workflow",
-      "Lepmon", 
-      "Experiment", 
-      "Timelapse", 
+      "Lepmon",
+      "Experiment",
+      "Timelapse",
       "UC2Config",
       "Objective"
     ],
     "nonAvailableWidgets": [
         "imswitch_arkitekt_next",
-      "Histogramm",  
+      "Histogramm",
       "FocusLock",
       "FlowStop",
       "SIM",
