@@ -1,160 +1,212 @@
 {
-  "positioners": {
-    "ESP32Stage": {
-      "managerName": "ESP32StageManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "enableauto": 0,
-        "isEnable": 1,
-        "homeXenabled": true, 
-        "homeStepsX":10000, 
-        "homeOnStartX": true,
-        "homeEndposReleaseX":5000,
-        "homeYenabled": true, 
-        "homeStepsY":10000, 
-        "homeOnStartY": true,
-        "homeEndposReleaseY":5000,
-        "homeAenabled": true, 
-        "homeStepsA":10000, 
-        "homeOnStarta": true,
-        "homeEndposReleaseA":5000,
-        "stepsizeX": -0.3125,
-        "stepsizeY": -0.3125,
-        "stepsizeZ": 0.3125
-      },
-      "axes": [
-        "X",
-        "Y",
-        "Z",
-        "A"
-      ],
-      "forScanning": true,
-      "forPositioning": true
-    }
-  },
-  "rs232devices": {
-    "ESP32": {
-      "managerName": "ESP32Manager",
-      "managerProperties": {
-        "host_": "192.168.43.129",
-        "serialport_": "COM3",
-        "serialport": "COM3",
-        "baudrate":115200
-       }
-    }
-  },
-  "lasers": {
-    "488 Laser": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "channel_index":1,
-        "filter_change": false,
-        "laser_despeckle_period": 10,
-        "laser_despeckle_amplitude": 0
-      },
-      "wavelength": 488,
-      "valueRangeMin": 0,
-      "valueRangeMax": 512
+    "detectors": {
+        "WidefieldCamera": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "HikCamManager",
+            "managerProperties": {
+                "isRGB": 0,
+                "cameraListIndex": 0,
+                "cameraEffPixelsize": 0.2257,
+                "hikcam": {
+                    "exposure": 0,
+                    "gain": 0,
+                    "blacklevel": 100,
+                    "image_width": 1000,
+                    "image_height": 1000
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
+        }
     },
-    "LED Matrix": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "channel_index": "LED",
-        "filter_change": false,
-        "filter_axis": 3,
-        "filter_position": 32000,
-        "filter_position_init": -0
-      },
-      "wavelength": 635,
-      "valueRangeMin": 0,
-      "valueRangeMax": 255
-    }
-  },
-  "detectors": {
-    "WidefieldCamera": {
-        "analogChannel": null,
-        "digitalLine": null,
-        "managerName": "HikCamManager",
-        "managerProperties": {
-            "isRGB": 0,
-            "cameraListIndex": 0,
-            "cameraEffPixelsize": 0.2257,
-            "hikcam": {
-                "exposure": 0,
-                "gain": 0,
-                "blacklevel": 100,
-                "image_width": 1000,
-                "image_height": 1000
-            }
+    "lasers": {
+        "488 Laser": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "ESP32LEDLaserManager",
+            "managerProperties": {
+                "rs232device": "ESP32",
+                "channel_index": 1,
+                "filter_change": false,
+                "laser_despeckle_period": 10,
+                "laser_despeckle_amplitude": 0
+            },
+            "valueRangeMin": 0,
+            "valueRangeMax": 512,
+            "wavelength": 488,
+            "freqRangeMin": 0,
+            "freqRangeMax": 0,
+            "freqRangeInit": 0,
+            "valueRangeStep": 1.0
         },
-        "forAcquisition": true,
-        "forFocusLock": true
-    }
+        "LED Matrix": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "ESP32LEDLaserManager",
+            "managerProperties": {
+                "rs232device": "ESP32",
+                "channel_index": "LED",
+                "filter_change": false,
+                "filter_axis": 3,
+                "filter_position": 32000,
+                "filter_position_init": 0
+            },
+            "valueRangeMin": 0,
+            "valueRangeMax": 255,
+            "wavelength": 635,
+            "freqRangeMin": 0,
+            "freqRangeMax": 0,
+            "freqRangeInit": 0,
+            "valueRangeStep": 1.0
+        }
     },
-  "rois": {
-    "Full chip": {
-      "x": 600,
-      "y": 600,
-      "w": 1200,
-      "h": 1200
-    }
-  },
-  "LEDMatrixs": {
-    "ESP32 LEDMatrix": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDMatrixManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "Nx": 4,
-        "Ny": 4
-      },
-      "wavelength": 488,
-      "valueRangeMin": 0,
-      "valueRangeMax": 32768
-    }
-  },
-  "mct": {
-    "monitorIdx": 2,
-    "width": 1080,
-    "height": 1920,
-    "wavelength": 0,
-    "pixelSize": 0,
-    "angleMount": 0,
-    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
-    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
-  },
-  "webrtc":{},
-  "PixelCalibration": {},
-  "availableWidgets": [
-    "Settings",
-    "Positioner",
-    "View",
-    "Recording",
-    "Image",
-    "Laser",
-    "Lightsheet",
-    "UC2Config",
-    "Joystick",
-    "LEDMatrix",
-    "HistoScan", 
-    "ROIScan",
-    "Lightsheet"
-  ],
-  "nonAvailableWidgets":[
-    "STORMRecon",
-    "LEDMatrix",
-    "MCT",
-    "ImSwitchServer",
-    "PixelCalibration",
-    "Hypha",
-    "FocusLock",
-    "HistoScan", 
-    "FocusLock"]
+    "LEDs": {},
+    "LEDMatrixs": {
+        "ESP32 LEDMatrix": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "ESP32LEDMatrixManager",
+            "managerProperties": {
+                "rs232device": "ESP32",
+                "Nx": 4,
+                "Ny": 4
+            }
+        }
+    },
+    "positioners": {
+        "ESP32Stage": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "ESP32StageManager",
+            "managerProperties": {
+                "rs232device": "ESP32",
+                "enableauto": 0,
+                "isEnable": 1,
+                "homeXenabled": true,
+                "homeStepsX": 10000,
+                "homeOnStartX": true,
+                "homeEndposReleaseX": 5000,
+                "homeYenabled": true,
+                "homeStepsY": 10000,
+                "homeOnStartY": true,
+                "homeEndposReleaseY": 5000,
+                "homeAenabled": true,
+                "homeStepsA": 10000,
+                "homeOnStarta": true,
+                "homeEndposReleaseA": 5000,
+                "stepsizeX": -0.3125,
+                "stepsizeY": -0.3125,
+                "stepsizeZ": 0.3125
+            },
+            "axes": [
+                "X",
+                "Y",
+                "Z",
+                "A"
+            ],
+            "isPositiveDirection": true,
+            "forPositioning": true,
+            "forScanning": true,
+            "resetOnClose": true,
+            "stageOffsets": {
+                "stageOffsetPositionX": 100.0,
+                "stageOffsetPositionY": 0,
+                "stageOffsetPositionZ": 0,
+                "stageOffsetPositionA": 0
+            }
+        }
+    },
+    "rs232devices": {
+        "ESP32": {
+            "managerName": "ESP32Manager",
+            "managerProperties": {
+                "host_": "192.168.43.129",
+                "serialport_": "COM3",
+                "serialport": "COM3",
+                "baudrate": 115200,
+                "debug": true
+            }
+        }
+    },
+    "slm": null,
+    "sim": null,
+    "dpc": null,
+    "objective": null,
+    "mct": {
+        "tWait": null
+    },
+    "nidaq": {
+        "timerCounterChannel": null,
+        "startTrigger": false
+    },
+    "roiscan": null,
+    "lightsheet": null,
+    "webrtc": {},
+    "hypha": null,
+    "mockxx": null,
+    "jetsonnano": null,
+    "HistoScan": null,
+    "Workflow": null,
+    "FlowStop": null,
+    "Lepmon": null,
+    "Flatfield": null,
+    "PixelCalibration": {},
+    "uc2Config": null,
+    "ism": null,
+    "focusLock": null,
+    "fovLock": null,
+    "autofocus": null,
+    "scan": null,
+    "etSTED": null,
+    "rotators": null,
+    "microscopeStand": null,
+    "pulseStreamer": {
+        "ipAddress": null
+    },
+    "pyroServerInfo": {
+        "name": "ImSwitchServer",
+        "host": "0.0.0.0",
+        "port": 54333,
+        "active": false
+    },
+    "rois": {
+        "Full chip": {
+            "x": 600,
+            "y": 600,
+            "w": 1200,
+            "h": 1200
+        }
+    },
+    "ledPresets": {},
+    "defaultLEDPresetForScan": null,
+    "laserPresets": {},
+    "stageOffsets": {},
+    "defaultLaserPresetForScan": null,
+    "availableWidgets": [
+        "Settings",
+        "Positioner",
+        "View",
+        "Recording",
+        "Image",
+        "Laser",
+        "Lightsheet",
+        "UC2Config",
+        "Joystick",
+        "LEDMatrix",
+        "HistoScan",
+        "ROIScan",
+        "Lightsheet"
+    ],
+    "nonAvailableWidgets": [
+        "STORMRecon",
+        "LEDMatrix",
+        "MCT",
+        "ImSwitchServer",
+        "PixelCalibration",
+        "Hypha",
+        "FocusLock",
+        "HistoScan",
+        "FocusLock"
+    ]
 }

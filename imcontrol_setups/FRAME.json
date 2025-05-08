@@ -105,7 +105,7 @@
         "cameraEffPixelsize": 0.2257,
         "mocktype": "OffAxisHolo",
         "hikcam": {
-          "exposure": 0,
+          "exposure": 10,
           "gain": 0,
           "blacklevel": 100,
           "image_width": 1000,

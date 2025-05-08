@@ -1,31 +1,10 @@
 {
-    "setupFileName": "example_virtual_microscope.json",
+    "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/FRAME.json",
     "recording": {
-        "outputFolder": "./ImSwitch/ImSwitch/recordings",
+        "outputFolder": "/Users/bene/ImSwitchConfig/recordings",
         "includeDateInOutputFolder": true
     },
     "watcher": {
         "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
-    },
-    "setupFileNameVIRT": "example_virtual_microscope.json",
-    "setupFileNameDaheng": "example_uc2_daheng_histo.json",
-    "setupFileNameHIK": "example_uc2_hik_flowstop.json",
-    "setupFileName____": "/Users/bene/ImSwitchConfig/imcontrol_setups/example_uc2_multicolour_daheng_lena.json",
-    "setupFileName_VirtFlow": "example_uc2_virtual_flowstop.json",
-    "setupFileNameLS": "example_uc2_lightsheethik.json",
-    "setupFileName_ANDREW": "example_uc2_hik_histo_andrew_1-12-24.json",
-    "setupFileNameESP": "example_uc2_esp32cam.json",
-    "setupFileNameHypha": "example_uc2_hypha.json",
-    "setupFileNameDPC": "example_uc2_ledmatrix.json",
-    "setupFileNamePCO": "example_uc2_pco.json",
-    "setupFileName_": "example_uc2_hik_histo.json",
-    "setupFileName___": "example_uc2_lighsheethik.json",
-    "setupFileName222": "example_uc2_hik_histo.json",
-    "setupFileNam_holo": "example_uc2_hik_holo.json",
-    "setupFileName111": "example_uc2_lightsheetdaheng.json",
-    "setupFileNameWei": "example_uc2_wei_alliedvision.json",
-    "setupFileName22": "example_uc2_labmaite.json",
-    "setupFileName11": "example_uc2_multicolour_hikvision.json",
-    "setupFileName2": "example_uc2_sim_daheng.json",
-    "setupFileName1": "example_uc2_storm_alliedvision.json"
+    }
 }

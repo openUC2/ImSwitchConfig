@@ -1,0 +1,125 @@
+{
+    "detectors": {
+        "CAM1": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "OpenCVCamManager",
+            "managerProperties": {
+                "isRGB": 0,
+                "cameraListIndex": 0,
+                "cameraEffPixelsize": 0.2257,
+                "opencvcam": {
+                    "exposure": 0,
+                    "gain": 0,
+                    "blacklevel": 100,
+                    "image_width": 1000,
+                    "image_height": 1000
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
+        },
+        "CAM2": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "OpenCVCamManager",
+            "managerProperties": {
+                "isRGB": 0,
+                "cameraListIndex": 1,
+                "cameraEffPixelsize": 0.2257,
+                "opencvcam": {
+                    "exposure": 0,
+                    "gain": 0,
+                    "blacklevel": 100,
+                    "image_width": 1000,
+                    "image_height": 1000
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
+        },
+        "CAM3": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "OpenCVCamManager",
+            "managerProperties": {
+                "isRGB": 0,
+                "cameraListIndex": 2,
+                "cameraEffPixelsize": 0.2257,
+                "opencvcam": {
+                    "exposure": 0,
+                    "gain": 0,
+                    "blacklevel": 100,
+                    "image_width": 1000,
+                    "image_height": 1000
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
+        }, 
+        "CAM4": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "OpenCVCamManager",
+            "managerProperties": {
+                "isRGB": 0,
+                "cameraListIndex": 3,
+                "cameraEffPixelsize": 0.2257,
+                "opencvcam": {
+                    "exposure": 0,
+                    "gain": 0,
+                    "blacklevel": 100,
+                    "image_width": 1000,
+                    "image_height": 1000
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
+        },
+        "CAM5": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "OpenCVCamManager",
+            "managerProperties": {
+                "isRGB": 0,
+                "cameraListIndex": 4,
+                "cameraEffPixelsize": 0.2257,
+                "opencvcam": {
+                    "exposure": 0,
+                    "gain": 0,
+                    "blacklevel": 100,
+                    "image_width": 1000,
+                    "image_height": 1000
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
+        }, 
+        "CAM6": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "OpenCVCamManager",
+            "managerProperties": {
+                "isRGB": 0,
+                "cameraListIndex": 5,
+                "cameraEffPixelsize": 0.2257,
+                "opencvcam": {
+                    "exposure": 0,
+                    "gain": 0,
+                    "blacklevel": 100,
+                    "image_width": 1000,
+                    "image_height": 1000
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
+        }
+    },
+    "availableWidgets": [
+        "Settings",
+        "Positioner",
+        "View",
+        "Recording",
+        "Image"
+        ]
+}
