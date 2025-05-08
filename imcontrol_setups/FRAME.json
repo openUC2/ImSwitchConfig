@@ -70,6 +70,7 @@
   },
   "lasers": {
     "LEDRing": {
+    "488": {
       "analogChannel": null,
       "digitalLine": null,
       "managerName": "ESP32LEDLaserManager",
@@ -81,7 +82,7 @@
       "valueRangeMin": 0,
       "valueRangeMax": 1023
     },
-    "LED": {
+    "635": {
       "analogChannel": null,
       "digitalLine": null,
       "managerName": "ESP32LEDLaserManager",
@@ -90,6 +91,18 @@
         "channel_index": 1
       },
       "wavelength": 1024,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1023
+    },
+    "LED": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": "LED"
+      },
+      "wavelength": 635,
       "valueRangeMin": 0,
       "valueRangeMax": 1023
     }
@@ -115,9 +128,6 @@
       "forAcquisition": true,
       "forFocusLock": true
     }
-  },
-  "HistoScan": {
-    "PreviewCamera1": "WidefieldCamera"
   },
   "autofocus": {
     "camera": "WidefieldCamera",
@@ -186,16 +196,16 @@
     "MCT",
     "UC2Config",
     "PixelCalibration",
-    "HistoScan",
-    "Joystick",
-    "Flatfield",
     "Histogramm",
     "ROIScan", 
     "Objective", 
-    "Experiment", 
-    "LEDMatrix"
-  ],
-  "nonAvailableWidgets": [
+    "Experiment",
+    "HistoScan"
+],
+"nonAvailableWidgets": [
+    "PixelCalibration",
+    "Joystick",
+      "Flatfield",
     "STORMRecon",
     "imswitch_arkitekt_next",
     "DPC",
