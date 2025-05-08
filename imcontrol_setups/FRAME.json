@@ -69,7 +69,6 @@
     }
   },
   "lasers": {
-    "LEDRing": {
     "488": {
       "analogChannel": null,
       "digitalLine": null,
@@ -195,7 +194,6 @@
     "Autofocus",
     "MCT",
     "UC2Config",
-    "PixelCalibration",
     "Histogramm",
     "ROIScan", 
     "Objective", 
