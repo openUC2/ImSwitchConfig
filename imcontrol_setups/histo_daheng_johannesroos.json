@@ -1,0 +1,248 @@
+{
+    "detectors": {
+        "WidefieldCamera": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "GXPIPYManager",
+            "managerProperties": {
+                "cameraListIndex": 1,
+                "isRGB": 0,
+                "cameraEffPixelsize": 0.327,
+                "gxipycam": {
+                    "exposure": 20,
+                    "gain": 0,
+                    "blacklevel": 10,
+                    "image_width": 1000,
+                    "image_height": 1000,
+                    "flipX": true,
+                    "flipY": true
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
+        },
+        "Observer": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "OpenCVCamManager",
+            "managerProperties": {
+                "cameraListIndex": 1,
+                "cameraListIndexWIN": 0,
+                "cameraEffPixelsize": 100,
+                "cameraPixelSize": 100,
+                "isRGB": 1,
+                "opencvcam": {
+                    "exposure": 10
+                }
+            },
+            "forAcquisition": false,
+            "forFocusLock": false
+        }
+    },
+    "lasers": {
+        "LED": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "ESP32LEDLaserManager",
+            "managerProperties": {
+                "rs232device": "ESP32",
+                "channel_index": 1
+            },
+            "valueRangeMin": 0,
+            "valueRangeMax": 1023,
+            "wavelength": 1024,
+            "freqRangeMin": 0,
+            "freqRangeMax": 0,
+            "freqRangeInit": 0,
+            "valueRangeStep": 1.0
+        }
+    },
+    "LEDs": {},
+    "LEDMatrixs": {},
+    "positioners": {
+        "ESP32Stage": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "ESP32StageManager",
+            "managerProperties": {
+                "rs232device": "ESP32",
+                "isEnable": true,
+                "enableauto": false,
+                "stepsizeX": 0.3125,
+                "stepsizeY": 0.3125,
+                "stepsizeZ": 0.3125,
+                "homeSpeedX": 15000,
+                "homeSpeedY": 15000,
+                "homeSpeedZ": 15000,
+                "isDualaxis": false,
+                "backlashXOld": 15,
+                "backlashYOld": 40,
+                "backlashX": 0,
+                "backlashY": 0,
+                "homeEndstoppolarityX": -1,
+                "homeEndstoppolarityY": -1,
+                "homeDirectionX": 1,
+                "homeDirectionY": 1,
+                "homeDirectionZ": 0,
+                "homeOnStartX": 1,
+                "homeOnStartY": 1,
+                "homeXenabled": 1,
+                "homeYenabled": 1,
+                "homeZenabled": 0,
+                "initialSpeed": {
+                    "X": 15000,
+                    "Y": 15000,
+                    "Z": 15000,
+                    "A": 15000
+                }
+            },
+            "axes": [
+                "X",
+                "Y",
+                "Z",
+                "A"
+            ],
+            "isPositiveDirection": true,
+            "forPositioning": true,
+            "forScanning": true,
+            "resetOnClose": true,
+            "stageOffsets": {
+                "stageOffsetPositionX": 0,
+                "stageOffsetPositionY": -100000.0,
+                "stageOffsetPositionZ": 0.0,
+                "stageOffsetPositionA": 0.0
+            }
+        }
+    },
+    "rs232devices": {
+        "ESP32": {
+            "managerName": "ESP32Manager",
+            "managerProperties": {
+                "host_": "192.168.43.129",
+                "serialport": "COM4",
+                "serialport_": "/dev/cu./dev/cu.SLAB_USBtoUART",
+                "debug": 1,
+                "baudrate": 115200
+            }
+        }
+    },
+    "slm": null,
+    "sim": null,
+    "dpc": {
+        "wavelength": 0,
+        "pixelsize": 0.2,
+        "magnefication": null,
+        "NA": 0.3,
+        "NAi": 0.3,
+        "n": 1.0,
+        "rotations": [
+            0,
+            180,
+            90,
+            270
+        ]
+    },
+    "objective": {
+        "pixelsizes": [
+            0.2,
+            0.2
+        ],
+        "NAs": [
+            0.3,
+            0.3
+        ],
+        "magnifications": [
+            10,
+            10
+        ],
+        "objectiveNames": [
+            "10x",
+            "20x"
+        ],
+        "objectivePositions": [
+            0,
+            1
+        ],
+        "homeDirection": -1,
+        "homePolarity": 1,
+        "homeSpeed": 20000,
+        "homeAcceleration": 20000,
+        "calibrateOnStart": false,
+        "active": false
+    },
+    "mct": {
+        "tWait": null
+    },
+    "nidaq": {
+        "timerCounterChannel": null,
+        "startTrigger": false
+    },
+    "roiscan": null,
+    "lightsheet": null,
+    "webrtc": {},
+    "hypha": null,
+    "mockxx": null,
+    "jetsonnano": null,
+    "Stresstest": null,
+    "HistoScan": null,
+    "Workflow": null,
+    "FlowStop": null,
+    "Lepmon": null,
+    "Flatfield": null,
+    "PixelCalibration": {},
+    "uc2Config": {},
+    "ism": null,
+    "focusLock": null,
+    "fovLock": null,
+    "autofocus": {
+        "camera": "WidefieldCamera",
+        "positioner": "ESP32Stage",
+        "updateFreq": 10,
+        "frameCropx": 780,
+        "frameCropy": 400,
+        "frameCropw": 500,
+        "frameCroph": 100
+    },
+    "scan": null,
+    "etSTED": null,
+    "rotators": null,
+    "microscopeStand": null,
+    "pulseStreamer": {
+        "ipAddress": null
+    },
+    "pyroServerInfo": {
+        "name": "ImSwitchServer",
+        "host": "0.0.0.0",
+        "port": 54333,
+        "active": false
+    },
+    "rois": {
+        "Full chip": {
+            "x": 600,
+            "y": 600,
+            "w": 1200,
+            "h": 1200
+        }
+    },
+    "ledPresets": {},
+    "defaultLEDPresetForScan": null,
+    "laserPresets": {},
+    "stageOffsets": {},
+    "defaultLaserPresetForScan": null,
+    "availableWidgets": [
+        "Settings",
+        "Positioner",
+        "View",
+        "Recording",
+        "Image",
+        "Laser",
+        "MCT",
+        "UC2Config",
+        "ImSwitchServer",
+        "Autofocus",
+        "ROIScan",
+        "Workflow",
+        "Experiment",
+        "Objective"
+    ]
+}
