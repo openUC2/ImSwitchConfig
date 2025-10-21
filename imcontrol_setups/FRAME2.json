@@ -5,7 +5,7 @@
             "digitalLine": null,
             "managerName": "HikCamManager",
             "managerProperties": {
-                "isRGB": 0,
+                "isRGB": 1,
                 "cameraListIndex": 0,
                 "cameraEffPixelsize": 0.2257,
                 "mocktype": "OffAxisHolo",

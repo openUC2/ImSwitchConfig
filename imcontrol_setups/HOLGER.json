@@ -1,0 +1,342 @@
+{
+  "detectors": {
+    "WidefieldCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "HikCamManager",
+      "managerProperties": {
+        "isRGB": 0,
+        "cameraListIndex": 0,
+        "cameraEffPixelsize": 0.2257,
+        "mocktype": "OffAxisHolo",
+        "hikcam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
+    }
+  },
+  "lasers": {
+    "red": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "LumencorLaserManager",
+      "managerProperties": {
+        "rs232device": "lumencor",
+        "rs232deviceUC2": "ESP32",
+        "channel_index": "red"
+      },
+      "valueRangeMin": 0,
+      "valueRangeMax": 100,
+      "wavelength": 635,
+      "freqRangeMin": 0,
+      "freqRangeMax": 0,
+      "freqRangeInit": 0,
+      "valueRangeStep": 1.0
+    },
+    "green": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "LumencorLaserManager",
+      "managerProperties": {
+        "rs232device": "lumencor",
+        "rs232deviceUC2": "ESP32",
+        "channel_index": "green"
+      },
+      "valueRangeMin": 0,
+      "valueRangeMax": 100,
+      "wavelength": 488,
+      "freqRangeMin": 0,
+      "freqRangeMax": 0,
+      "freqRangeInit": 0,
+      "valueRangeStep": 1.0
+    },
+    "blue": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "LumencorLaserManager",
+      "managerProperties": {
+        "rs232device": "lumencor",
+        "rs232deviceUC2": "ESP32",
+        "channel_index": "blue"
+      },
+      "valueRangeMin": 0,
+      "valueRangeMax": 100,
+      "wavelength": 405,
+      "freqRangeMin": 0,
+      "freqRangeMax": 0,
+      "freqRangeInit": 0,
+      "valueRangeStep": 1.0
+    },        
+    "UV": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "LumencorLaserManager",
+      "managerProperties": {
+        "rs232device": "lumencor",
+        "rs232deviceUC2": "ESP32",
+        "channel_index": "uv"
+      },
+      "valueRangeMin": 0,
+      "valueRangeMax": 100,
+      "wavelength": 365,
+      "freqRangeMin": 0,
+      "freqRangeMax": 0,
+      "freqRangeInit": 0,
+      "valueRangeStep": 1.0
+    }, 
+    "teal": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "LumencorLaserManager",
+      "managerProperties": {
+        "rs232device": "lumencor",
+        "rs232deviceUC2": "ESP32",
+        "channel_index": "teal"
+      },
+      "valueRangeMin": 0,
+      "valueRangeMax": 100,
+      "wavelength": 488,
+      "freqRangeMin": 0,
+      "freqRangeMax": 0,
+      "freqRangeInit": 0,
+      "valueRangeStep": 1.0
+    }, 
+    "cyan": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "LumencorLaserManager",
+      "managerProperties": {
+        "rs232device": "lumencor",
+        "rs232deviceUC2": "ESP32",
+        "channel_index": "cyan"
+      },
+      "valueRangeMin": 0,
+      "valueRangeMax": 100,
+      "wavelength": 488,
+      "freqRangeMin": 0,
+      "freqRangeMax": 0,
+      "freqRangeInit": 0,
+      "valueRangeStep": 1.0
+    }
+
+    
+  },
+  "LEDs": {},
+  "LEDMatrixs": {
+    "ESP32 LEDMatrix": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDMatrixManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "Nx": 4,
+        "Ny": 4,
+        "wavelength": 488,
+        "valueRangeMin": 0,
+        "valueRangeMax": 32768
+      }
+    }
+  },
+  "positioners": {
+    "ESP32Stage": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "isEnable": true,
+        "enableauto": false,
+        "stepsizeXDocu": "200*16 per revolution at 1.27 pitch",
+        "stepsizeX": 0.396,
+        "stepsizeY": 0.396,
+        "stepsizeA": 0.396,
+        "stepsizeZ": 0.3125,
+        "homeSpeedX": 10000,
+        "homeSpeedY": 10000,
+        "homeSpeedZ": 10000,
+        "homeSpeedA": 10000,
+        "isDualaxis": false,
+        "backlashXOld": 15,
+        "backlashYOld": 40,
+        "backlashX": 0,
+        "backlashY": 0,
+        "homeEndstoppolarityX": 1,
+        "homeEndstoppolarityY": -1,
+        "homeEndstoppolarityZ": -1,
+        "homeEndstoppolarityA": 1,
+        "homeDirectionX": -1,
+        "homeDirectionY": -1,
+        "homeDirectionZ": 1,
+        "homeDirectionA": -1,
+        "homeXenabled": 1,
+        "homeYenabled": 1,
+        "homeZenabled": 1,
+        "homeAenabled": 1,
+        "homeOnStartX": 0,
+        "homeOnStartY": 0,
+        "homeOnStartZ": 0,
+        "homeOnStartA": 0,
+        "initialSpeedX": 15000,
+        "initialSpeedY": 15000,
+        "initialSpeedZ": 15000,
+        "initialSpeedA": 15000
+      },
+      "axes": ["X", "Y", "Z", "A"],
+      "isPositiveDirection": true,
+      "forPositioning": true,
+      "forScanning": true,
+      "resetOnClose": true,
+      "stageOffsets": {
+        "stageOffsetPositionX": -26000.356,
+        "stageOffsetPositionY": -33000.032,
+        "stageOffsetPositionZ": 0,
+        "stageOffsetPositionA": 0
+      }
+    }
+  },
+  "rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport": "COM3",
+        "baudrate": 115200,
+        "debug": true
+      }
+    },
+    "lumencor": {
+      "managerName": "SerialManager",
+      "managerProperties": {
+        "port": "/dev/tty.usbserial-FTG6BLSE",
+        "encoding": "ascii",
+        "interface_type": "RS232",
+        "recv_termination": "\n",
+        "send_termination": "\r \n",
+        "baudrate": 9600,
+        "bytesize": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "rtscts": "false",
+        "dsrdtr": "false",
+        "xonxoff": "false"
+      }
+    }
+  },
+  "slm": null,
+  "sim": null,
+  "dpc": null,
+  "objective": {
+    "pixelsizes": [0.1, 0.5],
+    "NAs": [0.8, 0.16],
+    "magnifications": [20, 4],
+    "objectiveNames": ["Nikon 20x", "4x"],
+    "objectivePositions": [0, 1],
+    "homeDirection": -1,
+    "homePolarity": 1,
+    "homeSpeed": 20000,
+    "homeAcceleration": 20000,
+    "calibrateOnStart": true
+  },
+  "mct": {
+    "tWait": null
+  },
+  "nidaq": {
+    "timerCounterChannel": null,
+    "startTrigger": false
+  },
+  "roiscan": null,
+  "lightsheet": null,
+  "webrtc": null,
+  "hypha": null,
+  "mockxx": null,
+  "jetsonnano": null,
+  "HistoScan": {
+    "PreviewCamera": null
+  },
+  "Workflow": null,
+  "FlowStop": null,
+  "Lepmon": null,
+  "Flatfield": null,
+  "PixelCalibration": {},
+  "uc2Config": null,
+  "ism": null,
+  "focusLock": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32StageManager",
+    "updateFreq": 4,
+    "frameCropx": 0,
+    "frameCropy": 0,
+    "frameCropw": 0,
+    "frameCroph": 0,
+    "swapImageAxes": null,
+    "piKp": null,
+    "piKi": null
+  },
+  "fovLock": null,
+  "autofocus": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32Stage",
+    "updateFreq": 10,
+    "frameCropx": 780,
+    "frameCropy": 400,
+    "frameCropw": 500,
+    "frameCroph": 100
+  },
+  "scan": null,
+  "etSTED": null,
+  "rotators": null,
+  "microscopeStand": null,
+  "pulseStreamer": {
+    "ipAddress": null
+  },
+  "pyroServerInfo": {
+    "name": "ImSwitchServer",
+    "host": "0.0.0.0",
+    "port": 54333,
+    "active": false
+  },
+  "rois": {},
+  "ledPresets": {},
+  "defaultLEDPresetForScan": null,
+  "laserPresets": {},
+  "stageOffsets": {},
+  "defaultLaserPresetForScan": null,
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Image",
+    "Laser",
+    "Positioner",
+    "Autofocus",
+    "MCT",
+    "UC2Config",
+    "PixelCalibration",
+    "HistoScan",
+    "Joystick",
+    "Flatfield",
+    "Histogramm",
+    "ROIScan",
+    "Objective",
+    "Experiment",
+    "TriggerAcquisition",
+    "StageScanAcquisition"
+  ],
+  "nonAvailableWidgets": [
+    "STORMRecon",
+    "DPC",
+    "Holo",
+    "FFT",
+    "Hypha",
+    "FocusLock",
+    "HistoScan",
+    "FocusLock",
+    "FOVLock"
+  ]
+}

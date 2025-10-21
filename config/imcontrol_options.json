@@ -1,7 +1,7 @@
 {
     "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/example_virtual_microscope.json",
     "recording": {
-        "outputFolder": "~/Downloads/recordings",
+        "outputFolder": "/Users/bene/ImSwitchConfig/recordings",
         "includeDateInOutputFolder": true
     },
     "watcher": {

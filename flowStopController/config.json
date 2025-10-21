@@ -2,7 +2,7 @@
     "wasRunning": true,
     "flowRate": 100,
     "numberOfFrames": -1,
-    "experimentName": "LepmonExperiment",
+    "experimentName": "FlowStopExperiment",
     "frameRate": 1,
     "savePath": "./",
     "fileFormat": "JPG",
@@ -12,7 +12,7 @@
     "isRecordVideo": true,
     "numImages": 10,
     "uniqueId": [
-        102373
+        396367
     ],
     "volumePerImage": 1000,
     "timeToStabilize": 1,

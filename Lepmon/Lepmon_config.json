@@ -1,0 +1,32 @@
+{
+    "general": {
+        "serielnumber": "LEPMON001",
+        "project_name": "Lepmon#",
+        "current_folder": "",
+        "current_log": ""
+    },
+    "locality": {
+        "country": "Germany",
+        "province": "TH",
+        "city": "J"
+    },
+    "capture_mode": {
+        "time_buffer": 30,
+        "LepiLed_buffer": 60,
+        "flash": 0.25,
+        "interval": 2,
+        "dusk_treshold": 90,
+        "initial_exposure": 160,
+        "error_code": 0
+    },
+    "GPS": {
+        "latitude": 50.924009,
+        "Pol": "N",
+        "longitude": 11.584009,
+        "Block": "E"
+    },
+    "software": {
+        "version": "V1.0",
+        "date": "2024"
+    }
+}

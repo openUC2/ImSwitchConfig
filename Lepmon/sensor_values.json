@@ -1,0 +1,16 @@
+{
+    "time_read": "00:00:00",
+    "LUX": 0.0,
+    "Sensorstatus_Licht": 1,
+    "Temp_in": 20.0,
+    "Sensorstatus_Inne": 1,
+    "bus_voltage": 12.0,
+    "shunt_voltage": 0.0,
+    "current": 0.0,
+    "power": 0.0,
+    "Sensorstatus_Strom": 1,
+    "Temp_out": 15.0,
+    "air_pressure": 1013.25,
+    "air_humidity": 50.0,
+    "Status_aussen": 1
+}

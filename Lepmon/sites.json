@@ -1,0 +1,92 @@
+{
+    "Germany": {
+        "Thüringen": [
+            "TH",
+            "EF",
+            "GTH",
+            "J",
+            "MHL",
+            "SHK",
+            "SLF",
+            "SÖM",
+            "UH",
+            "WE"
+        ],
+        "Bayern": [
+            "BY",
+            "A",
+            "AB",
+            "AN",
+            "AÖ",
+            "AS",
+            "BA",
+            "BT",
+            "BY",
+            "CO",
+            "DON"
+        ],
+        "Baden-Württemberg": [
+            "BW",
+            "AA",
+            "AB",
+            "BC",
+            "BL",
+            "FR",
+            "HD",
+            "HN",
+            "KA"
+        ],
+        "Berlin": [
+            "BE",
+            "B"
+        ],
+        "Brandenburg": [
+            "BB",
+            "BAR",
+            "BRB",
+            "CB",
+            "EE",
+            "FF",
+            "HVL",
+            "LDS"
+        ]
+    },
+    "Austria": {
+        "Tirol": [
+            "T",
+            "IL",
+            "IM",
+            "KB",
+            "KU",
+            "LA",
+            "RE",
+            "SZ"
+        ],
+        "Wien": [
+            "W",
+            "W"
+        ],
+        "Salzburg": [
+            "S",
+            "HA",
+            "JO",
+            "SL",
+            "TA",
+            "ZE"
+        ]
+    },
+    "Switzerland": {
+        "Zürich": [
+            "ZH",
+            "ZH"
+        ],
+        "Bern": [
+            "BE",
+            "BE"
+        ],
+        "Genf": [
+            "GE",
+            "GE"
+        ]
+    }
+}
