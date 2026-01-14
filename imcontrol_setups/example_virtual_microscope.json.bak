@@ -124,7 +124,7 @@
                 "imagePath_": "simplant",
                 "imagePath__": "smlm",
                 "imagePath___": "astigmatism",
-                "imagePath": "wellplatecalib"
+                "imagePath____": "wellplatecalib"
             }
         }
     },
@@ -245,13 +245,13 @@
             "0": {
                 "affine_matrix": [
                     [
-                        1.0,
+                        -1.0,
                         0.0,
                         0.0
                     ],
                     [
                         0.0,
-                        1.0,
+                        -1.0,
                         0.0
                     ]
                 ],
@@ -268,7 +268,7 @@
                     "mean_correlation": 0.0,
                     "min_correlation": 0.0
                 },
-                "timestamp": "2025-10-19T12:45:50",
+                "timestamp": "2025-10-19T12:50:11",
                 "objective_info": {
                     "name": 0,
                     "detector": "VirtualCamera"
@@ -385,12 +385,13 @@
         "Demo",
         "FocusLock",
         "MazeGame",
-        "PixelCalibration"
+        "PixelCalibration", 
+        "Arkitekt",
+        "LiveView"
     ],
     "nonAvailableWidgets": [
         "STORMRecon",
         "Hypha",
-        "Arkitekt",
         "Histogramm",
         "Lepmon",
         "imswitch_lightsheet",

@@ -88,22 +88,26 @@
                 "stepsizeX": 1,
                 "stepsizeY": 1,
                 "stepsizeZ": 1,
+                "stepsizeA": 1,
                 "homeSpeedX": 15000,
                 "homeSpeedY": 15000,
                 "homeSpeedZ": 15000,
+                "homeSpeedA": 15000,
                 "homeDirectionX": 1,
                 "homeDirectionY": 1,
                 "homeDirectionZ": -1,
                 "initialSpeed": {
                     "X": 15000,
                     "Y": 15000,
-                    "Z": 15000
+                    "Z": 15000, 
+                    "A": 15000
                 }
             },
             "axes": [
                 "X",
                 "Y",
-                "Z"
+                "Z",
+                "A"
             ],
             "isPositiveDirection": true,
             "forPositioning": true,
@@ -124,7 +128,7 @@
                 "imagePath_": "simplant",
                 "imagePath__": "smlm",
                 "imagePath___": "astigmatism",
-                "imagePath": "wellplatecalib"
+                "imagePath____": "wellplatecalib"
             }
         }
     },
@@ -236,38 +240,6 @@
                     "mean_correlation": 0.0,
                     "min_correlation": 0.0
                 },
-                "timestamp": "2025-10-19T11:37:39",
-                "objective_info": {
-                    "name": 0,
-                    "detector": "VirtualCamera"
-                }
-            },
-            "0": {
-                "affine_matrix": [
-                    [
-                        -1.0,
-                        0.0,
-                        0.0
-                    ],
-                    [
-                        0.0,
-                        -1.0,
-                        0.0
-                    ]
-                ],
-                "metrics": {
-                    "rmse_um": 0.0,
-                    "max_error_um": 0.0,
-                    "mean_error_um": 0.0,
-                    "n_inliers": 9.0,
-                    "n_outliers": 0.0,
-                    "rotation_deg": 0.0,
-                    "scale_x_um_per_pixel": 1.0,
-                    "scale_y_um_per_pixel": 1.0,
-                    "condition_number": 1.0,
-                    "mean_correlation": 0.0,
-                    "min_correlation": 0.0
-                },
                 "timestamp": "2025-10-19T12:50:11",
                 "objective_info": {
                     "name": 0,
@@ -286,7 +258,8 @@
                 1.0,
                 0.0
             ]
-        ]
+        ],
+        "ObservationCamera": null
     },
     "experiment": {
         "omeroServerUrl": "100.111.214.77",
@@ -346,6 +319,9 @@
     "etSTED": null,
     "rotators": null,
     "microscopeStand": null,
+    "storage": {
+        "activeDataPath": "/Users/bene/Downloads/ImSwitchData"
+    },
     "pulseStreamer": {
         "ipAddress": null
     },
@@ -385,13 +361,15 @@
         "Demo",
         "FocusLock",
         "MazeGame",
-        "PixelCalibration", 
-        "LiveView"
+        "PixelCalibration",
+        "Arkitekt",
+        "LiveView", 
+        "Composite",
+        "InLineHolo"
     ],
     "nonAvailableWidgets": [
         "STORMRecon",
         "Hypha",
-        "Arkitekt",
         "Histogramm",
         "Lepmon",
         "imswitch_lightsheet",

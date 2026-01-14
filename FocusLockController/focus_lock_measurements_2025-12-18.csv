@@ -1,0 +1,2 @@
+timestamp;datetime;focus_value;focus_metric;is_locked;lock_position;current_position;pi_output;crop_size;crop_center;error;integral_term;derivative_term;step_size_um;travel_used_um
+1766062805.622723;2025-12-18 14:00:05.622;616.1133058828397;peak;False;;9797.1875;;1168;[1268, 1260];;;;;0.0

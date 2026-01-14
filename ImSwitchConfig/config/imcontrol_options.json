@@ -1,0 +1,10 @@
+{
+    "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/FRAME2b_2cam.json",
+    "recording": {
+        "outputFolder": "/Users/bene/ImSwitchConfig/ImSwitchConfig/recordings",
+        "includeDateInOutputFolder": true
+    },
+    "watcher": {
+        "outputFolder": "/Users/bene/ImSwitchConfig/ImSwitchConfig/scripts"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "setupFileName": "example_virtual_microscope.json",
+    "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/FRAME2b_2cam.json",
     "recording": {
         "outputFolder": "/Users/bene/ImSwitchConfig/recordings",
         "includeDateInOutputFolder": true
