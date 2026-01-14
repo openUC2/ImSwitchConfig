@@ -1,5 +1,5 @@
 {
-    "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/FRAME2b_2cam.json",
+    "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/FiveD_Helsinki.json",
     "recording": {
         "outputFolder": "/Users/bene/ImSwitchConfig/recordings",
         "includeDateInOutputFolder": true

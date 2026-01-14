@@ -1,0 +1,2551 @@
+{
+  "experiment_name": "experiment",
+  "experiment_mode": "normal",
+  "directory": "/Users/bene/ImSwitchConfig/data/ExperimentController/20260114_131941",
+  "filename": "20260114_131941_experiment",
+  "timepoint": 0,
+  "total_timepoints": 1,
+  "tile_count": 1,
+  "step_count": 104,
+  "snake_tiles": [
+    [
+      {
+        "iterator": 0,
+        "centerIndex": "area_0",
+        "iX": -2,
+        "iY": -2,
+        "x": 66930.15746975807,
+        "y": 56440.41747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 1,
+        "centerIndex": "area_0",
+        "iX": -1,
+        "iY": -2,
+        "x": 67636.71746975806,
+        "y": 56440.41747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 2,
+        "centerIndex": "area_0",
+        "iX": 0,
+        "iY": -2,
+        "x": 68343.27746975806,
+        "y": 56440.41747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 3,
+        "centerIndex": "area_0",
+        "iX": 1,
+        "iY": -2,
+        "x": 69049.83746975806,
+        "y": 56440.41747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 4,
+        "centerIndex": "area_0",
+        "iX": 2,
+        "iY": -2,
+        "x": 69756.39746975806,
+        "y": 56440.41747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 5,
+        "centerIndex": "area_0",
+        "iX": -2,
+        "iY": -1,
+        "x": 66930.15746975807,
+        "y": 56911.45747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 6,
+        "centerIndex": "area_0",
+        "iX": -1,
+        "iY": -1,
+        "x": 67636.71746975806,
+        "y": 56911.45747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 7,
+        "centerIndex": "area_0",
+        "iX": 0,
+        "iY": -1,
+        "x": 68343.27746975806,
+        "y": 56911.45747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 8,
+        "centerIndex": "area_0",
+        "iX": 1,
+        "iY": -1,
+        "x": 69049.83746975806,
+        "y": 56911.45747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 9,
+        "centerIndex": "area_0",
+        "iX": 2,
+        "iY": -1,
+        "x": 69756.39746975806,
+        "y": 56911.45747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 10,
+        "centerIndex": "area_0",
+        "iX": -2,
+        "iY": 0,
+        "x": 66930.15746975807,
+        "y": 57382.49747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 11,
+        "centerIndex": "area_0",
+        "iX": -1,
+        "iY": 0,
+        "x": 67636.71746975806,
+        "y": 57382.49747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 12,
+        "centerIndex": "area_0",
+        "iX": 0,
+        "iY": 0,
+        "x": 68343.27746975806,
+        "y": 57382.49747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 13,
+        "centerIndex": "area_0",
+        "iX": 1,
+        "iY": 0,
+        "x": 69049.83746975806,
+        "y": 57382.49747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 14,
+        "centerIndex": "area_0",
+        "iX": 2,
+        "iY": 0,
+        "x": 69756.39746975806,
+        "y": 57382.49747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 15,
+        "centerIndex": "area_0",
+        "iX": -2,
+        "iY": 1,
+        "x": 66930.15746975807,
+        "y": 57853.53747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 16,
+        "centerIndex": "area_0",
+        "iX": -1,
+        "iY": 1,
+        "x": 67636.71746975806,
+        "y": 57853.53747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 17,
+        "centerIndex": "area_0",
+        "iX": 0,
+        "iY": 1,
+        "x": 68343.27746975806,
+        "y": 57853.53747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 18,
+        "centerIndex": "area_0",
+        "iX": 1,
+        "iY": 1,
+        "x": 69049.83746975806,
+        "y": 57853.53747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 19,
+        "centerIndex": "area_0",
+        "iX": 2,
+        "iY": 1,
+        "x": 69756.39746975806,
+        "y": 57853.53747983871,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 20,
+        "centerIndex": "area_0",
+        "iX": -2,
+        "iY": 2,
+        "x": 66930.15746975807,
+        "y": 58324.577479838714,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 21,
+        "centerIndex": "area_0",
+        "iX": -1,
+        "iY": 2,
+        "x": 67636.71746975806,
+        "y": 58324.577479838714,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 22,
+        "centerIndex": "area_0",
+        "iX": 0,
+        "iY": 2,
+        "x": 68343.27746975806,
+        "y": 58324.577479838714,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 23,
+        "centerIndex": "area_0",
+        "iX": 1,
+        "iY": 2,
+        "x": 69049.83746975806,
+        "y": 58324.577479838714,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      },
+      {
+        "iterator": 24,
+        "centerIndex": "area_0",
+        "iX": 2,
+        "iY": 2,
+        "x": 69756.39746975806,
+        "y": 58324.577479838714,
+        "wellId": null,
+        "areaName": "Area_1",
+        "areaType": "free_scan"
+      }
+    ]
+  ],
+  "z_positions": [
+    -10489.0625
+  ],
+  "illumination_sources": [
+    "LED"
+  ],
+  "illumination_intensities": [
+    318
+  ],
+  "exposures": [
+    10.0
+  ],
+  "gains": [
+    0.0
+  ],
+  "autofocus": {
+    "enabled": false,
+    "min": 0.0,
+    "max": 0.0,
+    "step_size": 0.0,
+    "channel": "",
+    "mode": "hardware",
+    "max_attempts": 2,
+    "target_focus_setpoint": 312.60318490906826
+  },
+  "workflow_steps": [
+    {
+      "step_id": 0,
+      "name": "Move to point 0",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 66930.15746975807,
+        "posY": 56440.41747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 1,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 2,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 66930.15746975807,
+        "posY": 56440.41747983871,
+        "posZ": -10489.0625,
+        "iX": -2,
+        "iY": -2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 0,
+        "position_center_index": 0,
+        "runningNumber": 2,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 3,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 4,
+      "name": "Move to point 1",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 67636.71746975806,
+        "posY": 56440.41747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 5,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 6,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 67636.71746975806,
+        "posY": 56440.41747983871,
+        "posZ": -10489.0625,
+        "iX": -1,
+        "iY": -2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 1,
+        "position_center_index": 0,
+        "runningNumber": 6,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 7,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 8,
+      "name": "Move to point 2",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 68343.27746975806,
+        "posY": 56440.41747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 9,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 10,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 68343.27746975806,
+        "posY": 56440.41747983871,
+        "posZ": -10489.0625,
+        "iX": 0,
+        "iY": -2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 2,
+        "position_center_index": 0,
+        "runningNumber": 10,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 11,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 12,
+      "name": "Move to point 3",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69049.83746975806,
+        "posY": 56440.41747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 13,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 14,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69049.83746975806,
+        "posY": 56440.41747983871,
+        "posZ": -10489.0625,
+        "iX": 1,
+        "iY": -2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 3,
+        "position_center_index": 0,
+        "runningNumber": 14,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 15,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 16,
+      "name": "Move to point 4",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69756.39746975806,
+        "posY": 56440.41747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 17,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 18,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69756.39746975806,
+        "posY": 56440.41747983871,
+        "posZ": -10489.0625,
+        "iX": 2,
+        "iY": -2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 4,
+        "position_center_index": 0,
+        "runningNumber": 18,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 19,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 20,
+      "name": "Move to point 5",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 66930.15746975807,
+        "posY": 56911.45747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 21,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 22,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 66930.15746975807,
+        "posY": 56911.45747983871,
+        "posZ": -10489.0625,
+        "iX": -2,
+        "iY": -1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 5,
+        "position_center_index": 0,
+        "runningNumber": 22,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 23,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 24,
+      "name": "Move to point 6",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 67636.71746975806,
+        "posY": 56911.45747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 25,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 26,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 67636.71746975806,
+        "posY": 56911.45747983871,
+        "posZ": -10489.0625,
+        "iX": -1,
+        "iY": -1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 6,
+        "position_center_index": 0,
+        "runningNumber": 26,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 27,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 28,
+      "name": "Move to point 7",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 68343.27746975806,
+        "posY": 56911.45747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 29,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 30,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 68343.27746975806,
+        "posY": 56911.45747983871,
+        "posZ": -10489.0625,
+        "iX": 0,
+        "iY": -1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 7,
+        "position_center_index": 0,
+        "runningNumber": 30,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 31,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 32,
+      "name": "Move to point 8",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69049.83746975806,
+        "posY": 56911.45747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 33,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 34,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69049.83746975806,
+        "posY": 56911.45747983871,
+        "posZ": -10489.0625,
+        "iX": 1,
+        "iY": -1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 8,
+        "position_center_index": 0,
+        "runningNumber": 34,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 35,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 36,
+      "name": "Move to point 9",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69756.39746975806,
+        "posY": 56911.45747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 37,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 38,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69756.39746975806,
+        "posY": 56911.45747983871,
+        "posZ": -10489.0625,
+        "iX": 2,
+        "iY": -1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 9,
+        "position_center_index": 0,
+        "runningNumber": 38,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 39,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 40,
+      "name": "Move to point 10",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 66930.15746975807,
+        "posY": 57382.49747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 41,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 42,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 66930.15746975807,
+        "posY": 57382.49747983871,
+        "posZ": -10489.0625,
+        "iX": -2,
+        "iY": 0,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 10,
+        "position_center_index": 0,
+        "runningNumber": 42,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 43,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 44,
+      "name": "Move to point 11",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 67636.71746975806,
+        "posY": 57382.49747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 45,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 46,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 67636.71746975806,
+        "posY": 57382.49747983871,
+        "posZ": -10489.0625,
+        "iX": -1,
+        "iY": 0,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 11,
+        "position_center_index": 0,
+        "runningNumber": 46,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 47,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 48,
+      "name": "Move to point 12",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 68343.27746975806,
+        "posY": 57382.49747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 49,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 50,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 68343.27746975806,
+        "posY": 57382.49747983871,
+        "posZ": -10489.0625,
+        "iX": 0,
+        "iY": 0,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 12,
+        "position_center_index": 0,
+        "runningNumber": 50,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 51,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 52,
+      "name": "Move to point 13",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69049.83746975806,
+        "posY": 57382.49747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 53,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 54,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69049.83746975806,
+        "posY": 57382.49747983871,
+        "posZ": -10489.0625,
+        "iX": 1,
+        "iY": 0,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 13,
+        "position_center_index": 0,
+        "runningNumber": 54,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 55,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 56,
+      "name": "Move to point 14",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69756.39746975806,
+        "posY": 57382.49747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 57,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 58,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69756.39746975806,
+        "posY": 57382.49747983871,
+        "posZ": -10489.0625,
+        "iX": 2,
+        "iY": 0,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 14,
+        "position_center_index": 0,
+        "runningNumber": 58,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 59,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 60,
+      "name": "Move to point 15",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 66930.15746975807,
+        "posY": 57853.53747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 61,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 62,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 66930.15746975807,
+        "posY": 57853.53747983871,
+        "posZ": -10489.0625,
+        "iX": -2,
+        "iY": 1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 15,
+        "position_center_index": 0,
+        "runningNumber": 62,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 63,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 64,
+      "name": "Move to point 16",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 67636.71746975806,
+        "posY": 57853.53747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 65,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 66,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 67636.71746975806,
+        "posY": 57853.53747983871,
+        "posZ": -10489.0625,
+        "iX": -1,
+        "iY": 1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 16,
+        "position_center_index": 0,
+        "runningNumber": 66,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 67,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 68,
+      "name": "Move to point 17",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 68343.27746975806,
+        "posY": 57853.53747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 69,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 70,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 68343.27746975806,
+        "posY": 57853.53747983871,
+        "posZ": -10489.0625,
+        "iX": 0,
+        "iY": 1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 17,
+        "position_center_index": 0,
+        "runningNumber": 70,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 71,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 72,
+      "name": "Move to point 18",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69049.83746975806,
+        "posY": 57853.53747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 73,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 74,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69049.83746975806,
+        "posY": 57853.53747983871,
+        "posZ": -10489.0625,
+        "iX": 1,
+        "iY": 1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 18,
+        "position_center_index": 0,
+        "runningNumber": 74,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 75,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 76,
+      "name": "Move to point 19",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69756.39746975806,
+        "posY": 57853.53747983871,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 77,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 78,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69756.39746975806,
+        "posY": 57853.53747983871,
+        "posZ": -10489.0625,
+        "iX": 2,
+        "iY": 1,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 19,
+        "position_center_index": 0,
+        "runningNumber": 78,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 79,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 80,
+      "name": "Move to point 20",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 66930.15746975807,
+        "posY": 58324.577479838714,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 81,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 82,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 66930.15746975807,
+        "posY": 58324.577479838714,
+        "posZ": -10489.0625,
+        "iX": -2,
+        "iY": 2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 20,
+        "position_center_index": 0,
+        "runningNumber": 82,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 83,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 84,
+      "name": "Move to point 21",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 67636.71746975806,
+        "posY": 58324.577479838714,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 85,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 86,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 67636.71746975806,
+        "posY": 58324.577479838714,
+        "posZ": -10489.0625,
+        "iX": -1,
+        "iY": 2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 21,
+        "position_center_index": 0,
+        "runningNumber": 86,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 87,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 88,
+      "name": "Move to point 22",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 68343.27746975806,
+        "posY": 58324.577479838714,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 89,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 90,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 68343.27746975806,
+        "posY": 58324.577479838714,
+        "posZ": -10489.0625,
+        "iX": 0,
+        "iY": 2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 22,
+        "position_center_index": 0,
+        "runningNumber": 90,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 91,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 92,
+      "name": "Move to point 23",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69049.83746975806,
+        "posY": 58324.577479838714,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 93,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 94,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69049.83746975806,
+        "posY": 58324.577479838714,
+        "posZ": -10489.0625,
+        "iX": 1,
+        "iY": 2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 23,
+        "position_center_index": 0,
+        "runningNumber": 94,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 95,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 96,
+      "name": "Move to point 24",
+      "main_func": "move_stage_xy",
+      "main_params": {
+        "posX": 69756.39746975806,
+        "posY": 58324.577479838714,
+        "relative": false
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 97,
+      "name": "Turn on illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 318,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "wait_time"
+      ],
+      "post_params": {
+        "seconds": 0.1
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 98,
+      "name": "Acquire frame",
+      "main_func": "acquire_frame",
+      "main_params": {
+        "channel": "Mono"
+      },
+      "pre_funcs": [
+        "set_exposure_time_gain"
+      ],
+      "pre_params": {
+        "exposure_time": 10.0,
+        "gain": 0.0
+      },
+      "post_funcs": [
+        "save_frame_ome"
+      ],
+      "post_params": {
+        "posX": 69756.39746975806,
+        "posY": 58324.577479838714,
+        "posZ": -10489.0625,
+        "iX": 2,
+        "iY": 2,
+        "pixel_size": 0.2257,
+        "minX": 66930.15746975807,
+        "minY": 56440.41747983871,
+        "maxX": 69756.39746975806,
+        "maxY": 58324.577479838714,
+        "channel": "LED",
+        "time_index": 0,
+        "tile_index": 24,
+        "position_center_index": 0,
+        "runningNumber": 98,
+        "illuminationChannel": "LED",
+        "illuminationValue": 318,
+        "z_index": 0,
+        "channel_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 99,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 100,
+      "name": "Finalize OME writer for tile 0 (timepoint 0)",
+      "main_func": "dummy_main_func",
+      "main_params": {},
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "finalize_tile_ome_writer"
+      ],
+      "post_params": {
+        "tile_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 101,
+      "name": "Finalize OME writers (timepoint 0)",
+      "main_func": "dummy_main_func",
+      "main_params": {},
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [
+        "finalize_current_ome_writer"
+      ],
+      "post_params": {
+        "time_index": 0
+      },
+      "max_retries": 0
+    },
+    {
+      "step_id": 102,
+      "name": "Turn off illumination",
+      "main_func": "set_laser_power",
+      "main_params": {
+        "power": 0,
+        "channel": "LED"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    },
+    {
+      "step_id": 103,
+      "name": "Set LED status to idle",
+      "main_func": "set_led_status",
+      "main_params": {
+        "status": "idle"
+      },
+      "pre_funcs": [],
+      "pre_params": {},
+      "post_funcs": [],
+      "post_params": {},
+      "max_retries": 0
+    }
+  ],
+  "timestamp": "2026-01-14T13:20:00.558856",
+  "mode": "normal",
+  "imswitch_version": "unknown"
+}
