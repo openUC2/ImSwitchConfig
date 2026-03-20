@@ -1,0 +1,64 @@
+{
+  "detectors": {
+    "WidefieldCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "OpenCVCamManager",
+      "managerProperties": {
+        "cameraListIndex": 0,
+        "cameraListIndexWIN": 0,
+        "isRGB": true,
+        "cameraEffPixelsize": 12.2,
+        "opencvcam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000,
+          "pixel_format": "Mono12"
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": false
+    }
+  },
+  "positioners": {
+    "StepperXY": {
+      "managerName": "StepperXYStageManager",
+      "managerProperties": {
+        "rs232device": "StepperSerial",
+        "stepsizeX": 1000,
+        "stepsizeY": 1000,
+        "initialSpeedX": 600,
+        "initialSpeedY": 600
+      },
+      "axes": ["X", "Y"],
+      "forPositioning": true,
+      "forScanning": false,
+      "resetOnClose": false
+    }
+  },
+  "rs232devices": {
+    "StepperSerial": {
+      "managerName": "SerialManager",
+      "managerProperties": {
+        "port": "/dev/cu.usbmodem987ACBFC1",
+        "port_": "/dev/cu.usbmodem1101",
+        "baudrate": 9600,
+        "send_termination": "lf",
+        "recv_termination": "lf",
+        "timeout": 1.0
+      }
+    }
+  },
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Image",
+    "Laser",
+    "Positioner",
+    "Autofocus",
+    "Experiment",
+    "LiveView"
+  ]}

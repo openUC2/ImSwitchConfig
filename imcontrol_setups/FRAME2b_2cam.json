@@ -51,7 +51,7 @@
             "digitalLine": null,
             "managerName": "OpenCVCamManager",
             "managerProperties": {
-                "cameraListIndex": 0,
+                "cameraListIndex": 1,
                 "cameraListIndexWIN": 0,
                 "isRGB": true,
                 "cameraEffPixelsize": 12.2,
@@ -107,7 +107,7 @@
             "managerName": "ESP32LEDLaserManager",
             "managerProperties": {
                 "rs232device": "ESP32",
-                "channel_index": 0
+                "channel_index": 3
             },
             "valueRangeMin": 0,
             "valueRangeMax": 1023,
@@ -123,23 +123,7 @@
             "managerName": "ESP32LEDLaserManager",
             "managerProperties": {
                 "rs232device": "ESP32",
-                "channel_index": 3
-            },
-            "valueRangeMin": 0,
-            "valueRangeMax": 1023,
-            "wavelength": 1024,
-            "freqRangeMin": 0,
-            "freqRangeMax": 0,
-            "freqRangeInit": 0,
-            "valueRangeStep": 1.0
-        },
-        "LED Array": {
-            "analogChannel": null,
-            "digitalLine": null,
-            "managerName": "ESP32LEDLaserManager",
-            "managerProperties": {
-                "rs232device": "ESP32",
-                "channel_index": "LED"
+                "channel_index": 0
             },
             "valueRangeMin": 0,
             "valueRangeMax": 1023,
@@ -205,14 +189,14 @@
                 "backlashYOld": 40,
                 "backlashX": 0,
                 "backlashY": 0,
-                "homeEndstoppolarityA": 0,
-                "homeEndstoppolarityX": 0,
-                "homeEndstoppolarityY": 0,
-                "homeEndstoppolarityZ": 0,
+                "homeEndstoppolarityA": 1,
+                "homeEndstoppolarityX": 1,
+                "homeEndstoppolarityY": 1,
+                "homeEndstoppolarityZ": 1,
+                "homeDirectionA": -1,
                 "homeDirectionX": -1,
                 "homeDirectionY": -1,
                 "homeDirectionZ": 1,
-                "homeDirectionA": -1,
                 "homeXenabled": 1,
                 "homeYenabled": 1,
                 "homeZenabled": 1,
@@ -222,11 +206,25 @@
                 "homeOnStartZ": 0,
                 "homeOnStartA": 0,
                 "safePositionZHoming": -5000,
-                "initialSpeedX": 15000,
-                "initialSpeedY": 15000,
-                "initialSpeedZ": 15000,
-                "initialSpeedA": 15000,
-                "frameHomeOnStart": 0
+                "initialSpeedX": 20000,
+                "initialSpeedY": 20000,
+                "initialSpeedZ": 20000.0,
+                "initialSpeedA": 20000.0,
+                "frameHomeOnStart": 0,
+                "maxSpeedX": 10000,
+                "maxSpeedY": 10000,
+                "maxSpeedZ": 10000,
+                "maxSpeedA": 10000,
+                "backlashZ": 0,
+                "backlashA": 0,
+                "homeEndposReleaseX": 0,
+                "homeTimeoutX": 20000,
+                "homeEndposReleaseY": 0,
+                "homeTimeoutY": 20000,
+                "homeEndposReleaseZ": -10000,
+                "homeTimeoutZ": 20000,
+                "homeEndposReleaseA": 0,
+                "homeTimeoutA": 20000
             },
             "axes": [
                 "X",
@@ -239,20 +237,40 @@
             "forScanning": true,
             "resetOnClose": true,
             "stageOffsets": {
-                "stageOffsetPositionX": 4296.931384636802,
-                "stageOffsetPositionY": 1010.0994256526537,
+                "stageOffsetPositionX": -350.77590369757127,
+                "stageOffsetPositionY": -1804.0224889624733,
                 "stageOffsetPositionZ": 0.0,
                 "stageOffsetPositionA": 0.0
             }
         }
     },
+  "galvoScanners": {
+    "ESP32Galvo": {
+      "managerName": "ESP32GalvoScannerManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "nx": 256,
+        "ny": 256,
+        "x_min": 500,
+        "x_max": 3500,
+        "y_min": 500,
+        "y_max": 3500,
+        "sample_period_us": 1,
+        "frame_count": 0,
+        "bidirectional": false
+      },
+      "analogChannel": null,
+      "digitalLine": null
+    }
+  },
     "rs232devices": {
         "ESP32": {
             "managerName": "ESP32Manager",
             "managerProperties": {
                 "host_": "192.168.43.129",
-                "serialport": "COM3",
+                "serialport": "/dev/cu.usbmodem101",
                 "baudrate": 115200,
+                "baudrate_": 921600,
                 "debug": true
             }
         }
@@ -279,7 +297,7 @@
         ],
         "objectivePositions": [
             -1800.0,
-            29600.0
+            31300.0
         ],
         "homeDirection": 1,
         "homePolarity": 0,
@@ -287,9 +305,6 @@
         "homeAcceleration": 200000,
         "calibrateOnStart": false,
         "active": true
-    },
-    "mct": {
-        "tWait": null
     },
     "nidaq": {
         "timerCounterChannel": null,
@@ -427,6 +442,7 @@
     "storage": {
         "activeDataPath": "/Volumes/NO NAME/ImSwitchData"
     },
+    "instrument": null,
     "pulseStreamer": {
         "ipAddress": null
     },
@@ -461,10 +477,17 @@
         "MazeGame",
         "LiveView",
         "LEDMatrix",
-        "DPC"
+        "Composite", 
+        "Holo",
+        "OffAxisHolo",
+        "GalvoScanner"
     ],
+    "mct": {
+        "tWait": null
+    },
     "nonAvailableWidgets": [
         "TriggerAcquisition",
+        "DPC",
         "ESP32InfoScreen",
         "Arkitekt",
         "StageScanAcquisition",
@@ -472,7 +495,6 @@
         "STORMRecon",
         "imswitch_arkitekt_next",
         "DPC",
-        "Holo",
         "FFT",
         "Hypha",
         "HistoScan",

@@ -258,6 +258,11 @@
         "View",
         "Recording",
         "Image",
+        "LiveView",
+        "InLineHolo",
+"OffAxisHolo"],
+    "nonAvailableWidgets": [
+        "STORMRecon",
         "Laser",
         "Positioner",
         "Autofocus",
@@ -272,10 +277,7 @@
         "Objective",
         "Experiment", 
         "TriggerAcquisition", 
-        "StageScanAcquisition"
-    ],
-    "nonAvailableWidgets": [
-        "STORMRecon",
+        "StageScanAcquisition",
         "DPC",
         "Holo",
         "FFT",

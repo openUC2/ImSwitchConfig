@@ -194,11 +194,39 @@
             "forScanning": true,
             "resetOnClose": true,
             "stageOffsets": {
-                "stageOffsetPositionX": -20000.0,
-                "stageOffsetPositionY": -110000.0,
+                "stageOffsetPositionX": 31035.330933020945,
+                "stageOffsetPositionY": -46308.285212238145,
                 "stageOffsetPositionZ": 0.0,
                 "stageOffsetPositionA": 0.0
             }
+        }
+    },
+    "galvoScanners": {
+        "ESP32Galvo": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "ESP32GalvoScannerManager",
+            "managerProperties": {
+                "rs232device": "ESP32",
+                "nx": 256,
+                "ny": 256,
+                "x_min": 500,
+                "x_max": 3500,
+                "y_min": 500,
+                "y_max": 3500,
+                "sample_period_us": 1,
+                "frame_count": 0,
+                "bidirectional": false
+            },
+            "nx": 256,
+            "ny": 256,
+            "x_min": 500,
+            "x_max": 3500,
+            "y_min": 500,
+            "y_max": 3500,
+            "sample_period_us": 1,
+            "frame_count": 0,
+            "bidirectional": false
         }
     },
     "rs232devices": {
@@ -207,7 +235,8 @@
             "managerProperties": {
                 "host_": "192.168.43.129",
                 "serialport": "COM3",
-                "baudrate": 115200,
+                "baudrate_old": 115200,
+                "baudrate": 921600,
                 "debug": true
             }
         }
@@ -240,10 +269,8 @@
         "homePolarity": 0,
         "homeSpeed": 20000,
         "homeAcceleration": 200000,
-        "calibrateOnStart": false
-    },
-    "mct": {
-        "tWait": null
+        "calibrateOnStart": false,
+        "active": true
     },
     "nidaq": {
         "timerCounterChannel": null,
@@ -263,21 +290,49 @@
     "FlowStop": null,
     "Lepmon": null,
     "Flatfield": null,
-    "PixelCalibration": {},
+    "PixelCalibration": {
+        "affineCalibrations": {},
+        "defaultAffineMatrix": [
+            [
+                1.0,
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                1.0,
+                0.0
+            ]
+        ],
+        "ObservationCamera": null,
+        "overviewCalibration": {},
+        "ObservationCameraFlip": {
+            "flipX": true,
+            "flipY": true
+        }
+    },
+    "experiment": null,
     "uc2Config": null,
     "ism": null,
     "focusLock": {
         "camera": "WidefieldCamera",
         "positioner": "ESP32StageManager",
         "updateFreq": 4,
-        "frameCropx": 0,
-        "frameCropy": 0,
-        "frameCropw": 0,
-        "frameCroph": 0,
-        "swapImageAxes": null,
+        "cropCenter": null,
+        "cropSize": null,
         "piKp": null,
-        "piKi": null
+        "piKi": null,
+        "focusLockMetric": null,
+        "laserName": null,
+        "laserValue": null,
+        "fovWidth": 512,
+        "fovCenter": [
+            null,
+            null
+        ],
+        "calibrationData": null
     },
+    "arkitekt": null,
     "fovLock": null,
     "autofocus": {
         "camera": "WidefieldCamera",
@@ -292,6 +347,8 @@
     "etSTED": null,
     "rotators": null,
     "microscopeStand": null,
+    "storage": null,
+    "instrument": null,
     "pulseStreamer": {
         "ipAddress": null
     },
@@ -325,8 +382,12 @@
         "Objective",
         "Experiment",
         "TriggerAcquisition",
+        "GalvoScanner",
         "StageScanAcquisition"
     ],
+    "mct": {
+        "tWait": null
+    },
     "nonAvailableWidgets": [
         "Histogramm",
         "STORMRecon",
