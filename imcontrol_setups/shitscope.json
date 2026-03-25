@@ -1,4 +1,5 @@
 {
+  "comment": "Ethan edited this file without using sudo!",
   "detectors": {
     "WidefieldCamera": {
       "analogChannel": null,
@@ -42,8 +43,7 @@
     "StepperSerial": {
       "managerName": "SerialManager",
       "managerProperties": {
-        "port": "/dev/cu.usbmodem987ACBFC1",
-        "port_": "/dev/cu.usbmodem1101",
+        "port": "/dev/ttyACM0",
         "baudrate": 9600,
         "send_termination": "lf",
         "recv_termination": "lf",
