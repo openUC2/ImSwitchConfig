@@ -1,64 +1,163 @@
 {
-  "comment": "Ethan edited this file without using sudo!",
-  "detectors": {
-    "WidefieldCamera": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "OpenCVCamManager",
-      "managerProperties": {
-        "cameraListIndex": 0,
-        "cameraListIndexWIN": 0,
-        "isRGB": true,
-        "cameraEffPixelsize": 12.2,
-        "opencvcam": {
-          "exposure": 0,
-          "gain": 0,
-          "blacklevel": 100,
-          "image_width": 1000,
-          "image_height": 1000,
-          "pixel_format": "Mono12"
+    "detectors": {
+        "WidefieldCamera": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "Picamera2Manager",
+            "managerProperties": {
+                "cameraListIndex": 0,
+                "cameraEffPixelsize": 1.12,
+                "isRGB": true,
+                "resolution": [
+                    640,
+                    480
+                ],
+                "binning": 1,
+                "use_video_mode": true,
+                "mocktype": "normal",
+                "picamera2": {
+                    "exposure": 10,
+                    "gain": 1.0,
+                    "frame_rate": 30,
+                    "flipX": false,
+                    "flipY": false
+                }
+            },
+            "forAcquisition": true,
+            "forFocusLock": true
         }
-      },
-      "forAcquisition": true,
-      "forFocusLock": false
-    }
-  },
-  "positioners": {
-    "StepperXY": {
-      "managerName": "StepperXYStageManager",
-      "managerProperties": {
-        "rs232device": "StepperSerial",
-        "stepsizeX": 1000,
-        "stepsizeY": 1000,
-        "initialSpeedX": 600,
-        "initialSpeedY": 600
-      },
-      "axes": ["X", "Y"],
-      "forPositioning": true,
-      "forScanning": false,
-      "resetOnClose": false
-    }
-  },
-  "rs232devices": {
-    "StepperSerial": {
-      "managerName": "SerialManager",
-      "managerProperties": {
-        "port": "/dev/ttyACM0",
-        "baudrate": 9600,
-        "send_termination": "lf",
-        "recv_termination": "lf",
-        "timeout": 1.0
-      }
-    }
-  },
-  "availableWidgets": [
-    "Settings",
-    "View",
-    "Recording",
-    "Image",
-    "Laser",
-    "Positioner",
-    "Autofocus",
-    "Experiment",
-    "LiveView"
-  ]}
+    },
+    "lasers": {},
+    "LEDs": {},
+    "LEDMatrixs": {},
+    "positioners": {
+        "StepperXY": {
+            "analogChannel": null,
+            "digitalLine": null,
+            "managerName": "StepperXYStageManager",
+            "managerProperties": {
+                "rs232device": "StepperSerial",
+                "stepsizeX": 300,
+                "stepsizeY": -300,
+                "initialSpeedX": 600,
+                "initialSpeedY": 600,
+                "backlashX": 0,
+                "backlashY": 0,
+                "swapXY": true,
+                "homeSpeedSteps": 200,
+                "homeTimeS": 1.0
+            },
+            "axes": [
+                "X",
+                "Y"
+            ],
+            "isPositiveDirection": true,
+            "forPositioning": true,
+            "forScanning": false,
+            "resetOnClose": false,
+            "stageOffsets": {
+                "stageOffsetPositionX": 0,
+                "stageOffsetPositionY": 0,
+                "stageOffsetPositionZ": 0,
+                "stageOffsetPositionA": 0
+            }
+        }
+    },
+    "galvoScanners": {},
+    "rs232devices": {
+        "StepperSerial": {
+            "managerName": "SerialManager",
+            "managerProperties": {
+                "port": "/dev/ttyACM0",
+                "baudrate": 9600,
+                "send_termination": "lf",
+                "recv_termination": "lf",
+                "timeout": 1.0
+            }
+        }
+    },
+    "slm": null,
+    "sim": null,
+    "dpc": null,
+    "objective": {
+        "pixelsizes": [
+            0.1481481481,
+            0
+        ],
+        "NAs": [
+            0.45,
+            0.0
+        ],
+        "magnifications": [
+            20,
+            0
+        ],
+        "objectiveNames": [
+            "20x",
+            "0"
+        ],
+        "objectivePositions": [
+            0,
+            0
+        ],
+        "homeDirection": 0,
+        "homePolarity": 0,
+        "homeSpeed": 0,
+        "homeAcceleration": 0,
+        "calibrateOnStart": false,
+        "active": false
+    },
+    "nidaq": {
+        "timerCounterChannel": null,
+        "startTrigger": false
+    },
+    "roiscan": null,
+    "lightsheet": null,
+    "webrtc": null,
+    "hypha": null,
+    "mockxx": null,
+    "jetsonnano": null,
+    "Stresstest": null,
+    "HistoScan": null,
+    "Workflow": null,
+    "FlowStop": null,
+    "Lepmon": null,
+    "PixelCalibration": null,
+    "experiment": null,
+    "uc2Config": null,
+    "ism": null,
+    "focusLock": null,
+    "arkitekt": null,
+    "sila2": null,
+    "fovLock": null,
+    "autofocus": null,
+    "scan": null,
+    "etSTED": null,
+    "rotators": null,
+    "microscopeStand": null,
+    "storage": null,
+    "instrument": null,
+    "pulseStreamer": {
+        "ipAddress": null
+    },
+    "rois": {},
+    "ledPresets": {},
+    "defaultLEDPresetForScan": null,
+    "laserPresets": {},
+    "stageOffsets": {},
+    "defaultLaserPresetForScan": null,
+    "availableWidgets": [
+        "Settings",
+        "View",
+        "Recording",
+        "Image",
+        "Laser",
+        "Positioner",
+        "Autofocus",
+        "Experiment",
+        "LiveView",
+        "PixelCalibration",
+        "Objective"
+    ],
+    "comment": "Ethan edited this file without using sudo!"
+}
