@@ -3,26 +3,24 @@
         "WidefieldCamera": {
             "analogChannel": null,
             "digitalLine": null,
-            "managerName": "OpenCVCamManager",
+            "managerName": "HikCamManager",
             "managerProperties": {
-                "cameraListIndex": 0,
-                "cameraListIndexWIN": 0,
-                "isRGB": true,
-                "cameraEffPixelsize": 12.2,
-                "opencvcam": {
+                "isRGB": 1,
+                "cameraListIndex_old": 1,
+                "cameraListIndex_": 596,
+                "cameraListIndex": 507,
+                "hikcam": {
                     "exposure": 0,
                     "gain": 0,
                     "blacklevel": 100,
                     "image_width": 1000,
-                    "image_height": 1000,
-                    "pixel_format": "Mono12"
+                    "image_height": 1000
                 }
             },
             "forAcquisition": true,
             "forFocusLock": false,
             "defaultStreamSettings": {}
-        }
-    },
+        }},
     "lasers": {
         "LED": {
             "analogChannel": null,

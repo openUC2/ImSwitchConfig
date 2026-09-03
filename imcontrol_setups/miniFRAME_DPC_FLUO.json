@@ -50,45 +50,13 @@
         }
     },
     "lasers": {
-        "405": {
-            "analogChannel": null,
-            "digitalLine": null,
-            "managerName": "ESP32LEDLaserManager",
-            "managerProperties": {
-                "rs232device": "ESP32",
-                "channel_index": 1
-            },
-            "valueRangeMin": 0,
-            "valueRangeMax": 1023,
-            "wavelength": 635,
-            "freqRangeMin": 0,
-            "freqRangeMax": 0,
-            "freqRangeInit": 0,
-            "valueRangeStep": 1.0
-        },
-        "532": {
-            "analogChannel": null,
-            "digitalLine": null,
-            "managerName": "ESP32LEDLaserManager",
-            "managerProperties": {
-                "rs232device": "ESP32",
-                "channel_index": 2
-            },
-            "valueRangeMin": 0,
-            "valueRangeMax": 1023,
-            "wavelength": 1024,
-            "freqRangeMin": 0,
-            "freqRangeMax": 0,
-            "freqRangeInit": 0,
-            "valueRangeStep": 1.0
-        },
         "488": {
             "analogChannel": null,
             "digitalLine": null,
             "managerName": "ESP32LEDLaserManager",
             "managerProperties": {
                 "rs232device": "ESP32",
-                "channel_index": 3
+                "channel_index": 0
             },
             "valueRangeMin": 0,
             "valueRangeMax": 1023,
@@ -104,7 +72,7 @@
             "managerName": "ESP32LEDLaserManager",
             "managerProperties": {
                 "rs232device": "ESP32",
-                "channel_index": 0
+                "channel_index": 1
             },
             "valueRangeMin": 0,
             "valueRangeMax": 1023,
@@ -176,7 +144,7 @@
                 "homeEndstoppolarityZ": 1,
                 "homeDirectionA": -1,
                 "homeDirectionX": -1,
-                "homeDirectionY": 1,
+                "homeDirectionY": -1,
                 "homeDirectionZ": 1,
                 "homeXenabled": 1,
                 "homeYenabled": 1,
@@ -187,10 +155,10 @@
                 "homeOnStartZ": 0,
                 "homeOnStartA": 0,
                 "safePositionZHoming": -5000,
-                "initialSpeedX": 10000,
-                "initialSpeedY": 10000,
-                "initialSpeedZ": 10000,
-                "initialSpeedA": 10000,
+                "initialSpeedX": 20000,
+                "initialSpeedY": 20000,
+                "initialSpeedZ": 20000.0,
+                "initialSpeedA": 20000.0,
                 "frameHomeOnStart": 0,
                 "maxSpeedX": 10000,
                 "maxSpeedY": 10000,
@@ -258,8 +226,8 @@
             "managerName": "ESP32Manager",
             "managerProperties": {
                 "host_": "192.168.43.129",
-                "serialport": "/dev/cu.SLAB_USBtoUART",
-                "baudrate": 921600,
+                "serialport": "/dev/cu.usbmodem101",
+                "baudrate": 115200,
                 "baudrate_": 921600,
                 "debug": true
             }
@@ -271,29 +239,29 @@
     "objective": {
         "pixelsizes": [
             0.53,
-            0.265
+            0
         ],
         "NAs": [
-            0.1,
-            0.75
+            0.3,
+            0
         ],
         "magnifications": [
             10,
-            20
+            0
         ],
         "objectiveNames": [
-            "4x",
-            "20x"
+            "10x",
+            ""
         ],
         "objectivePositions": [
             1000.0,
-            31300.0
+            0
         ],
         "homeDirection": 1,
         "homePolarity": 0,
         "homeSpeed": 20000,
         "homeAcceleration": 200000,
-        "moveSpeed": 20000,
+        "moveSpeed": 123455,
         "calibrateOnStart": false,
         "active": true
     },
@@ -433,94 +401,11 @@
     },
     "uc2Config": null,
     "ism": null,
-    "focusLock": {
-        "camera": "FocusLockCamera",
-        "positioner": "ESP32Stage",
-        "updateFreq": 10,
-        "cropCenter": [
-            1268,
-            1260
-        ],
-        "cropSize": 1168,
-        "piKp": 1.0,
-        "piKi": 0.0,
-        "focusLockMetric": "peak",
-        "laserName": "488",
-        "laserValue": 0,
-        "fovWidth": 2048,
-        "fovCenter": [
-            null,
-            null
-        ],
-        "calibrationData": {
-            "position_data": [
-                5031.56,
-                5053.78,
-                5076.01,
-                5098.23,
-                5120.45,
-                5142.67,
-                5164.9,
-                5187.12,
-                5209.34,
-                5231.56
-            ],
-            "focus_data": [
-                379.1815844850118,
-                363.70545464799625,
-                347.6970218950457,
-                330.22838342100005,
-                314.89086128891535,
-                302.1364187967785,
-                287.08618213251503,
-                269.777798157693,
-                253.807423510289,
-                237.30670785139543
-            ],
-            "polynomial_coeffs": [
-                -0.7030673094836042,
-                3916.4152724069677
-            ],
-            "sensitivity_nm_per_unit": -1422.3389233308114,
-            "r_squared": 0.9993851563232461,
-            "linear_range": [
-                237.30670785139543,
-                379.1815844850118
-            ],
-            "timestamp": 1767800816.22368,
-            "lookup_table": {
-                "379.1815844850118": 5031.56,
-                "363.70545464799625": 5053.78,
-                "347.6970218950457": 5076.01,
-                "330.22838342100005": 5098.23,
-                "314.89086128891535": 5120.45,
-                "302.1364187967785": 5142.67,
-                "287.08618213251503": 5164.9,
-                "269.777798157693": 5187.12,
-                "253.807423510289": 5209.34,
-                "237.30670785139543": 5231.56
-            }
-        }
-    },
-    "arkitekt": {
-        "enabled": true,
-        "appName": "imswitch",
-        "redeemToken": "",
-        "url": "go.arkitekt.live",
-        "syncInAsync": true,
-        "deconvolveActionHash": "c58c90edbf6e208e3deafdd6f885553d6e027573f0ddc3b59ced3911f016ef4f"
-    },
+    "focusLock": null,
+    "arkitekt": null,
     "sila2": null,
     "fovLock": null,
-    "autofocus": {
-        "camera": "WidefieldCamera",
-        "positioner": "ESP32Stage",
-        "updateFreq": 10,
-        "frameCropx": 780,
-        "frameCropy": 400,
-        "frameCropw": 500,
-        "frameCroph": 100
-    },
+    "autofocus": null,
     "scan": null,
     "etSTED": null,
     "rotators": null,
@@ -546,44 +431,18 @@
         "Laser",
         "Positioner",
         "Autofocus",
-        "MCT",
         "UC2Config",
         "PixelCalibration",
         "Objective",
         "Experiment",
-        "Lightsheet",
-        "WiFi",
-        "MazeGame",
         "LiveView",
         "LEDMatrix",
-        "Composite",
-        "Holo",
-        "OffAxisHolo",
-        "GalvoScanner",
-        "Goniometer",
         "StageCenterCalibration",
-        "OpticalFlowController"
+        "OpticalFlow"
     ],
     "stageOffsets": {},
     "Flatfield": null,
     "mct": {
         "tWait": null
-    },
-    "nonAvailableWidgets": [
-        "TriggerAcquisition",
-        "DPC",
-        "FocusLock",
-        "ESP32InfoScreen",
-        "Arkitekt",
-        "StageScanAcquisition",
-        "Histogramm",
-        "STORMRecon",
-        "imswitch_arkitekt_next",
-        "DPC",
-        "FFT",
-        "Hypha",
-        "HistoScan",
-        "FocusLock",
-        "FOVLock"
-    ]
+    }
 }

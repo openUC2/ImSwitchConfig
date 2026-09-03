@@ -8,3 +8,8 @@ recordings*
 
 *.tif
 *.pyc
+/.cache
+/data
+.DS_Store
+/logs
+*.bak
