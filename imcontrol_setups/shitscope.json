@@ -21,7 +21,35 @@
             "forAcquisition": true,
             "forFocusLock": false,
             "defaultStreamSettings": {}
-        }
+        },
+                "WidefieldCamera2": {
+                    "analogChannel": null,
+                    "digitalLine": null,
+                    "managerName": "Picamera2Manager",
+                    "managerProperties": {
+                        "cameraListIndex": 0,
+                        "cameraEffPixelsize": 1.12,
+                        "isRGB": true,
+                        "resolution": [
+                            640,
+                            480
+                        ],
+                        "binning": 1,
+                        "use_video_mode": true,
+                        "mocktype": "normal",
+                        "picamera2": {
+                            "exposure": 10,
+                            "gain": 1.0,
+                            "frame_rate": 30,
+                            "flipX": false,
+                            "flipY": false
+                        }
+                    },
+                    "forAcquisition": true,
+                    "forFocusLock": true
+                }
+            },
+
     },
     "lasers": {
         "LED": {
@@ -142,70 +170,7 @@
     "Workflow": null,
     "FlowStop": null,
     "Lepmon": null,
-    "PixelCalibration": {
-        "affineCalibrations": {
-            "WidefieldCamera::default": {
-                "affine_matrix": [
-                    [
-                        2.0,
-                        0.0,
-                        0.0
-                    ],
-                    [
-                        0.0,
-                        2.0,
-                        0.0
-                    ]
-                ],
-                "metrics": {
-                    "scale_x_um_per_pixel": 2,
-                    "scale_y_um_per_pixel": 2,
-                    "rotation_deg": 0,
-                    "method": "manual_edit",
-                    "quality": "manual"
-                },
-                "timestamp": "2026-06-10T19:16:48",
-                "detector_name": "WidefieldCamera",
-                "objective_id": "default"
-            },
-            "WidefieldCamera::0": {
-                "affine_matrix": [
-                    [
-                        2.0,
-                        0.0,
-                        0.0
-                    ],
-                    [
-                        0.0,
-                        2.0,
-                        0.0
-                    ]
-                ],
-                "metrics": {
-                    "scale_x_um_per_pixel": 2,
-                    "scale_y_um_per_pixel": 2,
-                    "rotation_deg": 0,
-                    "method": "manual_edit",
-                    "quality": "manual"
-                },
-                "timestamp": "2026-06-10T19:39:50",
-                "detector_name": "WidefieldCamera",
-                "objective_id": "0"
-            }
-        },
-        "defaultAffineMatrix": [
-            [
-                1.0,
-                0.0,
-                0.0
-            ],
-            [
-                0.0,
-                1.0,
-                0.0
-            ]
-        ]
-    },
+    "PixelCalibration": null,
     "experiment": null,
     "uc2Config": null,
     "ism": null,
@@ -220,7 +185,6 @@
     "microscopeStand": null,
     "storage": null,
     "instrument": null,
-    "overviewRegistration": null,
     "pulseStreamer": {
         "ipAddress": null
     },
@@ -228,6 +192,7 @@
     "ledPresets": {},
     "defaultLEDPresetForScan": null,
     "laserPresets": {},
+    "stageOffsets": {},
     "defaultLaserPresetForScan": null,
     "availableWidgets": [
         "Settings",
