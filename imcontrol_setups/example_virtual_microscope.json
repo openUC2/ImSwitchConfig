@@ -837,6 +837,7 @@
         "Settings",
         "View",
         "Recording",
+        "FlowStop",
         "Image",
         "Laser",
         "Positioner",
@@ -851,7 +852,8 @@
         "UC2Config",
         "Objective",
         "Arkitekt",
-        "StageMap"
+        "StageMap", 
+        "ShitScope"
     ],
     "stageOffsets": {},
     "Flatfield": null,
@@ -877,7 +879,6 @@
         "imswitch_lightsheet",
         "imswitch_arkitekt_next",
         "FocusLock",
-        "FlowStop",
         "SIM",
         "imswitch_arkitekt",
         "DPC",

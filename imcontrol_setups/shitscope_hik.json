@@ -20,7 +20,8 @@
             "forAcquisition": true,
             "forFocusLock": false,
             "defaultStreamSettings": {}
-        }},
+        }
+    },
     "lasers": {
         "LED": {
             "analogChannel": null,
@@ -48,10 +49,58 @@
             "managerName": "StepperXYStageManager",
             "managerProperties": {
                 "rs232device": "StepperSerial",
-                "stepsizeX": 1000,
-                "stepsizeY": 1000,
-                "initialSpeedX": 600,
-                "initialSpeedY": 600
+                "stepsizeX": 174.9542,
+                "stepsizeY": 86.6589,
+                "initialSpeedX": 100,
+                "initialSpeedY": 100,
+                "umPerElectricalCycleX": 5598.5,
+                "umPerElectricalCycleY": 2773.1,
+                "powerX": 29000,
+                "powerY": 30000,
+                "approachDirectionX": 1,
+                "approachDirectionY": 1,
+                "approachOvershootSteps": 6,
+                "settleMs": 50,
+                "maxSpeedSteps": 10000,
+                "firmware": {
+                    "ACCEL": 1500,
+                    "HOLD": 0,
+                    "DITHER": "1 16 50",
+                    "PHASE_Y": [
+                        -1,
+                        -2,
+                        -3,
+                        -2,
+                        1,
+                        4,
+                        5,
+                        5,
+                        6,
+                        7,
+                        4,
+                        4,
+                        6,
+                        7,
+                        5,
+                        1,
+                        -4,
+                        -9,
+                        -12,
+                        -11,
+                        -10,
+                        -8,
+                        -6,
+                        -5,
+                        -4,
+                        -2,
+                        0,
+                        2,
+                        5,
+                        6,
+                        6,
+                        1
+                    ]
+                }
             },
             "axes": [
                 "X",
@@ -65,11 +114,12 @@
         }
     },
     "galvoScanners": {},
+    "flimLabs": null,
     "rs232devices": {
         "StepperSerial": {
             "managerName": "SerialManager",
             "managerProperties": {
-                "port": "/dev/cu.cu.usbmodem6D964F271",
+                "port": "/dev/cu.usbmodem6D964F271",
                 "port_": "/dev/cu.usbmodem1101",
                 "baudrate": 9600,
                 "send_termination": "lf",
@@ -93,12 +143,13 @@
             }
         }
     },
+    "mmcoreSettings": null,
     "slm": null,
     "sim": null,
     "dpc": null,
     "objective": {
         "pixelsizes": [
-            0.5,
+            0.5464480874,
             0
         ],
         "NAs": [
@@ -114,6 +165,10 @@
             "-"
         ],
         "objectivePositions": [
+            0,
+            0
+        ],
+        "zPositions": [
             0,
             0
         ],
@@ -145,48 +200,48 @@
             "WidefieldCamera::default": {
                 "affine_matrix": [
                     [
-                        2.0,
+                        0.5464480874,
                         0.0,
                         0.0
                     ],
                     [
                         0.0,
-                        2.0,
+                        0.5464480874,
                         0.0
                     ]
                 ],
                 "metrics": {
-                    "scale_x_um_per_pixel": 2,
-                    "scale_y_um_per_pixel": 2,
+                    "scale_x_um_per_pixel": 0.5464480874,
+                    "scale_y_um_per_pixel": 0.5464480874,
                     "rotation_deg": 0,
                     "method": "manual_edit",
                     "quality": "manual"
                 },
-                "timestamp": "2026-06-10T19:16:48",
+                "timestamp": "2026-09-25T12:00:00",
                 "detector_name": "WidefieldCamera",
                 "objective_id": "default"
             },
             "WidefieldCamera::0": {
                 "affine_matrix": [
                     [
-                        2.0,
+                        0.5464480874,
                         0.0,
                         0.0
                     ],
                     [
                         0.0,
-                        2.0,
+                        0.5464480874,
                         0.0
                     ]
                 ],
                 "metrics": {
-                    "scale_x_um_per_pixel": 2,
-                    "scale_y_um_per_pixel": 2,
+                    "scale_x_um_per_pixel": 0.5464480874,
+                    "scale_y_um_per_pixel": 0.5464480874,
                     "rotation_deg": 0,
                     "method": "manual_edit",
                     "quality": "manual"
                 },
-                "timestamp": "2026-06-10T19:39:50",
+                "timestamp": "2026-09-25T12:00:00",
                 "detector_name": "WidefieldCamera",
                 "objective_id": "0"
             }
@@ -238,6 +293,7 @@
         "Experiment",
         "LiveView",
         "Objective",
-        "Laser"
+        "Laser",
+        "ShitScope"
     ]
 }

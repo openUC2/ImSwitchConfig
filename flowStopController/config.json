@@ -1,20 +1,21 @@
 {
-    "wasRunning": true,
+    "wasRunning": false,
     "flowRate": 100,
     "numberOfFrames": -1,
     "experimentName": "FlowStopExperiment",
+    "experimentDescription": "",
     "frameRate": 1,
     "savePath": "./",
     "fileFormat": "JPG",
     "axisFlow": "X",
     "axisFocus": "Z",
-    "delayTimeAfterRestart": 1,
-    "isRecordVideo": true,
+    "delayTimeAfterRestart": 1.0,
+    "isRecordVideo": false,
     "numImages": 10,
-    "uniqueId": [
-        939400
-    ],
+    "uniqueId": "11820",
     "volumePerImage": 1000,
     "timeToStabilize": 1,
-    "pumpSpeed": 100
+    "pumpSpeed": 100,
+    "pumpTimeout": 5.0,
+    "metadata": {}
 }

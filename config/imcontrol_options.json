@@ -1,5 +1,5 @@
 {
-    "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/example_remote_focussensor.json",
+    "setupFileName": "/Users/bene/ImSwitchConfig/imcontrol_setups/shitscope_hik.json",
     "recording": {
         "outputFolder": "/Users/bene/ImSwitchConfig/recordings",
         "includeDateInOutputFolder": true
